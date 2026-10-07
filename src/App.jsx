@@ -11,7 +11,9 @@ import SkillGapPage from "./pages/SkillGapPage";
 import ComparePage from "./pages/ComparePage";
 import RoadmapPage from "./pages/RoadmapPage";
 import ProgressPage from "./pages/ProgressPage";
+import MobilityPage from "./pages/MobilityPage";
 import ProfilePage from "./pages/ProfilePage";
+import MarketPage from "./pages/MarketPage";
 import AuthPage from "./pages/AuthPage";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
               {/* Protected Application Routes */}
               <Route element={<ProtectedRoute />}>
                 <Route path="dashboard" element={<DashboardPage />} />
+                <Route path="mobility" element={<MobilityPage />} />
+                <Route path="market" element={<MarketPage />} />
                 <Route path="simulator" element={<SimulatorPage />} />
                 <Route path="explorer" element={<ExplorerPage />} />
                 <Route path="skill-gap" element={<SkillGapPage />} />

@@ -1,0 +1,94 @@
+{
+  "dataset_ds": "DataScience Jobs.csv",
+  "dataset_aj": "Analytics Jobs.csv",
+  "tasks": {
+    "ds_salary_regression": {
+      "task": "Supervised Salary Regression (DataScience Jobs)",
+      "target": "avg_salary_lpa",
+      "training_rows": 1602,
+      "features": [
+        "min_experience",
+        "num_of_jobs",
+        "job_title"
+      ],
+      "cv_method": "5-Fold Cross-Validation (seed=42)",
+      "selected_model": "RidgeRegression",
+      "model_comparison": [
+        {
+          "model": "RidgeRegression",
+          "cv_r2": 0.536,
+          "cv_r2_std": 0.0502,
+          "cv_mae_lpa": 3.6056,
+          "cv_rmse_lpa": 5.3165,
+          "selected": true
+        },
+        {
+          "model": "RandomForestRegressor",
+          "cv_r2": 0.5117,
+          "cv_r2_std": 0.0538,
+          "cv_mae_lpa": 3.7305,
+          "cv_rmse_lpa": 5.4557,
+          "selected": false
+        },
+        {
+          "model": "GradientBoostingRegressor",
+          "cv_r2": 0.5255,
+          "cv_r2_std": 0.0419,
+          "cv_mae_lpa": 3.674,
+          "cv_rmse_lpa": 5.3788,
+          "selected": false
+        }
+      ],
+      "best_metrics": {
+        "model": "RidgeRegression",
+        "cv_r2": 0.536,
+        "cv_r2_std": 0.0502,
+        "cv_mae_lpa": 3.6056,
+        "cv_rmse_lpa": 5.3165,
+        "selected": true
+      }
+    },
+    "aj_salary_tier_classification": {
+      "task": "Supervised Salary Tier Classification (Analytics Jobs)",
+      "target": "salary",
+      "training_rows": 15841,
+      "text_features": "key_skills (TF-IDF 800 terms, ngram 1-2)",
+      "cv_method": "Stratified 5-Fold Cross-Validation (seed=42)",
+      "selected_model": "LogisticRegression",
+      "model_comparison": [
+        {
+          "model": "MultinomialNB",
+          "cv_accuracy": 0.3324,
+          "cv_accuracy_std": 0.0064,
+          "cv_f1_weighted": 0.3194,
+          "cv_f1_macro": 0.308,
+          "selected": false
+        },
+        {
+          "model": "SGDClassifier (Log Loss)",
+          "cv_accuracy": 0.3386,
+          "cv_accuracy_std": 0.0076,
+          "cv_f1_weighted": 0.3258,
+          "cv_f1_macro": 0.3148,
+          "selected": false
+        },
+        {
+          "model": "LogisticRegression",
+          "cv_accuracy": 0.3384,
+          "cv_accuracy_std": 0.0084,
+          "cv_f1_weighted": 0.328,
+          "cv_f1_macro": 0.3195,
+          "selected": true
+        }
+      ],
+      "best_metrics": {
+        "model": "LogisticRegression",
+        "cv_accuracy": 0.3384,
+        "cv_accuracy_std": 0.0084,
+        "cv_f1_weighted": 0.328,
+        "cv_f1_macro": 0.3195,
+        "selected": true
+      }
+    }
+  }
+}

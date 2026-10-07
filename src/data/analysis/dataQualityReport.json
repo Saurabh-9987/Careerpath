@@ -1,0 +1,194 @@
+{
+  "timestamp": "2026-10-08T02:00:00Z",
+  "data_directory": "C:\\Users\\asus\\Downloads\\SAS Data Problem Statement and Instructions Hackathon (1)\\SAS Data Problem Statement and Instructions Hackathon",
+  "datasets": {
+    "DataScience Jobs.csv": {
+      "exists": true,
+      "raw_rows": 1602,
+      "raw_columns": 8,
+      "columns": [
+        "reference_no",
+        "company_name",
+        "job_title",
+        "min_experience",
+        "avg_salary",
+        "min_salary",
+        "max_salary",
+        "num_of_jobs"
+      ],
+      "missing_values": {
+        "reference_no": 0,
+        "company_name": 0,
+        "job_title": 0,
+        "min_experience": 0,
+        "avg_salary": 0,
+        "min_salary": 0,
+        "max_salary": 0,
+        "num_of_jobs": 0
+      },
+      "exact_duplicate_rows": 0,
+      "potential_identifiers": [
+        "reference_no"
+      ],
+      "leakage_risks": [
+        {
+          "column": "reference_no",
+          "reason": "Arbitrary index identifier; does not reflect candidate or job skill traits.",
+          "action": "Excluded from feature set."
+        }
+      ],
+      "total_aggregated_postings": 93005
+    },
+    "Analytics Jobs.csv": {
+      "exists": true,
+      "raw_rows": 15841,
+      "raw_columns": 8,
+      "columns": [
+        "s_no",
+        "experience",
+        "job_description",
+        "job_desig",
+        "job_type",
+        "key_skills",
+        "location",
+        "salary"
+      ],
+      "missing_values": {
+        "s_no": 0,
+        "experience": 0,
+        "job_description": 3508,
+        "job_desig": 0,
+        "job_type": 12011,
+        "key_skills": 1,
+        "location": 0,
+        "salary": 0
+      },
+      "exact_duplicate_rows": 0,
+      "potential_identifiers": [
+        "s_no"
+      ],
+      "leakage_risks": [
+        {
+          "column": "s_no",
+          "reason": "Row index counter without semantic skill value.",
+          "action": "Excluded from feature set."
+        }
+      ],
+      "target_distribution": {
+        "10to15": 3608,
+        "15to25": 3281,
+        "6to10": 2876,
+        "0to3": 2592,
+        "3to6": 2239,
+        "25to50": 1245
+      }
+    },
+    "JDS Skill Traits.xlsx": {
+      "exists": true,
+      "raw_rows": 139,
+      "raw_columns": 7,
+      "columns": [
+        "id",
+        "big_data_skills",
+        "maths-stats_skills",
+        "coding_skills",
+        "ai_and_ml_skills",
+        "dashboard_and_storytelling_skills",
+        "salary_hike_high_or_low"
+      ],
+      "missing_values": {
+        "id": 0,
+        "big_data_skills": 0,
+        "maths-stats_skills": 0,
+        "coding_skills": 0,
+        "ai_and_ml_skills": 0,
+        "dashboard_and_storytelling_skills": 0,
+        "salary_hike_high_or_low": 0
+      },
+      "unique_candidate_ids": 137,
+      "repeated_candidate_ids": [
+        3291,
+        2223
+      ],
+      "conflicting_candidate_ids": [
+        3291
+      ],
+      "conflict_handling": {
+        "conflicting_candidate_3291": "Candidate 3291 has conflicting records (target=0 and target=1 with different skill scores). Excluded 2 rows.",
+        "duplicate_candidate_2223": "Candidate 2223 has identical features and target=0. Deduplicated 1 row.",
+        "valid_training_rows": 136
+      },
+      "leakage_risks": [
+        {
+          "column": "id",
+          "reason": "Candidate ID is an identifier, not a competency trait.",
+          "action": "Excluded from feature matrix."
+        }
+      ],
+      "target_distribution_raw": {
+        "1": 73,
+        "0": 66
+      }
+    },
+    "SDS Personality Traits.xlsx": {
+      "exists": true,
+      "raw_rows": 161,
+      "raw_columns": 7,
+      "columns": [
+        "id",
+        "neuroticism",
+        "extraversion",
+        "openness_to_experience",
+        "agreeableness",
+        "conscientiousness",
+        "success_ classification_ high_low"
+      ],
+      "missing_values": {
+        "id": 0,
+        "neuroticism": 0,
+        "extraversion": 0,
+        "openness_to_experience": 0,
+        "agreeableness": 0,
+        "conscientiousness": 0,
+        "success_ classification_ high_low": 0
+      },
+      "unique_candidate_ids": 152,
+      "repeated_candidate_ids": [
+        8656,
+        8303,
+        8198,
+        8228,
+        8065,
+        8308,
+        8489,
+        8301,
+        8887
+      ],
+      "conflicting_candidate_ids": [
+        8303,
+        8198,
+        8065,
+        8308,
+        8489,
+        8301,
+        8887
+      ],
+      "conflict_handling": {
+        "conflicting_candidates_7_ids": "7 candidate IDs (8303, 8198, 8065, 8308, 8489, 8301, 8887) have contradictory targets (both 0 and 1) across 14 rows. Excluded 14 rows.",
+        "duplicate_candidates_8656_8228": "Candidates 8656 and 8228 are identical duplicates with consistent targets. Deduplicated 2 rows.",
+        "valid_training_rows": 145
+      },
+      "leakage_risks": [
+        {
+          "column": "id",
+          "reason": "Candidate ID is an administrative identifier.",
+          "action": "Excluded from feature matrix."
+        }
+      ],
+      "target_distribution_raw": {
+        "1": 85,
+        "0": 76
+      }
+    }
+  }
+}

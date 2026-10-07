@@ -4,6 +4,7 @@ import GlowSeparator from "../components/GlowSeparator";
 import { useCareer } from "../context/CareerContextCore";
 import { careerData, careerPaths } from "../data/careerData";
 import { getCareerMarketData } from "../data/careerIntelligence";
+import { getDashboardMlInsights } from "../data/careerMLEngine";
 import {
   getScore,
   getMissingSkills,
@@ -30,6 +31,19 @@ export default function DashboardPage() {
   const targetMarketData = useMemo(() => {
     return getCareerMarketData(targetCareer);
   }, [targetCareer]);
+
+  const mlInsights = useMemo(() => {
+    try {
+      return getDashboardMlInsights(profile, targetCareer);
+    } catch (err) {
+      console.warn("Failed to evaluate ML insights:", err);
+      return {
+        technicalSignal: { available: false, message: "Error calculating model insights." },
+        salaryEstimate: { available: false, message: "Salary regression unavailable." },
+        personalitySignal: { available: false, message: "Personality model unavailable." },
+      };
+    }
+  }, [profile, targetCareer]);
 
   const availablePaths = useMemo(() => {
     return careerPaths[role] || [
@@ -185,6 +199,308 @@ export default function DashboardPage() {
             <Link to="/skill-gap" className="secondary-button" style={{ display: "inline-block", textDecoration: "none" }}>
               View Skill Gap →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Machine Learning Model Insights & Capability Signals */}
+      <GlowSeparator />
+      <section className="dashboard-ml-insights-section">
+        <div className="section-heading" style={{ marginBottom: "20px" }}>
+          <div>
+            <p className="eyebrow">STATISTICAL INFERENCE ENGINE</p>
+            <h2 style={{ fontSize: "24px", margin: 0 }}>
+              AI Intelligence & Model Insights
+            </h2>
+          </div>
+          <span
+            style={{
+              fontSize: "11px",
+              fontWeight: "700",
+              letterSpacing: "1px",
+              color: "#60A5FA",
+              background: "rgba(59, 130, 246, 0.1)",
+              border: "1px solid rgba(59, 130, 246, 0.3)",
+              padding: "4px 10px",
+              borderRadius: "12px",
+            }}
+          >
+            MODEL PREDICTION
+          </span>
+        </div>
+
+        <div className="dashboard-hero-grid">
+          {/* Card A: Technical Capability Signal (JDS Model) */}
+          <div className="dashboard-panel">
+            <div>
+              <div className="dashboard-panel-header">
+                <span className="card-label">MODEL PREDICTION</span>
+                <span style={{ color: "#60A5FA", fontSize: "12px", fontWeight: "700" }}>
+                  JDS Skill Model
+                </span>
+              </div>
+
+              <h2 className="dashboard-panel-title">Technical Capability Signal</h2>
+              <p className="dashboard-panel-desc">
+                Observational salary-hike likelihood derived from technical competency features.
+              </p>
+
+              {mlInsights.technicalSignal?.available ? (
+                <div>
+                  <div className="readiness-metric" style={{ margin: "16px 0 12px" }}>
+                    <span
+                      className="readiness-score-number"
+                      style={{
+                        color: mlInsights.technicalSignal.predictedClass === 1 ? "#10B981" : "#F59E0B",
+                      }}
+                    >
+                      {mlInsights.technicalSignal.confidencePercent}%
+                    </span>
+                    <span className="readiness-score-label">Predicted Probability</span>
+                  </div>
+
+                  <div
+                    style={{
+                      display: "inline-block",
+                      background:
+                        mlInsights.technicalSignal.predictedClass === 1
+                          ? "rgba(16, 185, 129, 0.1)"
+                          : "rgba(245, 158, 11, 0.1)",
+                      border: `1px solid ${
+                        mlInsights.technicalSignal.predictedClass === 1
+                          ? "rgba(16, 185, 129, 0.3)"
+                          : "rgba(245, 158, 11, 0.3)"
+                      }`,
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      color:
+                        mlInsights.technicalSignal.predictedClass === 1 ? "#10B981" : "#F59E0B",
+                      fontSize: "12px",
+                      fontWeight: "700",
+                      marginBottom: "14px",
+                    }}
+                  >
+                    {mlInsights.technicalSignal.outcomeLabel}
+                  </div>
+
+                  <p style={{ color: "#94A3B8", fontSize: "12px", margin: "4px 0 6px" }}>
+                    Primary statistical drivers{" "}
+                    <span style={{ fontSize: "10px", color: "#A78BFA", letterSpacing: "0.5px" }}>
+                      [PROFILE-DERIVED FEATURE]
+                    </span>:
+                  </p>
+                  <ul
+                    style={{
+                      margin: 0,
+                      paddingLeft: "16px",
+                      color: "#CBD5E1",
+                      fontSize: "12px",
+                      lineHeight: "1.6",
+                    }}
+                  >
+                    {mlInsights.technicalSignal.primaryDrivers?.map((d) => (
+                      <li key={d.feature}>
+                        <strong style={{ color: "#FFFFFF" }}>{d.feature.replace(/_/g, " ")}:</strong>{" "}
+                        importance coef {d.importance > 0 ? `+${d.importance}` : d.importance}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div
+                  style={{
+                    padding: "16px",
+                    background: "rgba(255, 255, 255, 0.03)",
+                    borderRadius: "10px",
+                    border: "1px dashed rgba(255, 255, 255, 0.15)",
+                    margin: "16px 0",
+                  }}
+                >
+                  <p style={{ color: "#94A3B8", fontSize: "13px", margin: 0, lineHeight: "1.5" }}>
+                    {mlInsights.technicalSignal?.message ||
+                      "Insufficient profile data. Add skills in My Profile to calculate capabilities."}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div style={{ marginTop: "20px" }}>
+              <Link
+                to="/profile"
+                className="secondary-button"
+                style={{ display: "inline-block", textDecoration: "none", fontSize: "13px" }}
+              >
+                Update Skills →
+              </Link>
+            </div>
+          </div>
+
+          {/* Card B: Market Salary Estimate (DataScience Jobs Regressor) */}
+          <div className="dashboard-panel">
+            <div>
+              <div className="dashboard-panel-header">
+                <span className="card-label">MODEL PREDICTION</span>
+                <span style={{ color: "#34D399", fontSize: "12px", fontWeight: "700" }}>
+                  Salary Regressor
+                </span>
+              </div>
+
+              <h2 className="dashboard-panel-title">Role Compensation Estimate</h2>
+              <p className="dashboard-panel-desc">
+                Statistical regression estimate based on required experience benchmarks.
+              </p>
+
+              {mlInsights.salaryEstimate?.available ? (
+                <div>
+                  <div className="readiness-metric" style={{ margin: "16px 0 12px" }}>
+                    <span className="readiness-score-number" style={{ color: "#10B981" }}>
+                      ₹{mlInsights.salaryEstimate.predictedSalaryLPA} LPA
+                    </span>
+                    <span className="readiness-score-label">Regression Estimate</span>
+                  </div>
+
+                  <p style={{ color: "#94A3B8", fontSize: "12px", margin: "4px 0" }}>
+                    Experience: <strong style={{ color: "#FFFFFF" }}>{mlInsights.salaryEstimate.inputExperience} yrs</strong>{" "}
+                    <span style={{ fontSize: "10px", color: "#34D399", letterSpacing: "0.5px" }}>
+                      [USER-PROVIDED DATA]
+                    </span>
+                  </p>
+                  <p style={{ color: "#94A3B8", fontSize: "12px", margin: "4px 0" }}>
+                    Model: <strong style={{ color: "#E2E8F0" }}>{mlInsights.salaryEstimate.algorithm}</strong>
+                  </p>
+                  <p style={{ color: "#94A3B8", fontSize: "12px", margin: "4px 0 8px" }}>
+                    Target: <strong style={{ color: "#60A5FA" }}>{targetCareer}</strong> (CV R²:{" "}
+                    {mlInsights.salaryEstimate.cvR2})
+                  </p>
+                  <p style={{ color: "#64748B", fontSize: "11px", fontStyle: "italic", margin: "8px 0 0" }}>
+                    {mlInsights.salaryEstimate.benchmarkNote}
+                  </p>
+                </div>
+              ) : (
+                <div
+                  style={{
+                    padding: "16px",
+                    background: "rgba(255, 255, 255, 0.03)",
+                    borderRadius: "10px",
+                    border: "1px dashed rgba(255, 255, 255, 0.15)",
+                    margin: "16px 0",
+                  }}
+                >
+                  <p style={{ color: "#94A3B8", fontSize: "13px", margin: 0, lineHeight: "1.5" }}>
+                    {mlInsights.salaryEstimate?.message ||
+                      "Add your experience in My Profile to generate a model salary estimate."}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div style={{ marginTop: "20px" }}>
+              <Link
+                to={mlInsights.salaryEstimate?.available ? "/simulator" : "/profile"}
+                className="secondary-button"
+                style={{ display: "inline-block", textDecoration: "none", fontSize: "13px" }}
+              >
+                {mlInsights.salaryEstimate?.available ? "Test Experience Scenario →" : "Add Experience in Profile →"}
+              </Link>
+            </div>
+          </div>
+
+          {/* Card C: Personality & Leadership Signal (SDS Model) */}
+          <div className="dashboard-panel">
+            <div>
+              <div className="dashboard-panel-header">
+                <span className="card-label">MODEL PREDICTION</span>
+                <span style={{ color: "#A78BFA", fontSize: "12px", fontWeight: "700" }}>
+                  SDS Personality Model
+                </span>
+              </div>
+
+              <h2 className="dashboard-panel-title">Leadership & Outcome Signal</h2>
+              <p className="dashboard-panel-desc">
+                Observational senior leadership indicator from Big Five personality traits.
+              </p>
+
+              {mlInsights.personalitySignal?.available ? (
+                <div>
+                  <div className="readiness-metric" style={{ margin: "16px 0 12px" }}>
+                    <span
+                      className="readiness-score-number"
+                      style={{
+                        color:
+                          mlInsights.personalitySignal.predictedClass === 1 ? "#A78BFA" : "#94A3B8",
+                      }}
+                    >
+                      {mlInsights.personalitySignal.confidencePercent}%
+                    </span>
+                    <span className="readiness-score-label">Leadership Confidence</span>
+                  </div>
+
+                  <div
+                    style={{
+                      display: "inline-block",
+                      background: "rgba(167, 139, 250, 0.1)",
+                      border: "1px solid rgba(167, 139, 250, 0.3)",
+                      padding: "4px 10px",
+                      borderRadius: "8px",
+                      color: "#A78BFA",
+                      fontSize: "12px",
+                      fontWeight: "700",
+                      marginBottom: "14px",
+                    }}
+                  >
+                    {mlInsights.personalitySignal.outcomeLabel}
+                  </div>
+
+                  <p style={{ color: "#94A3B8", fontSize: "12px", margin: "4px 0 6px" }}>
+                    Primary trait drivers{" "}
+                    <span style={{ fontSize: "10px", color: "#34D399", letterSpacing: "0.5px" }}>
+                      [USER-PROVIDED DATA]
+                    </span>:
+                  </p>
+                  <ul
+                    style={{
+                      margin: 0,
+                      paddingLeft: "16px",
+                      color: "#CBD5E1",
+                      fontSize: "12px",
+                      lineHeight: "1.6",
+                    }}
+                  >
+                    {mlInsights.personalitySignal.primaryDrivers?.map((d) => (
+                      <li key={d.trait}>
+                        <strong style={{ color: "#FFFFFF" }}>{d.trait.replace(/_/g, " ")}:</strong>{" "}
+                        score {d.userScore} (importance coef {d.importance > 0 ? `+${d.importance}` : d.importance})
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div
+                  style={{
+                    padding: "16px",
+                    background: "rgba(255, 255, 255, 0.03)",
+                    borderRadius: "10px",
+                    border: "1px dashed rgba(255, 255, 255, 0.15)",
+                    margin: "16px 0",
+                  }}
+                >
+                  <p style={{ color: "#94A3B8", fontSize: "13px", margin: 0, lineHeight: "1.5" }}>
+                    {mlInsights.personalitySignal?.message ||
+                      "Personality assessment not completed. Big Five traits unavailable."}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div style={{ marginTop: "20px" }}>
+              <Link
+                to="/profile"
+                className="secondary-button"
+                style={{ display: "inline-block", textDecoration: "none", fontSize: "13px" }}
+              >
+                {mlInsights.personalitySignal?.available ? "Review Trait Signals →" : "Take Assessment in Profile →"}
+              </Link>
+            </div>
           </div>
         </div>
       </section>

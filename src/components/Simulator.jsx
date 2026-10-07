@@ -279,9 +279,11 @@ export default function Simulator({
 
         <WhatIfSimulator
           activeCareer={activeCareer}
+          role={role}
           profile={profile}
           mlProject={mlProject}
           onToggleMlProject={onToggleMlProject}
+          onTargetSelect={onCareerSelect}
         />
       </div>
 

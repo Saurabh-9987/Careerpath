@@ -1,0 +1,127 @@
+{
+  "dataset": "SDS Personality Traits.xlsx",
+  "task": "Supervised Binary Classification (Senior Big Five Personality Outcome)",
+  "target": "success_ classification_ high_low",
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": {
+    "0": "Standard Executive Performance",
+    "1": "High Leadership Success"
+  },
+  "training_rows": 145,
+  "excluded_conflicts": 14,
+  "features": [
+    "neuroticism",
+    "extraversion",
+    "openness_to_experience",
+    "agreeableness",
+    "conscientiousness"
+  ],
+  "cv_method": "Stratified 5-Fold Cross-Validation (seed=42)",
+  "selected_model": "RandomForest",
+  "model_comparison": [
+    {
+      "model": "LogisticRegression",
+      "cv_accuracy": 0.9241,
+      "cv_accuracy_std": 0.0258,
+      "cv_f1": 0.9312,
+      "cv_f1_std": 0.0221,
+      "cv_roc_auc": 0.9666,
+      "cv_roc_auc_std": 0.0183,
+      "cv_precision": 0.9074,
+      "cv_recall": 0.9617,
+      "selected": false
+    },
+    {
+      "model": "RandomForest",
+      "cv_accuracy": 0.9586,
+      "cv_accuracy_std": 0.0402,
+      "cv_f1": 0.9633,
+      "cv_f1_std": 0.0356,
+      "cv_roc_auc": 0.9933,
+      "cv_roc_auc_std": 0.0083,
+      "cv_precision": 0.9424,
+      "cv_recall": 0.9875,
+      "selected": true
+    },
+    {
+      "model": "HistGradientBoosting",
+      "cv_accuracy": 0.9241,
+      "cv_accuracy_std": 0.0507,
+      "cv_f1": 0.931,
+      "cv_f1_std": 0.0458,
+      "cv_roc_auc": 0.9904,
+      "cv_roc_auc_std": 0.0125,
+      "cv_precision": 0.9158,
+      "cv_recall": 0.95,
+      "selected": false
+    }
+  ],
+  "best_metrics": {
+    "model": "RandomForest",
+    "cv_accuracy": 0.9586,
+    "cv_accuracy_std": 0.0402,
+    "cv_f1": 0.9633,
+    "cv_f1_std": 0.0356,
+    "cv_roc_auc": 0.9933,
+    "cv_roc_auc_std": 0.0083,
+    "cv_precision": 0.9424,
+    "cv_recall": 0.9875,
+    "selected": true
+  },
+  "confusion_matrix_full": [
+    [
+      67,
+      1
+    ],
+    [
+      0,
+      77
+    ]
+  ],
+  "interpretability": {
+    "logistic_regression_coefficients": {
+      "neuroticism": 0.6658,
+      "extraversion": 0.748,
+      "openness_to_experience": 1.9472,
+      "agreeableness": 0.5921,
+      "conscientiousness": 2.008
+    },
+    "random_forest_feature_importance": {
+      "neuroticism": 0.0276,
+      "extraversion": 0.124,
+      "openness_to_experience": 0.3428,
+      "agreeableness": 0.1463,
+      "conscientiousness": 0.3593
+    },
+    "primary_drivers": [
+      [
+        "conscientiousness",
+        2.008
+      ],
+      [
+        "openness_to_experience",
+        1.9472
+      ],
+      [
+        "extraversion",
+        0.748
+      ],
+      [
+        "neuroticism",
+        0.6658
+      ],
+      [
+        "agreeableness",
+        0.5921
+      ]
+    ]
+  },
+  "pipeline_metadata": {
+    "scaler": null,
+    "classifier": "RandomForest",
+    "random_state": 42
+  }
+}

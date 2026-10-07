@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "test": "node src/utils/careerScoring.test.js && node src/utils/roadmapProgress.test.js && node src/utils/completeSkillData.test.js && node src/utils/resumeExtractor.test.js && node src/data/careerIntelligence.test.js && node src/data/careerEscapeRoute.test.js && node src/utils/auth.test.js",
+    "test": "node src/utils/careerScoring.test.js && node src/utils/roadmapProgress.test.js && node src/utils/completeSkillData.test.js && node src/utils/resumeExtractor.test.js && node src/data/careerIntelligence.test.js && node src/data/careerEscapeRoute.test.js && node src/utils/auth.test.js && node src/data/careerMLEngine.test.js && node src/data/careerMobilityEngine.test.js && node src/data/careerMobilityInterface.test.js && node src/data/careerWhatIfEngine.test.js && node src/data/careerRoadmapIntegration.test.js && node src/data/marketIntelligenceEngine.test.js",
     "preview": "vite preview"
   },
   "dependencies": {

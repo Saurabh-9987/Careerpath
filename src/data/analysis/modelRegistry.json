@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-10-08T02:00:00Z",
+  "models": [
+    {
+      "name": "jds_skill_outcome_model",
+      "dataset": "JDS Skill Traits.xlsx",
+      "task": "Supervised Binary Classification (Junior Technical Skill Outcome)",
+      "algorithm": "LogisticRegression",
+      "target": "salary_hike_high_or_low",
+      "training_rows": 136,
+      "cv_metrics": {
+        "model": "LogisticRegression",
+        "cv_accuracy": 0.8672,
+        "cv_accuracy_std": 0.0386,
+        "cv_f1": 0.8751,
+        "cv_f1_std": 0.0432,
+        "cv_roc_auc": 0.8956,
+        "cv_roc_auc_std": 0.0341,
+        "cv_precision": 0.8552,
+        "cv_recall": 0.9,
+        "selected": true
+      },
+      "selected": true,
+      "artifact": "models/jds_model.joblib",
+      "artifact_size_bytes": 1841,
+      "description": "Predicts junior high vs standard salary hike from technical skill mastery."
+    },
+    {
+      "name": "sds_personality_outcome_model",
+      "dataset": "SDS Personality Traits.xlsx",
+      "task": "Supervised Binary Classification (Senior Big Five Personality Outcome)",
+      "algorithm": "RandomForest",
+      "target": "success_ classification_ high_low",
+      "training_rows": 145,
+      "cv_metrics": {
+        "model": "RandomForest",
+        "cv_accuracy": 0.9586,
+        "cv_accuracy_std": 0.0402,
+        "cv_f1": 0.9633,
+        "cv_f1_std": 0.0356,
+        "cv_roc_auc": 0.9933,
+        "cv_roc_auc_std": 0.0083,
+        "cv_precision": 0.9424,
+        "cv_recall": 0.9875,
+        "selected": true
+      },
+      "selected": true,
+      "artifact": "models/sds_model.joblib",
+      "artifact_size_bytes": 151458,
+      "description": "Predicts senior leadership success from Big Five personality traits."
+    },
+    {
+      "name": "ds_salary_regressor",
+      "dataset": "DataScience Jobs.csv",
+      "task": "Supervised Salary Regression (DataScience Jobs)",
+      "algorithm": "RidgeRegression",
+      "target": "avg_salary_lpa",
+      "training_rows": 1602,
+      "cv_metrics": {
+        "model": "RidgeRegression",
+        "cv_r2": 0.536,
+        "cv_r2_std": 0.0502,
+        "cv_mae_lpa": 3.6056,
+        "cv_rmse_lpa": 5.3165,
+        "selected": true
+      },
+      "selected": true,
+      "artifact": "models/ds_salary_regressor.joblib",
+      "artifact_size_bytes": 3145,
+      "description": "Predicts average role salary in LPA based on experience, volume, and job title."
+    },
+    {
+      "name": "analytics_salary_tier_classifier",
+      "dataset": "Analytics Jobs.csv",
+      "task": "Supervised Salary Tier Classification (Analytics Jobs)",
+      "algorithm": "LogisticRegression",
+      "target": "salary",
+      "training_rows": 15841,
+      "cv_metrics": {
+        "model": "LogisticRegression",
+        "cv_accuracy": 0.3384,
+        "cv_accuracy_std": 0.0084,
+        "cv_f1_weighted": 0.328,
+        "cv_f1_macro": 0.3195,
+        "selected": true
+      },
+      "selected": true,
+      "artifact": "models/analytics_salary_classifier.joblib",
+      "artifact_size_bytes": 39495,
+      "description": "Classifies salary bracket from TF-IDF key skill combinations."
+    },
+    {
+      "name": "market_skill_cluster_model",
+      "dataset": "Analytics Jobs.csv",
+      "task": "Unsupervised Market Skill Clustering",
+      "algorithm": "KMeans on TF-IDF Key Skills Vector Space",
+      "target": null,
+      "training_rows": 15841,
+      "cv_metrics": {
+        "selected_k": 6,
+        "silhouette_score": 0.0258
+      },
+      "selected": true,
+      "artifact": "models/market_cluster_model.joblib",
+      "artifact_size_bytes": 102491,
+      "description": "Unsupervised KMeans clustering of job postings into 6 skill archetypes."
+    }
+  ]
+}

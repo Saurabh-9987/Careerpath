@@ -37,7 +37,7 @@ export default function AuthPage() {
     if (!isConfigured) {
       setError(
         authConfig?.message ||
-          "Authentication is not configured yet. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to the frontend .env file and restart the Vite development server."
+        "Authentication is not configured yet. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY to the frontend .env file and restart the Vite development server."
       );
       return;
     }
@@ -368,10 +368,10 @@ export default function AuthPage() {
             {submitting
               ? statusNotice || (mode === "signin" ? "Signing in..." : "Creating account...")
               : !isConfigured
-              ? "Authentication Unavailable"
-              : mode === "signin"
-              ? "Sign In"
-              : "Create Account"}
+                ? "Authentication Unavailable"
+                : mode === "signin"
+                  ? "Sign In"
+                  : "Create Account"}
           </button>
         </form>
 

@@ -1,0 +1,127 @@
+{
+  "dataset": "JDS Skill Traits.xlsx",
+  "task": "Supervised Binary Classification (Junior Technical Skill Outcome)",
+  "target": "salary_hike_high_or_low",
+  "classes": [
+    0,
+    1
+  ],
+  "class_labels": {
+    "0": "Low / Standard Salary Hike",
+    "1": "High Salary Hike"
+  },
+  "training_rows": 136,
+  "excluded_conflicts": 2,
+  "features": [
+    "big_data_skills",
+    "maths-stats_skills",
+    "coding_skills",
+    "ai_and_ml_skills",
+    "dashboard_and_storytelling_skills"
+  ],
+  "cv_method": "Stratified 5-Fold Cross-Validation (seed=42)",
+  "selected_model": "LogisticRegression",
+  "model_comparison": [
+    {
+      "model": "LogisticRegression",
+      "cv_accuracy": 0.8672,
+      "cv_accuracy_std": 0.0386,
+      "cv_f1": 0.8751,
+      "cv_f1_std": 0.0432,
+      "cv_roc_auc": 0.8956,
+      "cv_roc_auc_std": 0.0341,
+      "cv_precision": 0.8552,
+      "cv_recall": 0.9,
+      "selected": true
+    },
+    {
+      "model": "RandomForest",
+      "cv_accuracy": 0.8161,
+      "cv_accuracy_std": 0.0407,
+      "cv_f1": 0.8264,
+      "cv_f1_std": 0.0471,
+      "cv_roc_auc": 0.8917,
+      "cv_roc_auc_std": 0.0371,
+      "cv_precision": 0.8151,
+      "cv_recall": 0.8448,
+      "selected": false
+    },
+    {
+      "model": "HistGradientBoosting",
+      "cv_accuracy": 0.8087,
+      "cv_accuracy_std": 0.0494,
+      "cv_f1": 0.8207,
+      "cv_f1_std": 0.0548,
+      "cv_roc_auc": 0.8852,
+      "cv_roc_auc_std": 0.0206,
+      "cv_precision": 0.8022,
+      "cv_recall": 0.8448,
+      "selected": false
+    }
+  ],
+  "best_metrics": {
+    "model": "LogisticRegression",
+    "cv_accuracy": 0.8672,
+    "cv_accuracy_std": 0.0386,
+    "cv_f1": 0.8751,
+    "cv_f1_std": 0.0432,
+    "cv_roc_auc": 0.8956,
+    "cv_roc_auc_std": 0.0341,
+    "cv_precision": 0.8552,
+    "cv_recall": 0.9,
+    "selected": true
+  },
+  "confusion_matrix_full": [
+    [
+      54,
+      10
+    ],
+    [
+      7,
+      65
+    ]
+  ],
+  "interpretability": {
+    "logistic_regression_coefficients": {
+      "big_data_skills": 0.6754,
+      "maths-stats_skills": 1.2784,
+      "coding_skills": 0.5292,
+      "ai_and_ml_skills": 0.7568,
+      "dashboard_and_storytelling_skills": 1.0876
+    },
+    "random_forest_feature_importance": {
+      "big_data_skills": 0.0826,
+      "maths-stats_skills": 0.2704,
+      "coding_skills": 0.1521,
+      "ai_and_ml_skills": 0.142,
+      "dashboard_and_storytelling_skills": 0.3528
+    },
+    "primary_drivers": [
+      [
+        "maths-stats_skills",
+        1.2784
+      ],
+      [
+        "dashboard_and_storytelling_skills",
+        1.0876
+      ],
+      [
+        "ai_and_ml_skills",
+        0.7568
+      ],
+      [
+        "big_data_skills",
+        0.6754
+      ],
+      [
+        "coding_skills",
+        0.5292
+      ]
+    ]
+  },
+  "pipeline_metadata": {
+    "scaler": "StandardScaler",
+    "classifier": "LogisticRegression",
+    "random_state": 42
+  }
+}

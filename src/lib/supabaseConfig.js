@@ -30,8 +30,8 @@ export function isServiceRoleKey(key) {
         typeof atob === "function"
           ? atob(payloadBase64)
           : typeof Buffer !== "undefined"
-          ? Buffer.from(payloadBase64, "base64").toString("utf-8")
-          : "";
+            ? Buffer.from(payloadBase64, "base64").toString("utf-8")
+            : "";
       if (
         decoded.includes('"role":"service_role"') ||
         decoded.includes('"role": "service_role"')

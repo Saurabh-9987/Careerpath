@@ -1,0 +1,5915 @@
+{
+  "datasetSources": [
+    "DataScience Jobs.csv (1,602 cluster records, 93,005 postings)",
+    "Analytics Jobs.csv (15,841 raw postings)",
+    "JDS Skill Traits.xlsx (136 clean candidate evaluations)"
+  ],
+  "methodology": {
+    "title": "Evidence-based Career Pathway and Role Similarity Engine",
+    "roleRepresentation": "Constructed from canonical catalog skills, empirical posting counts, and salary brackets.",
+    "similarityMethod": "Cosine similarity of normalized skill vectors combined with target core requirement coverage ratio.",
+    "pathwayScoring": "Normalized composite (0\u2013100): 50% Skill Similarity, 25% Experience Compatibility, 25% Market Demand/Opportunity (renormalized to 65%/35% when target role is outside market dataset).",
+    "experienceCompatibility": "1.0 - (max(0, targetObservedMinYears - sourceObservedMinYears) / 10).",
+    "analyticalGuardrail": "Data-driven career pathway based on skill overlap and market evidence; does NOT represent historical career transition tracking."
+  },
+  "catalogRoles": [
+    "Data Scientist",
+    "Data Engineer",
+    "ML Engineer",
+    "Data Analyst",
+    "Software Engineer",
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "AI Engineer",
+    "NLP Engineer",
+    "Computer Vision Engineer",
+    "Business Intelligence Analyst",
+    "Cloud Engineer",
+    "DevOps Engineer",
+    "Site Reliability Engineer (SRE)",
+    "Cybersecurity Engineer",
+    "Security Analyst",
+    "UI/UX Designer",
+    "Mobile App Developer",
+    "Game Developer"
+  ],
+  "roleRepresentations": {
+    "Data Scientist": {
+      "careerName": "Data Scientist",
+      "datasetRole": "Data Scientist",
+      "marketEvidenceAvailable": true,
+      "skills": {
+        "core": [
+          "Python",
+          "SQL",
+          "Statistics",
+          "Machine Learning"
+        ],
+        "recommended": [
+          "Deep Learning",
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing",
+          "Scikit-Learn"
+        ],
+        "technical": [
+          "Python",
+          "SQL",
+          "R",
+          "Scikit-Learn",
+          "Pandas",
+          "NumPy",
+          "Jupyter",
+          "Matplotlib",
+          "Seaborn"
+        ],
+        "allNormalized": [
+          "a/b testing",
+          "data visualization",
+          "deep learning",
+          "feature engineering",
+          "jupyter",
+          "machine learning",
+          "matplotlib",
+          "numpy",
+          "pandas",
+          "python",
+          "r",
+          "scikit-learn",
+          "seaborn",
+          "sql",
+          "statistics"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": 9051,
+        "marketSharePercent": 9.73,
+        "avgSalaryLPA": 13.53,
+        "postingWeightedAvgSalaryLPA": 12.89,
+        "minSalaryLPA": 2.0,
+        "maxSalaryLPA": 74.5,
+        "experienceBenchmarkYears": 1.54,
+        "medianExperienceYears": 2.0,
+        "topCompanies": [
+          "TCS",
+          "Accenture",
+          "IBM",
+          "Cognizant",
+          "Capgemini"
+        ],
+        "topSkillsInDataset": [
+          "machine learning",
+          "python",
+          "data science",
+          "r",
+          "deep learning",
+          "data scientist",
+          "sql",
+          "data mining",
+          "java",
+          "nlp"
+        ]
+      }
+    },
+    "Data Engineer": {
+      "careerName": "Data Engineer",
+      "datasetRole": "Data Engineer",
+      "marketEvidenceAvailable": true,
+      "skills": {
+        "core": [
+          "Python",
+          "SQL",
+          "Spark",
+          "Cloud"
+        ],
+        "recommended": [
+          "Kafka",
+          "Airflow",
+          "Data Warehousing",
+          "Distributed Systems",
+          "Docker",
+          "dbt"
+        ],
+        "technical": [
+          "Python",
+          "SQL",
+          "Apache Spark",
+          "Apache Kafka",
+          "Apache Airflow",
+          "AWS/GCP",
+          "PostgreSQL",
+          "Snowflake",
+          "Docker"
+        ],
+        "allNormalized": [
+          "airflow",
+          "apache airflow",
+          "apache kafka",
+          "apache spark",
+          "cloud",
+          "data warehousing",
+          "dbt",
+          "distributed systems",
+          "docker",
+          "kafka",
+          "postgresql",
+          "python",
+          "snowflake",
+          "sql"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": 8044,
+        "marketSharePercent": 8.65,
+        "avgSalaryLPA": 11.81,
+        "postingWeightedAvgSalaryLPA": 9.91,
+        "minSalaryLPA": 1.1,
+        "maxSalaryLPA": 93.5,
+        "experienceBenchmarkYears": 1.51,
+        "medianExperienceYears": 1.0,
+        "topCompanies": [
+          "TCS",
+          "IBM",
+          "L&T Infotech",
+          "Accenture",
+          "Cognizant"
+        ],
+        "topSkillsInDataset": [
+          "spark",
+          "hadoop",
+          "sql",
+          "big data",
+          "hive",
+          "python",
+          "java",
+          "pig",
+          "etl",
+          "scala"
+        ]
+      }
+    },
+    "ML Engineer": {
+      "careerName": "ML Engineer",
+      "datasetRole": "Machine Learning Engineer",
+      "marketEvidenceAvailable": true,
+      "skills": {
+        "core": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning",
+          "Docker"
+        ],
+        "recommended": [
+          "MLOps",
+          "Kubernetes",
+          "PyTorch",
+          "Model Serving",
+          "FastAPI",
+          "CI/CD"
+        ],
+        "technical": [
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "Scikit-Learn",
+          "Docker",
+          "Kubernetes",
+          "FastAPI",
+          "MLflow"
+        ],
+        "allNormalized": [
+          "ci/cd",
+          "deep learning",
+          "docker",
+          "fastapi",
+          "kubernetes",
+          "machine learning",
+          "mlflow",
+          "mlops",
+          "model serving",
+          "python",
+          "pytorch",
+          "scikit-learn",
+          "tensorflow"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": 964,
+        "marketSharePercent": 1.04,
+        "avgSalaryLPA": 9.85,
+        "postingWeightedAvgSalaryLPA": 9.03,
+        "minSalaryLPA": 2.0,
+        "maxSalaryLPA": 40.0,
+        "experienceBenchmarkYears": 1.44,
+        "medianExperienceYears": 1.0,
+        "topCompanies": [
+          "TCS",
+          "Quantiphi Analytics Solutions",
+          "Accenture",
+          "Wipro",
+          "Tiger Analytics"
+        ],
+        "topSkillsInDataset": [
+          "machine learning",
+          "python",
+          "r",
+          "nlp",
+          "java",
+          "c++",
+          "deep learning",
+          "analytics",
+          "data mining",
+          "sql"
+        ]
+      }
+    },
+    "Data Analyst": {
+      "careerName": "Data Analyst",
+      "datasetRole": "Data Analyst",
+      "marketEvidenceAvailable": true,
+      "skills": {
+        "core": [
+          "Excel",
+          "SQL",
+          "Tableau",
+          "Python"
+        ],
+        "recommended": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling",
+          "Business Acumen"
+        ],
+        "technical": [
+          "SQL",
+          "Excel",
+          "Tableau",
+          "Power BI",
+          "Python",
+          "Pandas",
+          "Google Sheets"
+        ],
+        "allNormalized": [
+          "business acumen",
+          "data cleaning",
+          "data storytelling",
+          "excel",
+          "google sheets",
+          "pandas",
+          "power bi",
+          "python",
+          "sql",
+          "statistics",
+          "tableau"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": 18095,
+        "marketSharePercent": 19.46,
+        "avgSalaryLPA": 5.71,
+        "postingWeightedAvgSalaryLPA": 5.37,
+        "minSalaryLPA": 0.2,
+        "maxSalaryLPA": 50.0,
+        "experienceBenchmarkYears": 0.82,
+        "medianExperienceYears": 1.0,
+        "topCompanies": [
+          "TCS",
+          "Cognizant",
+          "Accenture",
+          "Capgemini",
+          "Wipro"
+        ],
+        "topSkillsInDataset": [
+          "data analysis",
+          "sql",
+          "excel",
+          "data analytics",
+          "python",
+          "r",
+          "data analyst",
+          "data mining",
+          "machine learning",
+          "advanced excel"
+        ]
+      }
+    },
+    "Software Engineer": {
+      "careerName": "Software Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Python",
+          "Data Structures",
+          "Algorithms",
+          "Git"
+        ],
+        "recommended": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD",
+          "Linux",
+          "Docker"
+        ],
+        "technical": [
+          "Python",
+          "Java",
+          "C++",
+          "Data Structures",
+          "Algorithms",
+          "Git",
+          "Linux",
+          "Object-Oriented Design"
+        ],
+        "allNormalized": [
+          "algorithms",
+          "c++",
+          "ci/cd",
+          "data structures",
+          "design patterns",
+          "docker",
+          "git",
+          "java",
+          "linux",
+          "object-oriented design",
+          "python",
+          "system design",
+          "testing"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Full Stack Developer": {
+      "careerName": "Full Stack Developer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "SQL"
+        ],
+        "recommended": [
+          "TypeScript",
+          "REST APIs",
+          "GraphQL",
+          "Tailwind CSS",
+          "Docker",
+          "Next.js"
+        ],
+        "technical": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "MongoDB",
+          "Git"
+        ],
+        "allNormalized": [
+          "docker",
+          "express",
+          "git",
+          "graphql",
+          "javascript",
+          "mongodb",
+          "next.js",
+          "node.js",
+          "postgresql",
+          "react",
+          "rest apis",
+          "sql",
+          "tailwind css",
+          "typescript"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Frontend Developer": {
+      "careerName": "Frontend Developer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "HTML/CSS",
+          "JavaScript",
+          "React",
+          "Git"
+        ],
+        "recommended": [
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js",
+          "Web Performance",
+          "Accessibility (a11y)"
+        ],
+        "technical": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Redux",
+          "Webpack/Vite",
+          "Figma"
+        ],
+        "allNormalized": [
+          "accessibility (a11y)",
+          "css3",
+          "figma",
+          "git",
+          "html/css",
+          "html5",
+          "javascript",
+          "next.js",
+          "react",
+          "redux",
+          "tailwind css",
+          "typescript",
+          "web performance",
+          "webpack/vite"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Backend Developer": {
+      "careerName": "Backend Developer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Node.js",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "recommended": [
+          "Microservices",
+          "Docker",
+          "Redis",
+          "Message Queues",
+          "Database Indexing"
+        ],
+        "technical": [
+          "Node.js",
+          "Python",
+          "Go",
+          "PostgreSQL",
+          "Redis",
+          "Docker",
+          "REST APIs",
+          "gRPC"
+        ],
+        "allNormalized": [
+          "database indexing",
+          "docker",
+          "git",
+          "go",
+          "grpc",
+          "message queues",
+          "microservices",
+          "node.js",
+          "postgresql",
+          "python",
+          "redis",
+          "rest apis",
+          "sql"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "AI Engineer": {
+      "careerName": "AI Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning",
+          "LLMs"
+        ],
+        "recommended": [
+          "LangChain",
+          "Vector Databases",
+          "Prompt Engineering",
+          "Fine-Tuning",
+          "RAG"
+        ],
+        "technical": [
+          "Python",
+          "PyTorch",
+          "Hugging Face",
+          "LangChain",
+          "LlamaIndex",
+          "ChromaDB",
+          "FastAPI"
+        ],
+        "allNormalized": [
+          "chromadb",
+          "deep learning",
+          "fastapi",
+          "fine-tuning",
+          "hugging face",
+          "langchain",
+          "llamaindex",
+          "llms",
+          "machine learning",
+          "prompt engineering",
+          "python",
+          "pytorch",
+          "rag",
+          "vector databases"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "NLP Engineer": {
+      "careerName": "NLP Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Python",
+          "NLP",
+          "Deep Learning",
+          "Transformers"
+        ],
+        "recommended": [
+          "BERT",
+          "Hugging Face",
+          "Tokenization",
+          "Information Extraction",
+          "Text Classification"
+        ],
+        "technical": [
+          "Python",
+          "PyTorch",
+          "spaCy",
+          "NLTK",
+          "Hugging Face",
+          "Transformers",
+          "BERT"
+        ],
+        "allNormalized": [
+          "bert",
+          "deep learning",
+          "hugging face",
+          "information extraction",
+          "nlp",
+          "nltk",
+          "python",
+          "pytorch",
+          "spacy",
+          "text classification",
+          "tokenization",
+          "transformers"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Computer Vision Engineer": {
+      "careerName": "Computer Vision Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Python",
+          "OpenCV",
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "recommended": [
+          "YOLO",
+          "Image Segmentation",
+          "Object Detection",
+          "CUDA",
+          "TensorRT"
+        ],
+        "technical": [
+          "Python",
+          "OpenCV",
+          "PyTorch",
+          "TensorFlow",
+          "CUDA",
+          "Torchvision",
+          "CNNs"
+        ],
+        "allNormalized": [
+          "cnns",
+          "cuda",
+          "deep learning",
+          "image segmentation",
+          "object detection",
+          "opencv",
+          "python",
+          "pytorch",
+          "tensorflow",
+          "tensorrt",
+          "torchvision",
+          "yolo"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Business Intelligence Analyst": {
+      "careerName": "Business Intelligence Analyst",
+      "datasetRole": "Business Analyst",
+      "marketEvidenceAvailable": true,
+      "skills": {
+        "core": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommended": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL",
+          "KPI Dashboards"
+        ],
+        "technical": [
+          "SQL",
+          "Power BI",
+          "DAX",
+          "Tableau",
+          "Excel",
+          "Star Schema",
+          "SSIS"
+        ],
+        "allNormalized": [
+          "data modeling",
+          "data warehousing",
+          "dax",
+          "etl",
+          "excel",
+          "kpi dashboards",
+          "power bi",
+          "sql",
+          "ssis",
+          "star schema",
+          "tableau"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": 32843,
+        "marketSharePercent": 35.31,
+        "avgSalaryLPA": 8.95,
+        "postingWeightedAvgSalaryLPA": 8.49,
+        "minSalaryLPA": 1.2,
+        "maxSalaryLPA": 30.0,
+        "experienceBenchmarkYears": 1.7,
+        "medianExperienceYears": 2.0,
+        "topCompanies": [
+          "TCS",
+          "Accenture",
+          "Genpact",
+          "Wipro",
+          "Cognizant"
+        ],
+        "topSkillsInDataset": [
+          "business analysis",
+          "business analyst",
+          "sql",
+          "requirement gathering",
+          "project management",
+          "uat",
+          "analytics",
+          "use cases",
+          "data analytics",
+          "user stories"
+        ]
+      }
+    },
+    "Cloud Engineer": {
+      "careerName": "Cloud Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Cloud",
+          "Docker",
+          "Linux",
+          "Terraform"
+        ],
+        "recommended": [
+          "Kubernetes",
+          "IAM",
+          "Networking",
+          "Serverless",
+          "Cost Optimization"
+        ],
+        "technical": [
+          "AWS/GCP/Azure",
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "Linux",
+          "Bash",
+          "CloudFormation"
+        ],
+        "allNormalized": [
+          "aws/gcp/azure",
+          "bash",
+          "cloud",
+          "cloudformation",
+          "cost optimization",
+          "docker",
+          "iam",
+          "kubernetes",
+          "linux",
+          "networking",
+          "serverless",
+          "terraform"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "DevOps Engineer": {
+      "careerName": "DevOps Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "CI/CD",
+          "Docker",
+          "Kubernetes",
+          "Linux"
+        ],
+        "recommended": [
+          "Terraform",
+          "Ansible",
+          "Prometheus",
+          "GitOps",
+          "Grafana"
+        ],
+        "technical": [
+          "Docker",
+          "Kubernetes",
+          "GitHub Actions",
+          "Jenkins",
+          "Linux",
+          "Terraform",
+          "Prometheus"
+        ],
+        "allNormalized": [
+          "ansible",
+          "ci/cd",
+          "docker",
+          "github actions",
+          "gitops",
+          "grafana",
+          "jenkins",
+          "kubernetes",
+          "linux",
+          "prometheus",
+          "terraform"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Site Reliability Engineer (SRE)": {
+      "careerName": "Site Reliability Engineer (SRE)",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Linux",
+          "Python",
+          "Kubernetes",
+          "Cloud"
+        ],
+        "recommended": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering",
+          "Distributed Tracing"
+        ],
+        "technical": [
+          "Linux",
+          "Python",
+          "Go",
+          "Kubernetes",
+          "Prometheus",
+          "Grafana",
+          "Terraform",
+          "Networking"
+        ],
+        "allNormalized": [
+          "chaos engineering",
+          "cloud",
+          "distributed tracing",
+          "go",
+          "grafana",
+          "incident management",
+          "kubernetes",
+          "linux",
+          "networking",
+          "prometheus",
+          "python",
+          "slo/sli",
+          "terraform"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Cybersecurity Engineer": {
+      "careerName": "Cybersecurity Engineer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Networking",
+          "Linux",
+          "Security Principles",
+          "Python"
+        ],
+        "recommended": [
+          "Penetration Testing",
+          "SIEM",
+          "Firewalls",
+          "Threat Modeling",
+          "Cryptography"
+        ],
+        "technical": [
+          "Wireshark",
+          "Linux",
+          "Python",
+          "Nmap",
+          "SIEM",
+          "Metasploit",
+          "Cryptography"
+        ],
+        "allNormalized": [
+          "cryptography",
+          "firewalls",
+          "linux",
+          "metasploit",
+          "networking",
+          "nmap",
+          "penetration testing",
+          "python",
+          "security principles",
+          "siem",
+          "threat modeling",
+          "wireshark"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Security Analyst": {
+      "careerName": "Security Analyst",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "SIEM",
+          "Incident Response",
+          "Networking",
+          "Linux"
+        ],
+        "recommended": [
+          "Threat Hunting",
+          "SOC Procedures",
+          "Log Analysis",
+          "Vulnerability Management"
+        ],
+        "technical": [
+          "Splunk",
+          "Wireshark",
+          "Linux",
+          "TCP/IP",
+          "EDR Tools",
+          "Snort"
+        ],
+        "allNormalized": [
+          "edr tools",
+          "incident response",
+          "linux",
+          "log analysis",
+          "networking",
+          "siem",
+          "snort",
+          "soc procedures",
+          "splunk",
+          "tcp/ip",
+          "threat hunting",
+          "vulnerability management",
+          "wireshark"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "UI/UX Designer": {
+      "careerName": "UI/UX Designer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "Figma",
+          "User Research",
+          "Wireframing",
+          "Prototyping"
+        ],
+        "recommended": [
+          "Design Systems",
+          "Usability Testing",
+          "Interaction Design",
+          "Information Architecture"
+        ],
+        "technical": [
+          "Figma",
+          "Adobe XD",
+          "User Journey Mapping",
+          "Prototyping",
+          "Design Tokens"
+        ],
+        "allNormalized": [
+          "adobe xd",
+          "design systems",
+          "design tokens",
+          "figma",
+          "information architecture",
+          "interaction design",
+          "prototyping",
+          "usability testing",
+          "user journey mapping",
+          "user research",
+          "wireframing"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Mobile App Developer": {
+      "careerName": "Mobile App Developer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "React Native",
+          "JavaScript",
+          "Mobile UI",
+          "REST APIs"
+        ],
+        "recommended": [
+          "Flutter",
+          "TypeScript",
+          "App Store Deployment",
+          "Native Modules",
+          "Offline Storage"
+        ],
+        "technical": [
+          "React Native",
+          "Flutter",
+          "Swift/Kotlin",
+          "TypeScript",
+          "Firebase",
+          "Redux",
+          "Git"
+        ],
+        "allNormalized": [
+          "app store deployment",
+          "firebase",
+          "flutter",
+          "git",
+          "javascript",
+          "mobile ui",
+          "native modules",
+          "offline storage",
+          "react native",
+          "redux",
+          "rest apis",
+          "swift/kotlin",
+          "typescript"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    },
+    "Game Developer": {
+      "careerName": "Game Developer",
+      "datasetRole": null,
+      "marketEvidenceAvailable": false,
+      "skills": {
+        "core": [
+          "C++",
+          "C#",
+          "Unity",
+          "Data Structures"
+        ],
+        "recommended": [
+          "Unreal Engine",
+          "Shader Programming",
+          "Physics Engines",
+          "3D Math",
+          "Game Optimization"
+        ],
+        "technical": [
+          "Unity",
+          "Unreal Engine",
+          "C#",
+          "C++",
+          "HLSL/GLSL",
+          "Linear Algebra",
+          "Git"
+        ],
+        "allNormalized": [
+          "3d math",
+          "c#",
+          "c++",
+          "data structures",
+          "game optimization",
+          "git",
+          "hlsl/glsl",
+          "linear algebra",
+          "physics engines",
+          "shader programming",
+          "unity",
+          "unreal engine"
+        ]
+      },
+      "marketEvidence": {
+        "postingVolume": null,
+        "marketSharePercent": null,
+        "avgSalaryLPA": null,
+        "postingWeightedAvgSalaryLPA": null,
+        "minSalaryLPA": null,
+        "maxSalaryLPA": null,
+        "experienceBenchmarkYears": null,
+        "medianExperienceYears": null,
+        "topCompanies": [],
+        "topSkillsInDataset": [],
+        "message": "No direct market evidence available in supplied datasets."
+      }
+    }
+  },
+  "pairwiseSimilarityMatrix": {
+    "Data Scientist": {
+      "Data Scientist": 1.0,
+      "Data Engineer": 0.319,
+      "ML Engineer": 0.5182,
+      "Data Analyst": 0.4057,
+      "Software Engineer": 0.1608,
+      "Full Stack Developer": 0.1595,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.1966,
+      "AI Engineer": 0.4785,
+      "NLP Engineer": 0.3245,
+      "Computer Vision Engineer": 0.3245,
+      "Business Intelligence Analyst": 0.1639,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.1608,
+      "Cybersecurity Engineer": 0.1623,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Data Engineer": {
+      "Data Scientist": 0.319,
+      "Data Engineer": 1.0,
+      "ML Engineer": 0.3241,
+      "Data Analyst": 0.3306,
+      "Software Engineer": 0.1991,
+      "Full Stack Developer": 0.2321,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.2732,
+      "AI Engineer": 0.1607,
+      "NLP Engineer": 0.1636,
+      "Computer Vision Engineer": 0.1636,
+      "Business Intelligence Analyst": 0.2056,
+      "Cloud Engineer": 0.3272,
+      "DevOps Engineer": 0.1653,
+      "Site Reliability Engineer (SRE)": 0.3241,
+      "Cybersecurity Engineer": 0.1636,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "ML Engineer": {
+      "Data Scientist": 0.3932,
+      "Data Engineer": 0.1991,
+      "ML Engineer": 1.0,
+      "Data Analyst": 0.1668,
+      "Software Engineer": 0.2404,
+      "Full Stack Developer": 0.0371,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.0769,
+      "AI Engineer": 0.5603,
+      "NLP Engineer": 0.3701,
+      "Computer Vision Engineer": 0.5351,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.2051,
+      "DevOps Engineer": 0.5004,
+      "Site Reliability Engineer (SRE)": 0.3269,
+      "Cybersecurity Engineer": 0.165,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Data Analyst": {
+      "Data Scientist": 0.5307,
+      "Data Engineer": 0.3306,
+      "ML Engineer": 0.1668,
+      "Data Analyst": 1.0,
+      "Software Engineer": 0.1668,
+      "Full Stack Developer": 0.1653,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.2086,
+      "AI Engineer": 0.1653,
+      "NLP Engineer": 0.1685,
+      "Computer Vision Engineer": 0.1685,
+      "Business Intelligence Analyst": 0.5568,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.1668,
+      "Cybersecurity Engineer": 0.1685,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Software Engineer": {
+      "Data Scientist": 0.1608,
+      "Data Engineer": 0.1991,
+      "ML Engineer": 0.3654,
+      "Data Analyst": 0.1668,
+      "Software Engineer": 1.0,
+      "Full Stack Developer": 0.0741,
+      "Frontend Developer": 0.1621,
+      "Backend Developer": 0.2404,
+      "AI Engineer": 0.1621,
+      "NLP Engineer": 0.165,
+      "Computer Vision Engineer": 0.165,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.3301,
+      "DevOps Engineer": 0.5004,
+      "Site Reliability Engineer (SRE)": 0.3269,
+      "Cybersecurity Engineer": 0.3301,
+      "Security Analyst": 0.1635,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0385,
+      "Game Developer": 0.3701
+    },
+    "Full Stack Developer": {
+      "Data Scientist": 0.1595,
+      "Data Engineer": 0.2321,
+      "ML Engineer": 0.1621,
+      "Data Analyst": 0.1653,
+      "Software Engineer": 0.1991,
+      "Full Stack Developer": 1.0,
+      "Frontend Developer": 0.5893,
+      "Backend Developer": 0.7224,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.1653,
+      "Cloud Engineer": 0.1636,
+      "DevOps Engineer": 0.1653,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.3982,
+      "Game Developer": 0.0386
+    },
+    "Frontend Developer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.1621,
+      "Full Stack Developer": 0.4643,
+      "Frontend Developer": 1.0,
+      "Backend Developer": 0.1621,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.1653,
+      "Mobile App Developer": 0.2732,
+      "Game Developer": 0.0386
+    },
+    "Backend Developer": {
+      "Data Scientist": 0.3216,
+      "Data Engineer": 0.3982,
+      "ML Engineer": 0.3269,
+      "Data Analyst": 0.3336,
+      "Software Engineer": 0.3654,
+      "Full Stack Developer": 0.4724,
+      "Frontend Developer": 0.1621,
+      "Backend Developer": 1.0,
+      "AI Engineer": 0.1621,
+      "NLP Engineer": 0.165,
+      "Computer Vision Engineer": 0.165,
+      "Business Intelligence Analyst": 0.1668,
+      "Cloud Engineer": 0.165,
+      "DevOps Engineer": 0.1668,
+      "Site Reliability Engineer (SRE)": 0.2019,
+      "Cybersecurity Engineer": 0.165,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.2019,
+      "Game Developer": 0.04
+    },
+    "AI Engineer": {
+      "Data Scientist": 0.3535,
+      "Data Engineer": 0.1607,
+      "ML Engineer": 0.5603,
+      "Data Analyst": 0.1653,
+      "Software Engineer": 0.1621,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.0371,
+      "AI Engineer": 1.0,
+      "NLP Engineer": 0.4043,
+      "Computer Vision Engineer": 0.4907,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.1621,
+      "Cybersecurity Engineer": 0.1636,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "NLP Engineer": {
+      "Data Scientist": 0.1995,
+      "Data Engineer": 0.1636,
+      "ML Engineer": 0.3701,
+      "Data Analyst": 0.1685,
+      "Software Engineer": 0.165,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.04,
+      "AI Engineer": 0.4043,
+      "NLP Engineer": 1.0,
+      "Computer Vision Engineer": 0.5,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.165,
+      "Cybersecurity Engineer": 0.1667,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Computer Vision Engineer": {
+      "Data Scientist": 0.1995,
+      "Data Engineer": 0.1636,
+      "ML Engineer": 0.4101,
+      "Data Analyst": 0.1685,
+      "Software Engineer": 0.165,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.04,
+      "AI Engineer": 0.3657,
+      "NLP Engineer": 0.375,
+      "Computer Vision Engineer": 1.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.165,
+      "Cybersecurity Engineer": 0.1667,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Business Intelligence Analyst": {
+      "Data Scientist": 0.1639,
+      "Data Engineer": 0.2056,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.5568,
+      "Software Engineer": 0.0,
+      "Full Stack Developer": 0.1653,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.1668,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 1.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Cloud Engineer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.2022,
+      "ML Engineer": 0.2051,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.0801,
+      "Full Stack Developer": 0.0386,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.04,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 1.0,
+      "DevOps Engineer": 0.5491,
+      "Site Reliability Engineer (SRE)": 0.5752,
+      "Cybersecurity Engineer": 0.3333,
+      "Security Analyst": 0.3301,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "DevOps Engineer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0403,
+      "ML Engineer": 0.2504,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.1254,
+      "Full Stack Developer": 0.0403,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.0418,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.5491,
+      "DevOps Engineer": 1.0,
+      "Site Reliability Engineer (SRE)": 0.4591,
+      "Cybersecurity Engineer": 0.1685,
+      "Security Analyst": 0.1668,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Site Reliability Engineer (SRE)": {
+      "Data Scientist": 0.1608,
+      "Data Engineer": 0.3241,
+      "ML Engineer": 0.2019,
+      "Data Analyst": 0.1668,
+      "Software Engineer": 0.2019,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.0769,
+      "AI Engineer": 0.1621,
+      "NLP Engineer": 0.165,
+      "Computer Vision Engineer": 0.165,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.5752,
+      "DevOps Engineer": 0.4591,
+      "Site Reliability Engineer (SRE)": 1.0,
+      "Cybersecurity Engineer": 0.4951,
+      "Security Analyst": 0.3269,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Cybersecurity Engineer": {
+      "Data Scientist": 0.1623,
+      "Data Engineer": 0.1636,
+      "ML Engineer": 0.165,
+      "Data Analyst": 0.1685,
+      "Software Engineer": 0.2051,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.04,
+      "AI Engineer": 0.1636,
+      "NLP Engineer": 0.1667,
+      "Computer Vision Engineer": 0.1667,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.2083,
+      "DevOps Engineer": 0.1685,
+      "Site Reliability Engineer (SRE)": 0.3701,
+      "Cybersecurity Engineer": 1.0,
+      "Security Analyst": 0.5351,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Security Analyst": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.0385,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0,
+      "Backend Developer": 0.0,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.2051,
+      "DevOps Engineer": 0.1668,
+      "Site Reliability Engineer (SRE)": 0.2019,
+      "Cybersecurity Engineer": 0.4101,
+      "Security Analyst": 1.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "UI/UX Designer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.0,
+      "Full Stack Developer": 0.0,
+      "Frontend Developer": 0.0403,
+      "Backend Developer": 0.0,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 1.0,
+      "Mobile App Developer": 0.0,
+      "Game Developer": 0.0
+    },
+    "Mobile App Developer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.1635,
+      "Full Stack Developer": 0.2732,
+      "Frontend Developer": 0.3982,
+      "Backend Developer": 0.3269,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 1.0,
+      "Game Developer": 0.04
+    },
+    "Game Developer": {
+      "Data Scientist": 0.0,
+      "Data Engineer": 0.0,
+      "ML Engineer": 0.0,
+      "Data Analyst": 0.0,
+      "Software Engineer": 0.3701,
+      "Full Stack Developer": 0.0386,
+      "Frontend Developer": 0.1636,
+      "Backend Developer": 0.165,
+      "AI Engineer": 0.0,
+      "NLP Engineer": 0.0,
+      "Computer Vision Engineer": 0.0,
+      "Business Intelligence Analyst": 0.0,
+      "Cloud Engineer": 0.0,
+      "DevOps Engineer": 0.0,
+      "Site Reliability Engineer (SRE)": 0.0,
+      "Cybersecurity Engineer": 0.0,
+      "Security Analyst": 0.0,
+      "UI/UX Designer": 0.0,
+      "Mobile App Developer": 0.04,
+      "Game Developer": 1.0
+    }
+  },
+  "topPathwaysByRole": {
+    "Data Scientist": [
+      {
+        "from": "Data Scientist",
+        "to": "Data Analyst",
+        "similarityScore": 0.4057,
+        "pathwayScore": 58.9,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "SQL",
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Data Cleaning",
+          "Data Storytelling",
+          "Business Acumen"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.54,
+          "targetObservedMinYears": 0.82,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": 13.53,
+          "salaryOpportunityLPA": -7.82,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL, Python. Primary skill gaps to bridge: Excel, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Data Scientist",
+        "to": "AI Engineer",
+        "similarityScore": 0.4785,
+        "pathwayScore": 57.4,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "LLMs"
+        ],
+        "recommendedSkills": [
+          "LangChain",
+          "Vector Databases",
+          "Prompt Engineering",
+          "Fine-Tuning"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning, Deep Learning. Primary skill gaps to bridge: LLMs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Data Scientist",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.1639,
+        "pathwayScore": 57.4,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.54,
+          "targetObservedMinYears": 1.7,
+          "gapYears": 0.2,
+          "compatibilityScore": 0.98,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": 13.53,
+          "salaryOpportunityLPA": -4.58,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Data Scientist",
+        "to": "ML Engineer",
+        "similarityScore": 0.5182,
+        "pathwayScore": 51.6,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "MLOps",
+          "Kubernetes",
+          "PyTorch",
+          "Model Serving"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.54,
+          "targetObservedMinYears": 1.44,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 964,
+          "targetMarketSharePct": 1.04,
+          "targetAvgSalaryLPA": 9.85,
+          "sourceAvgSalaryLPA": 13.53,
+          "salaryOpportunityLPA": -3.68,
+          "salaryRange": "2.0 - 40.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Quantiphi Analytics Solutions",
+            "Accenture",
+            "Wipro",
+            "Tiger Analytics"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning, Deep Learning. Primary skill gaps to bridge: Docker. Target career shows verified market demand with 964 job postings (1.04% market share) and average compensation of 9.85 LPA."
+      },
+      {
+        "from": "Data Scientist",
+        "to": "NLP Engineer",
+        "similarityScore": 0.3245,
+        "pathwayScore": 47.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "NLP",
+          "Transformers"
+        ],
+        "recommendedSkills": [
+          "BERT",
+          "Hugging Face",
+          "Tokenization",
+          "Information Extraction"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: NLP, Transformers. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Data Engineer": [
+      {
+        "from": "Data Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.2056,
+        "pathwayScore": 59.5,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "ETL",
+          "KPI Dashboards"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.51,
+          "targetObservedMinYears": 1.7,
+          "gapYears": 0.2,
+          "compatibilityScore": 0.98,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": 11.81,
+          "salaryOpportunityLPA": -2.86,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Data Engineer",
+        "to": "Data Analyst",
+        "similarityScore": 0.3306,
+        "pathwayScore": 55.1,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "SQL",
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.51,
+          "targetObservedMinYears": 0.82,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": 11.81,
+          "salaryOpportunityLPA": -6.1,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL, Python. Primary skill gaps to bridge: Excel, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Data Engineer",
+        "to": "Data Scientist",
+        "similarityScore": 0.319,
+        "pathwayScore": 47.8,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "SQL"
+        ],
+        "missingSkills": [
+          "Statistics",
+          "Machine Learning"
+        ],
+        "recommendedSkills": [
+          "Deep Learning",
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.51,
+          "targetObservedMinYears": 1.54,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 9051,
+          "targetMarketSharePct": 9.73,
+          "targetAvgSalaryLPA": 13.53,
+          "sourceAvgSalaryLPA": 11.81,
+          "salaryOpportunityLPA": 1.72,
+          "salaryRange": "2.0 - 74.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "IBM",
+            "Cognizant",
+            "Capgemini"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, SQL. Primary skill gaps to bridge: Statistics, Machine Learning. Target career shows verified market demand with 9,051 job postings (9.73% market share) and average compensation of 13.53 LPA."
+      },
+      {
+        "from": "Data Engineer",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.3272,
+        "pathwayScore": 47.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Cloud",
+          "Docker"
+        ],
+        "missingSkills": [
+          "Linux",
+          "Terraform"
+        ],
+        "recommendedSkills": [
+          "Kubernetes",
+          "IAM",
+          "Networking",
+          "Serverless"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Cloud, Docker. Primary skill gaps to bridge: Linux, Terraform. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Data Engineer",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.3241,
+        "pathwayScore": 47.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Cloud"
+        ],
+        "missingSkills": [
+          "Linux",
+          "Kubernetes"
+        ],
+        "recommendedSkills": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Cloud. Primary skill gaps to bridge: Linux, Kubernetes. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "ML Engineer": [
+      {
+        "from": "ML Engineer",
+        "to": "AI Engineer",
+        "similarityScore": 0.5603,
+        "pathwayScore": 62.7,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "LLMs"
+        ],
+        "recommendedSkills": [
+          "LangChain",
+          "Vector Databases",
+          "Prompt Engineering",
+          "Fine-Tuning"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning, Deep Learning. Primary skill gaps to bridge: LLMs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "ML Engineer",
+        "to": "Computer Vision Engineer",
+        "similarityScore": 0.5351,
+        "pathwayScore": 61.0,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "missingSkills": [
+          "OpenCV"
+        ],
+        "recommendedSkills": [
+          "YOLO",
+          "Image Segmentation",
+          "Object Detection",
+          "CUDA"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning, PyTorch. Primary skill gaps to bridge: OpenCV. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "ML Engineer",
+        "to": "DevOps Engineer",
+        "similarityScore": 0.5004,
+        "pathwayScore": 58.8,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "CI/CD",
+          "Docker",
+          "Kubernetes"
+        ],
+        "missingSkills": [
+          "Linux"
+        ],
+        "recommendedSkills": [
+          "Terraform",
+          "Ansible",
+          "Prometheus",
+          "GitOps"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in CI/CD, Docker, Kubernetes. Primary skill gaps to bridge: Linux. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "ML Engineer",
+        "to": "Data Scientist",
+        "similarityScore": 0.3932,
+        "pathwayScore": 51.2,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning"
+        ],
+        "missingSkills": [
+          "SQL",
+          "Statistics"
+        ],
+        "recommendedSkills": [
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.44,
+          "targetObservedMinYears": 1.54,
+          "gapYears": 0.1,
+          "compatibilityScore": 0.99,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 9051,
+          "targetMarketSharePct": 9.73,
+          "targetAvgSalaryLPA": 13.53,
+          "sourceAvgSalaryLPA": 9.85,
+          "salaryOpportunityLPA": 3.68,
+          "salaryRange": "2.0 - 74.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "IBM",
+            "Cognizant",
+            "Capgemini"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning. Primary skill gaps to bridge: SQL, Statistics. Target career shows verified market demand with 9,051 job postings (9.73% market share) and average compensation of 13.53 LPA."
+      },
+      {
+        "from": "ML Engineer",
+        "to": "NLP Engineer",
+        "similarityScore": 0.3701,
+        "pathwayScore": 50.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "NLP",
+          "Transformers"
+        ],
+        "recommendedSkills": [
+          "BERT",
+          "Hugging Face",
+          "Tokenization",
+          "Information Extraction"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: NLP, Transformers. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Data Analyst": [
+      {
+        "from": "Data Analyst",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.5568,
+        "pathwayScore": 75.3,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "SQL",
+          "Power BI",
+          "Excel"
+        ],
+        "missingSkills": [
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "DAX",
+          "Data Warehousing",
+          "ETL",
+          "KPI Dashboards"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 0.82,
+          "targetObservedMinYears": 1.7,
+          "gapYears": 0.9,
+          "compatibilityScore": 0.91,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": 5.71,
+          "salaryOpportunityLPA": 3.24,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL, Power BI, Excel. Primary skill gaps to bridge: Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Data Analyst",
+        "to": "Data Scientist",
+        "similarityScore": 0.5307,
+        "pathwayScore": 56.6,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "SQL",
+          "Statistics"
+        ],
+        "missingSkills": [
+          "Machine Learning"
+        ],
+        "recommendedSkills": [
+          "Deep Learning",
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 0.82,
+          "targetObservedMinYears": 1.54,
+          "gapYears": 0.7,
+          "compatibilityScore": 0.93,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 9051,
+          "targetMarketSharePct": 9.73,
+          "targetAvgSalaryLPA": 13.53,
+          "sourceAvgSalaryLPA": 5.71,
+          "salaryOpportunityLPA": 7.82,
+          "salaryRange": "2.0 - 74.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "IBM",
+            "Cognizant",
+            "Capgemini"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, SQL, Statistics. Primary skill gaps to bridge: Machine Learning. Target career shows verified market demand with 9,051 job postings (9.73% market share) and average compensation of 13.53 LPA."
+      },
+      {
+        "from": "Data Analyst",
+        "to": "Data Engineer",
+        "similarityScore": 0.3306,
+        "pathwayScore": 45.8,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "SQL"
+        ],
+        "missingSkills": [
+          "Spark",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Kafka",
+          "Airflow",
+          "Data Warehousing",
+          "Distributed Systems"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 0.82,
+          "targetObservedMinYears": 1.51,
+          "gapYears": 0.7,
+          "compatibilityScore": 0.93,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 8044,
+          "targetMarketSharePct": 8.65,
+          "targetAvgSalaryLPA": 11.81,
+          "sourceAvgSalaryLPA": 5.71,
+          "salaryOpportunityLPA": 6.1,
+          "salaryRange": "1.1 - 93.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "IBM",
+            "L&T Infotech",
+            "Accenture",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, SQL. Primary skill gaps to bridge: Spark, Cloud. Target career shows verified market demand with 8,044 job postings (8.65% market share) and average compensation of 11.81 LPA."
+      },
+      {
+        "from": "Data Analyst",
+        "to": "Backend Developer",
+        "similarityScore": 0.2086,
+        "pathwayScore": 39.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Node.js",
+          "REST APIs",
+          "Git"
+        ],
+        "recommendedSkills": [
+          "Microservices",
+          "Docker",
+          "Redis",
+          "Message Queues"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Node.js, REST APIs, Git. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Data Analyst",
+        "to": "NLP Engineer",
+        "similarityScore": 0.1685,
+        "pathwayScore": 37.2,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Python"
+        ],
+        "missingSkills": [
+          "NLP",
+          "Deep Learning",
+          "Transformers"
+        ],
+        "recommendedSkills": [
+          "BERT",
+          "Hugging Face",
+          "Tokenization",
+          "Information Extraction"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python. Primary skill gaps to bridge: NLP, Deep Learning, Transformers. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Software Engineer": [
+      {
+        "from": "Software Engineer",
+        "to": "DevOps Engineer",
+        "similarityScore": 0.5004,
+        "pathwayScore": 58.8,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "CI/CD",
+          "Docker",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Kubernetes"
+        ],
+        "recommendedSkills": [
+          "Terraform",
+          "Ansible",
+          "Prometheus",
+          "GitOps"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in CI/CD, Docker, Linux. Primary skill gaps to bridge: Kubernetes. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Software Engineer",
+        "to": "Game Developer",
+        "similarityScore": 0.3701,
+        "pathwayScore": 50.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "C++",
+          "Data Structures"
+        ],
+        "missingSkills": [
+          "C#",
+          "Unity"
+        ],
+        "recommendedSkills": [
+          "Unreal Engine",
+          "Shader Programming",
+          "Physics Engines",
+          "3D Math"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in C++, Data Structures. Primary skill gaps to bridge: C#, Unity. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Software Engineer",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.3301,
+        "pathwayScore": 47.7,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Docker",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Cloud",
+          "Terraform"
+        ],
+        "recommendedSkills": [
+          "Kubernetes",
+          "IAM",
+          "Networking",
+          "Serverless"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Docker, Linux. Primary skill gaps to bridge: Cloud, Terraform. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Software Engineer",
+        "to": "Cybersecurity Engineer",
+        "similarityScore": 0.3301,
+        "pathwayScore": 47.7,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Linux",
+          "Python"
+        ],
+        "missingSkills": [
+          "Networking",
+          "Security Principles"
+        ],
+        "recommendedSkills": [
+          "Penetration Testing",
+          "SIEM",
+          "Firewalls",
+          "Threat Modeling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux, Python. Primary skill gaps to bridge: Networking, Security Principles. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Software Engineer",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.3269,
+        "pathwayScore": 47.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Linux",
+          "Python"
+        ],
+        "missingSkills": [
+          "Kubernetes",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux, Python. Primary skill gaps to bridge: Kubernetes, Cloud. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Full Stack Developer": [
+      {
+        "from": "Full Stack Developer",
+        "to": "Backend Developer",
+        "similarityScore": 0.7224,
+        "pathwayScore": 73.2,
+        "skillCoverageRatio": 1.0,
+        "sharedSkills": [
+          "Node.js",
+          "SQL",
+          "REST APIs",
+          "Git"
+        ],
+        "missingSkills": [],
+        "recommendedSkills": [
+          "Microservices",
+          "Redis",
+          "Message Queues",
+          "Database Indexing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Node.js, SQL, REST APIs, Git. All core technical competencies satisfied. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Full Stack Developer",
+        "to": "Frontend Developer",
+        "similarityScore": 0.5893,
+        "pathwayScore": 64.6,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "JavaScript",
+          "React",
+          "Git"
+        ],
+        "missingSkills": [
+          "HTML/CSS"
+        ],
+        "recommendedSkills": [
+          "Web Performance",
+          "Accessibility (a11y)"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript, React, Git. Primary skill gaps to bridge: HTML/CSS. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Full Stack Developer",
+        "to": "Mobile App Developer",
+        "similarityScore": 0.3982,
+        "pathwayScore": 52.1,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "JavaScript",
+          "REST APIs"
+        ],
+        "missingSkills": [
+          "React Native",
+          "Mobile UI"
+        ],
+        "recommendedSkills": [
+          "Flutter",
+          "App Store Deployment",
+          "Native Modules",
+          "Offline Storage"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript, REST APIs. Primary skill gaps to bridge: React Native, Mobile UI. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Full Stack Developer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.1653,
+        "pathwayScore": 51.7,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Full Stack Developer",
+        "to": "Data Analyst",
+        "similarityScore": 0.1653,
+        "pathwayScore": 40.6,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Excel",
+          "Tableau",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Excel, Tableau, Python. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      }
+    ],
+    "Frontend Developer": [
+      {
+        "from": "Frontend Developer",
+        "to": "Full Stack Developer",
+        "similarityScore": 0.4643,
+        "pathwayScore": 56.4,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "JavaScript",
+          "React"
+        ],
+        "missingSkills": [
+          "Node.js",
+          "SQL"
+        ],
+        "recommendedSkills": [
+          "REST APIs",
+          "GraphQL",
+          "Docker"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript, React. Primary skill gaps to bridge: Node.js, SQL. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Frontend Developer",
+        "to": "Mobile App Developer",
+        "similarityScore": 0.2732,
+        "pathwayScore": 44.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "JavaScript"
+        ],
+        "missingSkills": [
+          "React Native",
+          "Mobile UI",
+          "REST APIs"
+        ],
+        "recommendedSkills": [
+          "Flutter",
+          "App Store Deployment",
+          "Native Modules",
+          "Offline Storage"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript. Primary skill gaps to bridge: React Native, Mobile UI, REST APIs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Frontend Developer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Frontend Developer",
+        "to": "UI/UX Designer",
+        "similarityScore": 0.1653,
+        "pathwayScore": 37.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Figma"
+        ],
+        "missingSkills": [
+          "User Research",
+          "Wireframing",
+          "Prototyping"
+        ],
+        "recommendedSkills": [
+          "Design Systems",
+          "Usability Testing",
+          "Interaction Design",
+          "Information Architecture"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Figma. Primary skill gaps to bridge: User Research, Wireframing, Prototyping. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Frontend Developer",
+        "to": "Software Engineer",
+        "similarityScore": 0.1621,
+        "pathwayScore": 36.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Git"
+        ],
+        "missingSkills": [
+          "Python",
+          "Data Structures",
+          "Algorithms"
+        ],
+        "recommendedSkills": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Git. Primary skill gaps to bridge: Python, Data Structures, Algorithms. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Backend Developer": [
+      {
+        "from": "Backend Developer",
+        "to": "Full Stack Developer",
+        "similarityScore": 0.4724,
+        "pathwayScore": 57.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Node.js",
+          "SQL"
+        ],
+        "missingSkills": [
+          "JavaScript",
+          "React"
+        ],
+        "recommendedSkills": [
+          "TypeScript",
+          "GraphQL",
+          "Tailwind CSS",
+          "Next.js"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Node.js, SQL. Primary skill gaps to bridge: JavaScript, React. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Backend Developer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.1668,
+        "pathwayScore": 51.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Backend Developer",
+        "to": "Software Engineer",
+        "similarityScore": 0.3654,
+        "pathwayScore": 50.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Git"
+        ],
+        "missingSkills": [
+          "Data Structures",
+          "Algorithms"
+        ],
+        "recommendedSkills": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Git. Primary skill gaps to bridge: Data Structures, Algorithms. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Backend Developer",
+        "to": "Data Analyst",
+        "similarityScore": 0.3336,
+        "pathwayScore": 49.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "SQL",
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL, Python. Primary skill gaps to bridge: Excel, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Backend Developer",
+        "to": "Data Engineer",
+        "similarityScore": 0.3982,
+        "pathwayScore": 44.7,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "SQL"
+        ],
+        "missingSkills": [
+          "Spark",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Kafka",
+          "Airflow",
+          "Data Warehousing",
+          "Distributed Systems"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 8044,
+          "targetMarketSharePct": 8.65,
+          "targetAvgSalaryLPA": 11.81,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.1 - 93.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "IBM",
+            "L&T Infotech",
+            "Accenture",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, SQL. Primary skill gaps to bridge: Spark, Cloud. Target career shows verified market demand with 8,044 job postings (8.65% market share) and average compensation of 11.81 LPA."
+      }
+    ],
+    "AI Engineer": [
+      {
+        "from": "AI Engineer",
+        "to": "Computer Vision Engineer",
+        "similarityScore": 0.4907,
+        "pathwayScore": 58.1,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "missingSkills": [
+          "OpenCV"
+        ],
+        "recommendedSkills": [
+          "YOLO",
+          "Image Segmentation",
+          "Object Detection",
+          "CUDA"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning, PyTorch. Primary skill gaps to bridge: OpenCV. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "AI Engineer",
+        "to": "NLP Engineer",
+        "similarityScore": 0.4043,
+        "pathwayScore": 52.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "NLP",
+          "Transformers"
+        ],
+        "recommendedSkills": [
+          "BERT",
+          "Tokenization",
+          "Information Extraction",
+          "Text Classification"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: NLP, Transformers. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "AI Engineer",
+        "to": "ML Engineer",
+        "similarityScore": 0.5603,
+        "pathwayScore": 47.5,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "MLOps",
+          "Kubernetes",
+          "Model Serving",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 964,
+          "targetMarketSharePct": 1.04,
+          "targetAvgSalaryLPA": 9.85,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "2.0 - 40.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Quantiphi Analytics Solutions",
+            "Accenture",
+            "Wipro",
+            "Tiger Analytics"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning, Deep Learning. Primary skill gaps to bridge: Docker. Target career shows verified market demand with 964 job postings (1.04% market share) and average compensation of 9.85 LPA."
+      },
+      {
+        "from": "AI Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "AI Engineer",
+        "to": "Data Scientist",
+        "similarityScore": 0.3535,
+        "pathwayScore": 43.2,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Machine Learning"
+        ],
+        "missingSkills": [
+          "SQL",
+          "Statistics"
+        ],
+        "recommendedSkills": [
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing",
+          "Scikit-Learn"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 9051,
+          "targetMarketSharePct": 9.73,
+          "targetAvgSalaryLPA": 13.53,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "2.0 - 74.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "IBM",
+            "Cognizant",
+            "Capgemini"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Machine Learning. Primary skill gaps to bridge: SQL, Statistics. Target career shows verified market demand with 9,051 job postings (9.73% market share) and average compensation of 13.53 LPA."
+      }
+    ],
+    "NLP Engineer": [
+      {
+        "from": "NLP Engineer",
+        "to": "Computer Vision Engineer",
+        "similarityScore": 0.5,
+        "pathwayScore": 58.7,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning",
+          "PyTorch"
+        ],
+        "missingSkills": [
+          "OpenCV"
+        ],
+        "recommendedSkills": [
+          "YOLO",
+          "Image Segmentation",
+          "Object Detection",
+          "CUDA"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning, PyTorch. Primary skill gaps to bridge: OpenCV. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "NLP Engineer",
+        "to": "AI Engineer",
+        "similarityScore": 0.4043,
+        "pathwayScore": 52.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Machine Learning",
+          "LLMs"
+        ],
+        "recommendedSkills": [
+          "LangChain",
+          "Vector Databases",
+          "Prompt Engineering",
+          "Fine-Tuning"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: Machine Learning, LLMs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "NLP Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "NLP Engineer",
+        "to": "Data Analyst",
+        "similarityScore": 0.1685,
+        "pathwayScore": 40.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "SQL",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python. Primary skill gaps to bridge: Excel, SQL, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "NLP Engineer",
+        "to": "ML Engineer",
+        "similarityScore": 0.3701,
+        "pathwayScore": 38.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Machine Learning",
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "MLOps",
+          "Kubernetes",
+          "Model Serving",
+          "FastAPI"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 964,
+          "targetMarketSharePct": 1.04,
+          "targetAvgSalaryLPA": 9.85,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "2.0 - 40.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Quantiphi Analytics Solutions",
+            "Accenture",
+            "Wipro",
+            "Tiger Analytics"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: Machine Learning, Docker. Target career shows verified market demand with 964 job postings (1.04% market share) and average compensation of 9.85 LPA."
+      }
+    ],
+    "Computer Vision Engineer": [
+      {
+        "from": "Computer Vision Engineer",
+        "to": "NLP Engineer",
+        "similarityScore": 0.375,
+        "pathwayScore": 50.6,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "NLP",
+          "Transformers"
+        ],
+        "recommendedSkills": [
+          "BERT",
+          "Hugging Face",
+          "Tokenization",
+          "Information Extraction"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: NLP, Transformers. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Computer Vision Engineer",
+        "to": "AI Engineer",
+        "similarityScore": 0.3657,
+        "pathwayScore": 50.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Machine Learning",
+          "LLMs"
+        ],
+        "recommendedSkills": [
+          "LangChain",
+          "Vector Databases",
+          "Prompt Engineering",
+          "Fine-Tuning"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: Machine Learning, LLMs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Computer Vision Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Computer Vision Engineer",
+        "to": "Data Analyst",
+        "similarityScore": 0.1685,
+        "pathwayScore": 40.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "SQL",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python. Primary skill gaps to bridge: Excel, SQL, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Computer Vision Engineer",
+        "to": "ML Engineer",
+        "similarityScore": 0.4101,
+        "pathwayScore": 40.0,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Python",
+          "Deep Learning"
+        ],
+        "missingSkills": [
+          "Machine Learning",
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "MLOps",
+          "Kubernetes",
+          "Model Serving",
+          "FastAPI"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 964,
+          "targetMarketSharePct": 1.04,
+          "targetAvgSalaryLPA": 9.85,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "2.0 - 40.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Quantiphi Analytics Solutions",
+            "Accenture",
+            "Wipro",
+            "Tiger Analytics"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python, Deep Learning. Primary skill gaps to bridge: Machine Learning, Docker. Target career shows verified market demand with 964 job postings (1.04% market share) and average compensation of 9.85 LPA."
+      }
+    ],
+    "Business Intelligence Analyst": [
+      {
+        "from": "Business Intelligence Analyst",
+        "to": "Data Analyst",
+        "similarityScore": 0.5568,
+        "pathwayScore": 66.4,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Excel",
+          "SQL",
+          "Tableau"
+        ],
+        "missingSkills": [
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling",
+          "Business Acumen"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.7,
+          "targetObservedMinYears": 0.82,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": 8.95,
+          "salaryOpportunityLPA": -3.24,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Excel, SQL, Tableau. Primary skill gaps to bridge: Python. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Business Intelligence Analyst",
+        "to": "Data Engineer",
+        "similarityScore": 0.2056,
+        "pathwayScore": 41.3,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Python",
+          "Spark",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Kafka",
+          "Airflow",
+          "Distributed Systems",
+          "Docker"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.7,
+          "targetObservedMinYears": 1.51,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 8044,
+          "targetMarketSharePct": 8.65,
+          "targetAvgSalaryLPA": 11.81,
+          "sourceAvgSalaryLPA": 8.95,
+          "salaryOpportunityLPA": 2.86,
+          "salaryRange": "1.1 - 93.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "IBM",
+            "L&T Infotech",
+            "Accenture",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Python, Spark, Cloud. Target career shows verified market demand with 8,044 job postings (8.65% market share) and average compensation of 11.81 LPA."
+      },
+      {
+        "from": "Business Intelligence Analyst",
+        "to": "Data Scientist",
+        "similarityScore": 0.1639,
+        "pathwayScore": 40.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Python",
+          "Statistics",
+          "Machine Learning"
+        ],
+        "recommendedSkills": [
+          "Deep Learning",
+          "Data Visualization",
+          "Feature Engineering",
+          "A/B Testing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": 1.7,
+          "targetObservedMinYears": 1.54,
+          "gapYears": 0.0,
+          "compatibilityScore": 1.0,
+          "benchmarkLabel": "Observed dataset experience benchmark"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 9051,
+          "targetMarketSharePct": 9.73,
+          "targetAvgSalaryLPA": 13.53,
+          "sourceAvgSalaryLPA": 8.95,
+          "salaryOpportunityLPA": 4.58,
+          "salaryRange": "2.0 - 74.5 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "IBM",
+            "Cognizant",
+            "Capgemini"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Python, Statistics, Machine Learning. Target career shows verified market demand with 9,051 job postings (9.73% market share) and average compensation of 13.53 LPA."
+      },
+      {
+        "from": "Business Intelligence Analyst",
+        "to": "Backend Developer",
+        "similarityScore": 0.1668,
+        "pathwayScore": 37.1,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "Node.js",
+          "REST APIs",
+          "Git"
+        ],
+        "recommendedSkills": [
+          "Microservices",
+          "Docker",
+          "Redis",
+          "Message Queues"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: Node.js, REST APIs, Git. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Business Intelligence Analyst",
+        "to": "Full Stack Developer",
+        "similarityScore": 0.1653,
+        "pathwayScore": 37.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "SQL"
+        ],
+        "missingSkills": [
+          "JavaScript",
+          "React",
+          "Node.js"
+        ],
+        "recommendedSkills": [
+          "TypeScript",
+          "REST APIs",
+          "GraphQL",
+          "Tailwind CSS"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SQL. Primary skill gaps to bridge: JavaScript, React, Node.js. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Cloud Engineer": [
+      {
+        "from": "Cloud Engineer",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.5752,
+        "pathwayScore": 63.6,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Linux",
+          "Kubernetes",
+          "Cloud"
+        ],
+        "missingSkills": [
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux, Kubernetes, Cloud. Primary skill gaps to bridge: Python. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cloud Engineer",
+        "to": "DevOps Engineer",
+        "similarityScore": 0.5491,
+        "pathwayScore": 61.9,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Docker",
+          "Kubernetes",
+          "Linux"
+        ],
+        "missingSkills": [
+          "CI/CD"
+        ],
+        "recommendedSkills": [
+          "Ansible",
+          "Prometheus",
+          "GitOps",
+          "Grafana"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Docker, Kubernetes, Linux. Primary skill gaps to bridge: CI/CD. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cloud Engineer",
+        "to": "Cybersecurity Engineer",
+        "similarityScore": 0.3333,
+        "pathwayScore": 47.9,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Networking",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Security Principles",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Penetration Testing",
+          "SIEM",
+          "Firewalls",
+          "Threat Modeling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Networking, Linux. Primary skill gaps to bridge: Security Principles, Python. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cloud Engineer",
+        "to": "Security Analyst",
+        "similarityScore": 0.3301,
+        "pathwayScore": 47.7,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Networking",
+          "Linux"
+        ],
+        "missingSkills": [
+          "SIEM",
+          "Incident Response"
+        ],
+        "recommendedSkills": [
+          "Threat Hunting",
+          "SOC Procedures",
+          "Log Analysis",
+          "Vulnerability Management"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Networking, Linux. Primary skill gaps to bridge: SIEM, Incident Response. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cloud Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      }
+    ],
+    "DevOps Engineer": [
+      {
+        "from": "DevOps Engineer",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.5491,
+        "pathwayScore": 61.9,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Docker",
+          "Linux",
+          "Terraform"
+        ],
+        "missingSkills": [
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "IAM",
+          "Networking",
+          "Serverless",
+          "Cost Optimization"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Docker, Linux, Terraform. Primary skill gaps to bridge: Cloud. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "DevOps Engineer",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.4591,
+        "pathwayScore": 56.1,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Linux",
+          "Kubernetes"
+        ],
+        "missingSkills": [
+          "Python",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering",
+          "Distributed Tracing"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux, Kubernetes. Primary skill gaps to bridge: Python, Cloud. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "DevOps Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "DevOps Engineer",
+        "to": "Cybersecurity Engineer",
+        "similarityScore": 0.1685,
+        "pathwayScore": 37.2,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "Networking",
+          "Security Principles",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Penetration Testing",
+          "SIEM",
+          "Firewalls",
+          "Threat Modeling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: Networking, Security Principles, Python. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "DevOps Engineer",
+        "to": "Security Analyst",
+        "similarityScore": 0.1668,
+        "pathwayScore": 37.1,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "SIEM",
+          "Incident Response",
+          "Networking"
+        ],
+        "recommendedSkills": [
+          "Threat Hunting",
+          "SOC Procedures",
+          "Log Analysis",
+          "Vulnerability Management"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: SIEM, Incident Response, Networking. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Site Reliability Engineer (SRE)": [
+      {
+        "from": "Site Reliability Engineer (SRE)",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.5752,
+        "pathwayScore": 63.6,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Cloud",
+          "Linux",
+          "Terraform"
+        ],
+        "missingSkills": [
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "IAM",
+          "Serverless",
+          "Cost Optimization"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Cloud, Linux, Terraform. Primary skill gaps to bridge: Docker. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Site Reliability Engineer (SRE)",
+        "to": "Cybersecurity Engineer",
+        "similarityScore": 0.4951,
+        "pathwayScore": 58.4,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "Networking",
+          "Linux",
+          "Python"
+        ],
+        "missingSkills": [
+          "Security Principles"
+        ],
+        "recommendedSkills": [
+          "Penetration Testing",
+          "SIEM",
+          "Firewalls",
+          "Threat Modeling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Networking, Linux, Python. Primary skill gaps to bridge: Security Principles. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Site Reliability Engineer (SRE)",
+        "to": "DevOps Engineer",
+        "similarityScore": 0.4591,
+        "pathwayScore": 56.1,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Kubernetes",
+          "Linux"
+        ],
+        "missingSkills": [
+          "CI/CD",
+          "Docker"
+        ],
+        "recommendedSkills": [
+          "Ansible",
+          "GitOps"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Kubernetes, Linux. Primary skill gaps to bridge: CI/CD, Docker. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Site Reliability Engineer (SRE)",
+        "to": "Security Analyst",
+        "similarityScore": 0.3269,
+        "pathwayScore": 47.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Networking",
+          "Linux"
+        ],
+        "missingSkills": [
+          "SIEM",
+          "Incident Response"
+        ],
+        "recommendedSkills": [
+          "Threat Hunting",
+          "SOC Procedures",
+          "Log Analysis",
+          "Vulnerability Management"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Networking, Linux. Primary skill gaps to bridge: SIEM, Incident Response. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Site Reliability Engineer (SRE)",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      }
+    ],
+    "Cybersecurity Engineer": [
+      {
+        "from": "Cybersecurity Engineer",
+        "to": "Security Analyst",
+        "similarityScore": 0.5351,
+        "pathwayScore": 61.0,
+        "skillCoverageRatio": 0.75,
+        "sharedSkills": [
+          "SIEM",
+          "Networking",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Incident Response"
+        ],
+        "recommendedSkills": [
+          "Threat Hunting",
+          "SOC Procedures",
+          "Log Analysis",
+          "Vulnerability Management"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in SIEM, Networking, Linux. Primary skill gaps to bridge: Incident Response. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cybersecurity Engineer",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.3701,
+        "pathwayScore": 50.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Linux",
+          "Python"
+        ],
+        "missingSkills": [
+          "Kubernetes",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux, Python. Primary skill gaps to bridge: Kubernetes, Cloud. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Cybersecurity Engineer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Cybersecurity Engineer",
+        "to": "Data Analyst",
+        "similarityScore": 0.1685,
+        "pathwayScore": 40.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Python"
+        ],
+        "missingSkills": [
+          "Excel",
+          "SQL",
+          "Tableau"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Python. Primary skill gaps to bridge: Excel, SQL, Tableau. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "Cybersecurity Engineer",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.2083,
+        "pathwayScore": 39.8,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "Cloud",
+          "Docker",
+          "Terraform"
+        ],
+        "recommendedSkills": [
+          "Kubernetes",
+          "IAM",
+          "Serverless",
+          "Cost Optimization"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: Cloud, Docker, Terraform. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Security Analyst": [
+      {
+        "from": "Security Analyst",
+        "to": "Cybersecurity Engineer",
+        "similarityScore": 0.4101,
+        "pathwayScore": 52.9,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Networking",
+          "Linux"
+        ],
+        "missingSkills": [
+          "Security Principles",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Penetration Testing",
+          "Firewalls",
+          "Threat Modeling",
+          "Cryptography"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Networking, Linux. Primary skill gaps to bridge: Security Principles, Python. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Security Analyst",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Security Analyst",
+        "to": "Cloud Engineer",
+        "similarityScore": 0.2051,
+        "pathwayScore": 39.6,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "Cloud",
+          "Docker",
+          "Terraform"
+        ],
+        "recommendedSkills": [
+          "Kubernetes",
+          "IAM",
+          "Serverless",
+          "Cost Optimization"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: Cloud, Docker, Terraform. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Security Analyst",
+        "to": "Site Reliability Engineer (SRE)",
+        "similarityScore": 0.2019,
+        "pathwayScore": 39.4,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "Python",
+          "Kubernetes",
+          "Cloud"
+        ],
+        "recommendedSkills": [
+          "Prometheus",
+          "Incident Management",
+          "SLO/SLI",
+          "Chaos Engineering"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: Python, Kubernetes, Cloud. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Security Analyst",
+        "to": "DevOps Engineer",
+        "similarityScore": 0.1668,
+        "pathwayScore": 37.1,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Linux"
+        ],
+        "missingSkills": [
+          "CI/CD",
+          "Docker",
+          "Kubernetes"
+        ],
+        "recommendedSkills": [
+          "Terraform",
+          "Ansible",
+          "Prometheus",
+          "GitOps"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Linux. Primary skill gaps to bridge: CI/CD, Docker, Kubernetes. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "UI/UX Designer": [
+      {
+        "from": "UI/UX Designer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "UI/UX Designer",
+        "to": "Data Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 32.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "Excel",
+          "SQL",
+          "Tableau",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: Excel, SQL, Tableau, Python. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      },
+      {
+        "from": "UI/UX Designer",
+        "to": "Frontend Developer",
+        "similarityScore": 0.0403,
+        "pathwayScore": 28.9,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "HTML/CSS",
+          "JavaScript",
+          "React",
+          "Git"
+        ],
+        "recommendedSkills": [
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js",
+          "Web Performance"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: HTML/CSS, JavaScript, React, Git. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "UI/UX Designer",
+        "to": "Software Engineer",
+        "similarityScore": 0.0,
+        "pathwayScore": 26.2,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "Python",
+          "Data Structures",
+          "Algorithms",
+          "Git"
+        ],
+        "recommendedSkills": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: Python, Data Structures, Algorithms, Git. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "UI/UX Designer",
+        "to": "Full Stack Developer",
+        "similarityScore": 0.0,
+        "pathwayScore": 26.2,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "JavaScript",
+          "React",
+          "Node.js",
+          "SQL"
+        ],
+        "recommendedSkills": [
+          "TypeScript",
+          "REST APIs",
+          "GraphQL",
+          "Tailwind CSS"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: JavaScript, React, Node.js, SQL. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Mobile App Developer": [
+      {
+        "from": "Mobile App Developer",
+        "to": "Frontend Developer",
+        "similarityScore": 0.3982,
+        "pathwayScore": 52.1,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "JavaScript",
+          "Git"
+        ],
+        "missingSkills": [
+          "HTML/CSS",
+          "React"
+        ],
+        "recommendedSkills": [
+          "Tailwind CSS",
+          "Next.js",
+          "Web Performance",
+          "Accessibility (a11y)"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript, Git. Primary skill gaps to bridge: HTML/CSS, React. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Mobile App Developer",
+        "to": "Backend Developer",
+        "similarityScore": 0.3269,
+        "pathwayScore": 47.5,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "REST APIs",
+          "Git"
+        ],
+        "missingSkills": [
+          "Node.js",
+          "SQL"
+        ],
+        "recommendedSkills": [
+          "Microservices",
+          "Docker",
+          "Redis",
+          "Message Queues"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in REST APIs, Git. Primary skill gaps to bridge: Node.js, SQL. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Mobile App Developer",
+        "to": "Full Stack Developer",
+        "similarityScore": 0.2732,
+        "pathwayScore": 44.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "JavaScript"
+        ],
+        "missingSkills": [
+          "React",
+          "Node.js",
+          "SQL"
+        ],
+        "recommendedSkills": [
+          "GraphQL",
+          "Tailwind CSS",
+          "Docker",
+          "Next.js"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in JavaScript. Primary skill gaps to bridge: React, Node.js, SQL. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Mobile App Developer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Mobile App Developer",
+        "to": "Software Engineer",
+        "similarityScore": 0.1635,
+        "pathwayScore": 36.9,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Git"
+        ],
+        "missingSkills": [
+          "Python",
+          "Data Structures",
+          "Algorithms"
+        ],
+        "recommendedSkills": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Git. Primary skill gaps to bridge: Python, Data Structures, Algorithms. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      }
+    ],
+    "Game Developer": [
+      {
+        "from": "Game Developer",
+        "to": "Software Engineer",
+        "similarityScore": 0.3701,
+        "pathwayScore": 50.3,
+        "skillCoverageRatio": 0.5,
+        "sharedSkills": [
+          "Data Structures",
+          "Git"
+        ],
+        "missingSkills": [
+          "Python",
+          "Algorithms"
+        ],
+        "recommendedSkills": [
+          "Design Patterns",
+          "System Design",
+          "Testing",
+          "CI/CD"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Data Structures, Git. Primary skill gaps to bridge: Python, Algorithms. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Game Developer",
+        "to": "Business Intelligence Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 43.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "SQL",
+          "Power BI",
+          "Excel",
+          "Data Modeling"
+        ],
+        "recommendedSkills": [
+          "Tableau",
+          "DAX",
+          "Data Warehousing",
+          "ETL"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 32843,
+          "targetMarketSharePct": 35.31,
+          "targetAvgSalaryLPA": 8.95,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "1.2 - 30.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Accenture",
+            "Genpact",
+            "Wipro",
+            "Cognizant"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: SQL, Power BI, Excel, Data Modeling. Target career shows verified market demand with 32,843 job postings (35.31% market share) and average compensation of 8.95 LPA."
+      },
+      {
+        "from": "Game Developer",
+        "to": "Backend Developer",
+        "similarityScore": 0.165,
+        "pathwayScore": 37.0,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Git"
+        ],
+        "missingSkills": [
+          "Node.js",
+          "SQL",
+          "REST APIs"
+        ],
+        "recommendedSkills": [
+          "Microservices",
+          "Docker",
+          "Redis",
+          "Message Queues"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Git. Primary skill gaps to bridge: Node.js, SQL, REST APIs. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Game Developer",
+        "to": "Frontend Developer",
+        "similarityScore": 0.1636,
+        "pathwayScore": 36.9,
+        "skillCoverageRatio": 0.25,
+        "sharedSkills": [
+          "Git"
+        ],
+        "missingSkills": [
+          "HTML/CSS",
+          "JavaScript",
+          "React"
+        ],
+        "recommendedSkills": [
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js",
+          "Web Performance"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": false,
+          "targetPostingVolume": null,
+          "targetMarketSharePct": null,
+          "targetAvgSalaryLPA": null,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": null,
+          "topHiringCompanies": [],
+          "message": "No direct market evidence available in supplied datasets."
+        },
+        "explanation": "Data-driven career pathway: Transferable foundational competencies in Git. Primary skill gaps to bridge: HTML/CSS, JavaScript, React. Career exists in technical catalog; market demand unobserved in supplied dataset."
+      },
+      {
+        "from": "Game Developer",
+        "to": "Data Analyst",
+        "similarityScore": 0.0,
+        "pathwayScore": 32.4,
+        "skillCoverageRatio": 0.0,
+        "sharedSkills": [],
+        "missingSkills": [
+          "Excel",
+          "SQL",
+          "Tableau",
+          "Python"
+        ],
+        "recommendedSkills": [
+          "Power BI",
+          "Statistics",
+          "Data Cleaning",
+          "Data Storytelling"
+        ],
+        "experienceGap": {
+          "sourceObservedMinYears": null,
+          "targetObservedMinYears": null,
+          "gapYears": null,
+          "compatibilityScore": 0.75,
+          "benchmarkLabel": "Standard career catalog progression (unobserved in dataset)"
+        },
+        "marketEvidence": {
+          "available": true,
+          "targetPostingVolume": 18095,
+          "targetMarketSharePct": 19.46,
+          "targetAvgSalaryLPA": 5.71,
+          "sourceAvgSalaryLPA": null,
+          "salaryOpportunityLPA": null,
+          "salaryRange": "0.2 - 50.0 LPA",
+          "topHiringCompanies": [
+            "TCS",
+            "Cognizant",
+            "Accenture",
+            "Capgemini",
+            "Wipro"
+          ]
+        },
+        "explanation": "Data-driven career pathway: Limited foundational skill overlap; significant upskilling required. Primary skill gaps to bridge: Excel, SQL, Tableau, Python. Target career shows verified market demand with 18,095 job postings (19.46% market share) and average compensation of 5.71 LPA."
+      }
+    ]
+  }
+}

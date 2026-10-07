@@ -1,0 +1,182 @@
+{
+  "dataset": "Analytics Jobs.csv",
+  "task": "Unsupervised Market Skill Clustering",
+  "algorithm": "KMeans on TF-IDF Key Skills Vector Space",
+  "total_postings_clustered": 15841,
+  "cluster_evaluations": [
+    {
+      "k": 3,
+      "inertia": 14922.23,
+      "silhouette_score": 0.0175
+    },
+    {
+      "k": 4,
+      "inertia": 14762.45,
+      "silhouette_score": 0.0179
+    },
+    {
+      "k": 5,
+      "inertia": 14587.35,
+      "silhouette_score": 0.0229
+    },
+    {
+      "k": 6,
+      "inertia": 14460.27,
+      "silhouette_score": 0.0258
+    }
+  ],
+  "selected_k": 6,
+  "silhouette_score": 0.0258,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 612,
+      "percentage": 3.86,
+      "top_skills_and_terms": [
+        "research",
+        "market",
+        "market research",
+        "research analysis",
+        "analysis",
+        "business",
+        "research market",
+        "business research",
+        "secondary",
+        "secondary research"
+      ],
+      "representative_titles": {
+        "Research Analyst": 12,
+        "Mutual Fund Analyst": 8,
+        "Product Manager": 6,
+        "Fundamental Research Role - Equities Global Markets - Financial Servic": 6,
+        "Sr. Exploit and Vulnerability Researchers": 5
+      },
+      "dominant_salary_tier": "0to3"
+    },
+    {
+      "cluster_id": 1,
+      "size": 1797,
+      "percentage": 11.34,
+      "top_skills_and_terms": [
+        "business",
+        "business analysis",
+        "analysis",
+        "business development",
+        "business process",
+        "process",
+        "development",
+        "sales",
+        "management",
+        "outsourcing"
+      ],
+      "representative_titles": {
+        "Business Analyst": 77,
+        "Microsoft Advanced Analytics": 17,
+        "Senior Business Analyst": 17,
+        "Business Development Manager": 16,
+        "Application Developer": 15
+      },
+      "dominant_salary_tier": "10to15"
+    },
+    {
+      "cluster_id": 2,
+      "size": 937,
+      "percentage": 5.92,
+      "top_skills_and_terms": [
+        "financial",
+        "finance",
+        "accounting",
+        "financial analysis",
+        "analysis",
+        "budgeting",
+        "finance financial",
+        "accounting finance",
+        "financial planning",
+        "financial modelling"
+      ],
+      "representative_titles": {
+        "Financial Analyst": 15,
+        "Technical Manager": 10,
+        "Financial Controller": 10,
+        "Program Control Services": 8,
+        "Finance Manager": 7
+      },
+      "dominant_salary_tier": "15to25"
+    },
+    {
+      "cluster_id": 3,
+      "size": 1069,
+      "percentage": 6.75,
+      "top_skills_and_terms": [
+        "marketing",
+        "digital",
+        "digital marketing",
+        "seo",
+        "media",
+        "social",
+        "social media",
+        "google",
+        "sem",
+        "google analytics"
+      ],
+      "representative_titles": {
+        "Digital Marketing Manager": 43,
+        "Digital Marketing Executive": 34,
+        "SEO Analyst": 22,
+        "SEO Executive": 17,
+        "Marketing Manager": 12
+      },
+      "dominant_salary_tier": "3to6"
+    },
+    {
+      "cluster_id": 4,
+      "size": 9013,
+      "percentage": 56.9,
+      "top_skills_and_terms": [
+        "management",
+        "analytics",
+        "analysis",
+        "development",
+        "sales",
+        "design",
+        "java",
+        "project",
+        "sql",
+        "quality"
+      ],
+      "representative_titles": {
+        "Home Base Job/ Data Entry/online Work/part Time Work/freelancer work": 45,
+        "Product Manager": 30,
+        "Analyst": 27,
+        "Data Entry/home Base Job/ Online Work/part Time Work/freelancer work": 21,
+        "Quality Analyst": 19
+      },
+      "dominant_salary_tier": "10to15"
+    },
+    {
+      "cluster_id": 5,
+      "size": 2413,
+      "percentage": 15.23,
+      "top_skills_and_terms": [
+        "data",
+        "analytics",
+        "learning",
+        "machine",
+        "machine learning",
+        "data analysis",
+        "sql",
+        "python",
+        "data analytics",
+        "analysis"
+      ],
+      "representative_titles": {
+        "Data Scientist": 55,
+        "Data Analyst": 41,
+        "Data Engineer": 15,
+        "Business Analyst": 13,
+        "Analytics Manager": 13
+      },
+      "dominant_salary_tier": "15to25"
+    }
+  ]
+}

@@ -95,6 +95,8 @@ export default function Navbar({ isLanding = false }) {
     ? []
     : [
         { to: "/dashboard", label: "Dashboard" },
+        { to: "/mobility", label: "Mobility" },
+        { to: "/market", label: "Market" },
         { to: "/simulator", label: "Simulator" },
         { to: "/explorer", label: "Explorer" },
         { to: "/skill-gap", label: "Skill Gap" },
@@ -105,6 +107,8 @@ export default function Navbar({ isLanding = false }) {
 
   const allWorkspaceLinks = [
     { to: "/dashboard", label: "Dashboard" },
+    { to: "/mobility", label: "Mobility" },
+    { to: "/market", label: "Market" },
     { to: "/simulator", label: "Simulator" },
     { to: "/explorer", label: "Explorer" },
     { to: "/skill-gap", label: "Skill Gap" },

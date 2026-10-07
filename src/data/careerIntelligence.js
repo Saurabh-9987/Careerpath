@@ -435,6 +435,16 @@ export function augmentCareerWithMarket(careerName, careerObject) {
   };
 }
 
+// Re-export ML Engine methods
+export {
+  getModelRegistry,
+  getMLTrainingSummary,
+  predictJuniorSalaryHike,
+  predictSeniorLeadershipSuccess,
+  predictMarketSalary,
+  getMarketSkillArchetypes,
+} from "./careerMLEngine.js";
+
 // Default export object for convenient consumption
 const careerIntelligence = {
   getMarketSummary,
