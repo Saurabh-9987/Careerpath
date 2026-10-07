@@ -1,0 +1,892 @@
+{
+  "Business Analyst": {
+    "role_name": "Business Analyst",
+    "posting_volume": 32843,
+    "market_share_percentage": 35.31,
+    "compensation": {
+      "unweighted_avg_lpa": 8.95,
+      "posting_weighted_avg_lpa": 8.49,
+      "min_lpa": 1.2,
+      "max_lpa": 30.0,
+      "median_approx_lpa": 15.6
+    },
+    "experience_requirement": {
+      "mean_min_years": 1.7,
+      "median_min_years": 2.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "TCS",
+        "posting_volume": 4200
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 1900
+      },
+      {
+        "company": "Genpact",
+        "posting_volume": 1700
+      },
+      {
+        "company": "Wipro",
+        "posting_volume": 1200
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 1100
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "business analysis",
+        "frequency": 400
+      },
+      {
+        "skill": "business analyst",
+        "frequency": 96
+      },
+      {
+        "skill": "sql",
+        "frequency": 52
+      },
+      {
+        "skill": "requirement gathering",
+        "frequency": 40
+      },
+      {
+        "skill": "project management",
+        "frequency": 39
+      },
+      {
+        "skill": "uat",
+        "frequency": 37
+      },
+      {
+        "skill": "analytics",
+        "frequency": 35
+      },
+      {
+        "skill": "use cases",
+        "frequency": 35
+      },
+      {
+        "skill": "data analytics",
+        "frequency": 33
+      },
+      {
+        "skill": "user stories",
+        "frequency": 33
+      },
+      {
+        "skill": "business analysis...",
+        "frequency": 31
+      },
+      {
+        "skill": "finance",
+        "frequency": 30
+      }
+    ],
+    "market_demand_tier": "Very High"
+  },
+  "Data Analyst": {
+    "role_name": "Data Analyst",
+    "posting_volume": 18095,
+    "market_share_percentage": 19.46,
+    "compensation": {
+      "unweighted_avg_lpa": 5.71,
+      "posting_weighted_avg_lpa": 5.37,
+      "min_lpa": 0.2,
+      "max_lpa": 50.0,
+      "median_approx_lpa": 25.1
+    },
+    "experience_requirement": {
+      "mean_min_years": 0.82,
+      "median_min_years": 1.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "TCS",
+        "posting_volume": 1600
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 1200
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 1100
+      },
+      {
+        "company": "Capgemini",
+        "posting_volume": 485
+      },
+      {
+        "company": "Wipro",
+        "posting_volume": 475
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "data analysis",
+        "frequency": 122
+      },
+      {
+        "skill": "sql",
+        "frequency": 47
+      },
+      {
+        "skill": "excel",
+        "frequency": 45
+      },
+      {
+        "skill": "data analytics",
+        "frequency": 32
+      },
+      {
+        "skill": "python",
+        "frequency": 30
+      },
+      {
+        "skill": "r",
+        "frequency": 29
+      },
+      {
+        "skill": "data analyst",
+        "frequency": 28
+      },
+      {
+        "skill": "data mining",
+        "frequency": 26
+      },
+      {
+        "skill": "machine learning",
+        "frequency": 20
+      },
+      {
+        "skill": "advanced excel",
+        "frequency": 17
+      },
+      {
+        "skill": "mysql",
+        "frequency": 16
+      },
+      {
+        "skill": "data analysis...",
+        "frequency": 15
+      }
+    ],
+    "market_demand_tier": "Very High"
+  },
+  "Data Architect": {
+    "role_name": "Data Architect",
+    "posting_volume": 528,
+    "market_share_percentage": 0.57,
+    "compensation": {
+      "unweighted_avg_lpa": 25.09,
+      "posting_weighted_avg_lpa": 22.14,
+      "min_lpa": 7.5,
+      "max_lpa": 102.0,
+      "median_approx_lpa": 54.75
+    },
+    "experience_requirement": {
+      "mean_min_years": 9.98,
+      "median_min_years": 10.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "Accenture",
+        "posting_volume": 55
+      },
+      {
+        "company": "TCS",
+        "posting_volume": 49
+      },
+      {
+        "company": "Fiserv",
+        "posting_volume": 47
+      },
+      {
+        "company": "IBM",
+        "posting_volume": 44
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 42
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "hadoop",
+        "frequency": 30
+      },
+      {
+        "skill": "spark",
+        "frequency": 27
+      },
+      {
+        "skill": "big data",
+        "frequency": 22
+      },
+      {
+        "skill": "data modeling",
+        "frequency": 22
+      },
+      {
+        "skill": "sql",
+        "frequency": 20
+      },
+      {
+        "skill": "hive",
+        "frequency": 19
+      },
+      {
+        "skill": "java",
+        "frequency": 17
+      },
+      {
+        "skill": "cloudera",
+        "frequency": 12
+      },
+      {
+        "skill": "data analytics",
+        "frequency": 11
+      },
+      {
+        "skill": "nosql",
+        "frequency": 11
+      },
+      {
+        "skill": "data warehousing",
+        "frequency": 10
+      },
+      {
+        "skill": "hbase",
+        "frequency": 9
+      }
+    ],
+    "market_demand_tier": "Specialized"
+  },
+  "Data Engineer": {
+    "role_name": "Data Engineer",
+    "posting_volume": 8044,
+    "market_share_percentage": 8.65,
+    "compensation": {
+      "unweighted_avg_lpa": 11.81,
+      "posting_weighted_avg_lpa": 9.91,
+      "min_lpa": 1.1,
+      "max_lpa": 93.5,
+      "median_approx_lpa": 47.3
+    },
+    "experience_requirement": {
+      "mean_min_years": 1.51,
+      "median_min_years": 1.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "TCS",
+        "posting_volume": 819
+      },
+      {
+        "company": "IBM",
+        "posting_volume": 727
+      },
+      {
+        "company": "L&T Infotech",
+        "posting_volume": 420
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 332
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 292
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "spark",
+        "frequency": 39
+      },
+      {
+        "skill": "hadoop",
+        "frequency": 39
+      },
+      {
+        "skill": "sql",
+        "frequency": 36
+      },
+      {
+        "skill": "big data",
+        "frequency": 34
+      },
+      {
+        "skill": "hive",
+        "frequency": 30
+      },
+      {
+        "skill": "python",
+        "frequency": 29
+      },
+      {
+        "skill": "java",
+        "frequency": 27
+      },
+      {
+        "skill": "pig",
+        "frequency": 19
+      },
+      {
+        "skill": "etl",
+        "frequency": 18
+      },
+      {
+        "skill": "scala",
+        "frequency": 18
+      },
+      {
+        "skill": "hbase",
+        "frequency": 17
+      },
+      {
+        "skill": "nosql",
+        "frequency": 16
+      }
+    ],
+    "market_demand_tier": "High"
+  },
+  "Data Scientist": {
+    "role_name": "Data Scientist",
+    "posting_volume": 9051,
+    "market_share_percentage": 9.73,
+    "compensation": {
+      "unweighted_avg_lpa": 13.53,
+      "posting_weighted_avg_lpa": 12.89,
+      "min_lpa": 2.0,
+      "max_lpa": 74.5,
+      "median_approx_lpa": 38.25
+    },
+    "experience_requirement": {
+      "mean_min_years": 1.54,
+      "median_min_years": 2.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "TCS",
+        "posting_volume": 841
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 501
+      },
+      {
+        "company": "IBM",
+        "posting_volume": 394
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 318
+      },
+      {
+        "company": "Capgemini",
+        "posting_volume": 300
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "machine learning",
+        "frequency": 175
+      },
+      {
+        "skill": "python",
+        "frequency": 148
+      },
+      {
+        "skill": "data science",
+        "frequency": 131
+      },
+      {
+        "skill": "r",
+        "frequency": 131
+      },
+      {
+        "skill": "deep learning",
+        "frequency": 74
+      },
+      {
+        "skill": "data scientist",
+        "frequency": 60
+      },
+      {
+        "skill": "sql",
+        "frequency": 54
+      },
+      {
+        "skill": "data mining",
+        "frequency": 50
+      },
+      {
+        "skill": "java",
+        "frequency": 48
+      },
+      {
+        "skill": "nlp",
+        "frequency": 48
+      },
+      {
+        "skill": "analytics",
+        "frequency": 48
+      },
+      {
+        "skill": "sas",
+        "frequency": 41
+      }
+    ],
+    "market_demand_tier": "High"
+  },
+  "Machine Learning Engineer": {
+    "role_name": "Machine Learning Engineer",
+    "posting_volume": 964,
+    "market_share_percentage": 1.04,
+    "compensation": {
+      "unweighted_avg_lpa": 9.85,
+      "posting_weighted_avg_lpa": 9.03,
+      "min_lpa": 2.0,
+      "max_lpa": 40.0,
+      "median_approx_lpa": 21.0
+    },
+    "experience_requirement": {
+      "mean_min_years": 1.44,
+      "median_min_years": 1.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "TCS",
+        "posting_volume": 193
+      },
+      {
+        "company": "Quantiphi Analytics Solutions",
+        "posting_volume": 174
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 61
+      },
+      {
+        "company": "Wipro",
+        "posting_volume": 45
+      },
+      {
+        "company": "Tiger Analytics",
+        "posting_volume": 37
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "machine learning",
+        "frequency": 124
+      },
+      {
+        "skill": "python",
+        "frequency": 65
+      },
+      {
+        "skill": "r",
+        "frequency": 44
+      },
+      {
+        "skill": "nlp",
+        "frequency": 41
+      },
+      {
+        "skill": "java",
+        "frequency": 37
+      },
+      {
+        "skill": "c++",
+        "frequency": 29
+      },
+      {
+        "skill": "deep learning",
+        "frequency": 29
+      },
+      {
+        "skill": "analytics",
+        "frequency": 27
+      },
+      {
+        "skill": "data mining",
+        "frequency": 24
+      },
+      {
+        "skill": "sql",
+        "frequency": 18
+      },
+      {
+        "skill": "natural language processing",
+        "frequency": 15
+      },
+      {
+        "skill": "computer vision",
+        "frequency": 14
+      }
+    ],
+    "market_demand_tier": "Specialized"
+  },
+  "Senior Business Analyst": {
+    "role_name": "Senior Business Analyst",
+    "posting_volume": 14115,
+    "market_share_percentage": 15.18,
+    "compensation": {
+      "unweighted_avg_lpa": 13.17,
+      "posting_weighted_avg_lpa": 12.08,
+      "min_lpa": 2.4,
+      "max_lpa": 38.0,
+      "median_approx_lpa": 20.2
+    },
+    "experience_requirement": {
+      "mean_min_years": 4.02,
+      "median_min_years": 4.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "Accenture",
+        "posting_volume": 1100
+      },
+      {
+        "company": "TCS",
+        "posting_volume": 1100
+      },
+      {
+        "company": "Evalueserve",
+        "posting_volume": 1000
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 616
+      },
+      {
+        "company": "HCL Technologies",
+        "posting_volume": 384
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "business analysis",
+        "frequency": 66
+      },
+      {
+        "skill": "business analysis...",
+        "frequency": 22
+      },
+      {
+        "skill": "linear regression",
+        "frequency": 20
+      },
+      {
+        "skill": "business analyst",
+        "frequency": 20
+      },
+      {
+        "skill": "sas",
+        "frequency": 16
+      },
+      {
+        "skill": "sql",
+        "frequency": 14
+      },
+      {
+        "skill": "insurance analytics",
+        "frequency": 12
+      },
+      {
+        "skill": "vba",
+        "frequency": 11
+      },
+      {
+        "skill": "analytics",
+        "frequency": 11
+      },
+      {
+        "skill": "data analysis",
+        "frequency": 10
+      },
+      {
+        "skill": "r",
+        "frequency": 9
+      },
+      {
+        "skill": "excel",
+        "frequency": 8
+      }
+    ],
+    "market_demand_tier": "Very High"
+  },
+  "Senior Data Analyst": {
+    "role_name": "Senior Data Analyst",
+    "posting_volume": 3825,
+    "market_share_percentage": 4.11,
+    "compensation": {
+      "unweighted_avg_lpa": 9.57,
+      "posting_weighted_avg_lpa": 9.04,
+      "min_lpa": 1.4,
+      "max_lpa": 40.0,
+      "median_approx_lpa": 20.7
+    },
+    "experience_requirement": {
+      "mean_min_years": 2.86,
+      "median_min_years": 3.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "Accenture",
+        "posting_volume": 213
+      },
+      {
+        "company": "Capgemini",
+        "posting_volume": 129
+      },
+      {
+        "company": "TCS",
+        "posting_volume": 118
+      },
+      {
+        "company": "Unilog Content Solutions ( P)",
+        "posting_volume": 110
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 109
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "data analysis",
+        "frequency": 21
+      },
+      {
+        "skill": "sas",
+        "frequency": 6
+      },
+      {
+        "skill": "r",
+        "frequency": 6
+      },
+      {
+        "skill": "excel",
+        "frequency": 6
+      },
+      {
+        "skill": "spss",
+        "frequency": 5
+      },
+      {
+        "skill": "python",
+        "frequency": 5
+      },
+      {
+        "skill": "data visualization",
+        "frequency": 4
+      },
+      {
+        "skill": "qlikview",
+        "frequency": 4
+      },
+      {
+        "skill": "tableau",
+        "frequency": 4
+      },
+      {
+        "skill": "machine learning",
+        "frequency": 4
+      },
+      {
+        "skill": "data analytics",
+        "frequency": 3
+      },
+      {
+        "skill": "data validation",
+        "frequency": 3
+      }
+    ],
+    "market_demand_tier": "Specialized"
+  },
+  "Senior Data Engineer": {
+    "role_name": "Senior Data Engineer",
+    "posting_volume": 3411,
+    "market_share_percentage": 3.67,
+    "compensation": {
+      "unweighted_avg_lpa": 19.0,
+      "posting_weighted_avg_lpa": 16.66,
+      "min_lpa": 2.5,
+      "max_lpa": 94.0,
+      "median_approx_lpa": 48.25
+    },
+    "experience_requirement": {
+      "mean_min_years": 4.57,
+      "median_min_years": 4.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "L&T Infotech",
+        "posting_volume": 729
+      },
+      {
+        "company": "Quantiphi Analytics Solutions",
+        "posting_volume": 137
+      },
+      {
+        "company": "IBM",
+        "posting_volume": 112
+      },
+      {
+        "company": "Maersk",
+        "posting_volume": 110
+      },
+      {
+        "company": "Accenture",
+        "posting_volume": 83
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "etl",
+        "frequency": 5
+      },
+      {
+        "skill": "ssis",
+        "frequency": 4
+      },
+      {
+        "skill": "data modeling...",
+        "frequency": 4
+      },
+      {
+        "skill": "hadoop",
+        "frequency": 3
+      },
+      {
+        "skill": "hive",
+        "frequency": 3
+      },
+      {
+        "skill": "data warehousing",
+        "frequency": 3
+      },
+      {
+        "skill": "sql development",
+        "frequency": 3
+      },
+      {
+        "skill": "python",
+        "frequency": 2
+      },
+      {
+        "skill": "flume",
+        "frequency": 2
+      },
+      {
+        "skill": "sqoop",
+        "frequency": 2
+      },
+      {
+        "skill": "oozie",
+        "frequency": 2
+      },
+      {
+        "skill": "sql server",
+        "frequency": 2
+      }
+    ],
+    "market_demand_tier": "Specialized"
+  },
+  "Senior Data Scientist": {
+    "role_name": "Senior Data Scientist",
+    "posting_volume": 2129,
+    "market_share_percentage": 2.29,
+    "compensation": {
+      "unweighted_avg_lpa": 22.29,
+      "posting_weighted_avg_lpa": 21.96,
+      "min_lpa": 1.0,
+      "max_lpa": 100.0,
+      "median_approx_lpa": 50.5
+    },
+    "experience_requirement": {
+      "mean_min_years": 3.96,
+      "median_min_years": 4.0
+    },
+    "top_hiring_organizations": [
+      {
+        "company": "Accenture",
+        "posting_volume": 80
+      },
+      {
+        "company": "TCS",
+        "posting_volume": 79
+      },
+      {
+        "company": "Cognizant",
+        "posting_volume": 57
+      },
+      {
+        "company": "Fractal Analytics",
+        "posting_volume": 47
+      },
+      {
+        "company": "Ab Inbev",
+        "posting_volume": 44
+      }
+    ],
+    "top_associated_skills": [
+      {
+        "skill": "machine learning",
+        "frequency": 30
+      },
+      {
+        "skill": "python",
+        "frequency": 29
+      },
+      {
+        "skill": "data science",
+        "frequency": 21
+      },
+      {
+        "skill": "r",
+        "frequency": 21
+      },
+      {
+        "skill": "deep learning",
+        "frequency": 10
+      },
+      {
+        "skill": "predictive analytics",
+        "frequency": 10
+      },
+      {
+        "skill": "sql",
+        "frequency": 9
+      },
+      {
+        "skill": "hadoop",
+        "frequency": 6
+      },
+      {
+        "skill": "python...",
+        "frequency": 6
+      },
+      {
+        "skill": "data scientist",
+        "frequency": 6
+      },
+      {
+        "skill": "spark",
+        "frequency": 5
+      },
+      {
+        "skill": "sql...",
+        "frequency": 5
+      }
+    ],
+    "market_demand_tier": "Specialized"
+  }
+}

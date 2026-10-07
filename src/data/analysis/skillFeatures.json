@@ -1,0 +1,4352 @@
+[
+  {
+    "skill_name": "sql",
+    "mention_count": 915,
+    "posting_coverage_pct": 5.78,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 178
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 150
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 131
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 113
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 104
+      }
+    ]
+  },
+  {
+    "skill_name": "analytics",
+    "mention_count": 904,
+    "posting_coverage_pct": 5.71,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sas",
+        "co_occurrence_count": 180
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 116
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 113
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 94
+      },
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 91
+      }
+    ]
+  },
+  {
+    "skill_name": "python",
+    "mention_count": 840,
+    "posting_coverage_pct": 5.3,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 309
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 241
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 178
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 168
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 116
+      }
+    ]
+  },
+  {
+    "skill_name": "finance",
+    "mention_count": 756,
+    "posting_coverage_pct": 4.77,
+    "domain_category": "Finance & Domain Knowledge",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 167
+      },
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 111
+      },
+      {
+        "skill": "financial analysis",
+        "co_occurrence_count": 103
+      },
+      {
+        "skill": "auditing",
+        "co_occurrence_count": 85
+      },
+      {
+        "skill": "banking",
+        "co_occurrence_count": 56
+      }
+    ]
+  },
+  {
+    "skill_name": "java",
+    "mention_count": 726,
+    "posting_coverage_pct": 4.58,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 168
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 142
+      },
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 98
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 98
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 88
+      }
+    ]
+  },
+  {
+    "skill_name": "r",
+    "mention_count": 655,
+    "posting_coverage_pct": 4.13,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 241
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 241
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 238
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 150
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 94
+      }
+    ]
+  },
+  {
+    "skill_name": "sas",
+    "mention_count": 636,
+    "posting_coverage_pct": 4.01,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 241
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 180
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 131
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 78
+      },
+      {
+        "skill": "predictive modeling",
+        "co_occurrence_count": 67
+      }
+    ]
+  },
+  {
+    "skill_name": "business analysis",
+    "mention_count": 633,
+    "posting_coverage_pct": 4.0,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Business Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business analyst",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "project management",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "uat",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 29
+      }
+    ]
+  },
+  {
+    "skill_name": "machine learning",
+    "mention_count": 629,
+    "posting_coverage_pct": 3.97,
+    "domain_category": "AI & Machine Learning",
+    "primary_role_affinity": "Data Scientist",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 309
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 238
+      },
+      {
+        "skill": "data science",
+        "co_occurrence_count": 109
+      },
+      {
+        "skill": "data mining",
+        "co_occurrence_count": 94
+      },
+      {
+        "skill": "nlp",
+        "co_occurrence_count": 92
+      }
+    ]
+  },
+  {
+    "skill_name": "data analysis",
+    "mention_count": 618,
+    "posting_coverage_pct": 3.9,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 104
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 78
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 77
+      },
+      {
+        "skill": "data mining",
+        "co_occurrence_count": 73
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 65
+      }
+    ]
+  },
+  {
+    "skill_name": "digital marketing",
+    "mention_count": 566,
+    "posting_coverage_pct": 3.57,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "seo",
+        "co_occurrence_count": 256
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 117
+      },
+      {
+        "skill": "online marketing",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 77
+      },
+      {
+        "skill": "google adwords",
+        "co_occurrence_count": 68
+      }
+    ]
+  },
+  {
+    "skill_name": "javascript",
+    "mention_count": 535,
+    "posting_coverage_pct": 3.38,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "css",
+        "co_occurrence_count": 176
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 175
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 155
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 142
+      },
+      {
+        "skill": "html5",
+        "co_occurrence_count": 80
+      }
+    ]
+  },
+  {
+    "skill_name": "project management",
+    "mention_count": 505,
+    "posting_coverage_pct": 3.19,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "business analysis",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "program management",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "pmp",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "scope",
+        "co_occurrence_count": 22
+      }
+    ]
+  },
+  {
+    "skill_name": "seo",
+    "mention_count": 494,
+    "posting_coverage_pct": 3.12,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 256
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 159
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 92
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 61
+      },
+      {
+        "skill": "social media",
+        "co_occurrence_count": 56
+      }
+    ]
+  },
+  {
+    "skill_name": "data analytics",
+    "mention_count": 412,
+    "posting_coverage_pct": 2.6,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 78
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 63
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 47
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 46
+      }
+    ]
+  },
+  {
+    "skill_name": "sales",
+    "mention_count": 404,
+    "posting_coverage_pct": 2.55,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "business development",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 33
+      },
+      {
+        "skill": "product management",
+        "co_occurrence_count": 27
+      },
+      {
+        "skill": "lead generation",
+        "co_occurrence_count": 23
+      }
+    ]
+  },
+  {
+    "skill_name": "excel",
+    "mention_count": 393,
+    "posting_coverage_pct": 2.48,
+    "domain_category": "Business Intelligence & Visualization",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 86
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 77
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 65
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 51
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 34
+      }
+    ]
+  },
+  {
+    "skill_name": "accounting",
+    "mention_count": 376,
+    "posting_coverage_pct": 2.37,
+    "domain_category": "Finance & Domain Knowledge",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 167
+      },
+      {
+        "skill": "auditing",
+        "co_occurrence_count": 74
+      },
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "taxation",
+        "co_occurrence_count": 45
+      },
+      {
+        "skill": "financial analysis",
+        "co_occurrence_count": 31
+      }
+    ]
+  },
+  {
+    "skill_name": "outsourcing",
+    "mention_count": 360,
+    "posting_coverage_pct": 2.27,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business process",
+        "co_occurrence_count": 176
+      },
+      {
+        "skill": "operations...",
+        "co_occurrence_count": 116
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 91
+      },
+      {
+        "skill": "operations",
+        "co_occurrence_count": 91
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 47
+      }
+    ]
+  },
+  {
+    "skill_name": "marketing",
+    "mention_count": 326,
+    "posting_coverage_pct": 2.06,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sales",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "business development",
+        "co_occurrence_count": 57
+      },
+      {
+        "skill": "market research",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "social media",
+        "co_occurrence_count": 19
+      }
+    ]
+  },
+  {
+    "skill_name": "html",
+    "mention_count": 305,
+    "posting_coverage_pct": 1.93,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 175
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 140
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 68
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 60
+      },
+      {
+        "skill": "php",
+        "co_occurrence_count": 52
+      }
+    ]
+  },
+  {
+    "skill_name": "hadoop",
+    "mention_count": 300,
+    "posting_coverage_pct": 1.89,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "spark",
+        "co_occurrence_count": 158
+      },
+      {
+        "skill": "hive",
+        "co_occurrence_count": 139
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 98
+      },
+      {
+        "skill": "big data",
+        "co_occurrence_count": 97
+      },
+      {
+        "skill": "scala",
+        "co_occurrence_count": 59
+      }
+    ]
+  },
+  {
+    "skill_name": "spark",
+    "mention_count": 284,
+    "posting_coverage_pct": 1.79,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 158
+      },
+      {
+        "skill": "hive",
+        "co_occurrence_count": 130
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 98
+      },
+      {
+        "skill": "scala",
+        "co_occurrence_count": 90
+      },
+      {
+        "skill": "big data",
+        "co_occurrence_count": 87
+      }
+    ]
+  },
+  {
+    "skill_name": "business process",
+    "mention_count": 280,
+    "posting_coverage_pct": 1.77,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 176
+      },
+      {
+        "skill": "operations...",
+        "co_occurrence_count": 71
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 55
+      },
+      {
+        "skill": "outsourcing...",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "operations",
+        "co_occurrence_count": 38
+      }
+    ]
+  },
+  {
+    "skill_name": "data science",
+    "mention_count": 271,
+    "posting_coverage_pct": 1.71,
+    "domain_category": "AI & Machine Learning",
+    "primary_role_affinity": "Data Scientist",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 109
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 83
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 37
+      }
+    ]
+  },
+  {
+    "skill_name": "big data",
+    "mention_count": 263,
+    "posting_coverage_pct": 1.66,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 97
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 87
+      },
+      {
+        "skill": "hive",
+        "co_occurrence_count": 60
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 56
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 46
+      }
+    ]
+  },
+  {
+    "skill_name": "business development",
+    "mention_count": 253,
+    "posting_coverage_pct": 1.6,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 57
+      },
+      {
+        "skill": "sales",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "lead generation",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "strategy",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "cold calling",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "auditing",
+    "mention_count": 247,
+    "posting_coverage_pct": 1.56,
+    "domain_category": "Finance & Domain Knowledge",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 85
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 74
+      },
+      {
+        "skill": "internal audit",
+        "co_occurrence_count": 61
+      },
+      {
+        "skill": "taxation",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 21
+      }
+    ]
+  },
+  {
+    "skill_name": "financial analysis",
+    "mention_count": 245,
+    "posting_coverage_pct": 1.55,
+    "domain_category": "Finance & Domain Knowledge",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 103
+      },
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "financial planning",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "financial modelling",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "market research",
+    "mention_count": 234,
+    "posting_coverage_pct": 1.48,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "research analysis",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "business research",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "research",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "sales",
+        "co_occurrence_count": 19
+      }
+    ]
+  },
+  {
+    "skill_name": "css",
+    "mention_count": 230,
+    "posting_coverage_pct": 1.45,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 176
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 140
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 78
+      },
+      {
+        "skill": "html5",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 48
+      }
+    ]
+  },
+  {
+    "skill_name": "c++",
+    "mention_count": 229,
+    "posting_coverage_pct": 1.45,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 84
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 70
+      },
+      {
+        "skill": "algorithms",
+        "co_occurrence_count": 64
+      },
+      {
+        "skill": "c",
+        "co_occurrence_count": 63
+      },
+      {
+        "skill": "data structures",
+        "co_occurrence_count": 52
+      }
+    ]
+  },
+  {
+    "skill_name": "data mining",
+    "mention_count": 225,
+    "posting_coverage_pct": 1.42,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 94
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 73
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 58
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 45
+      }
+    ]
+  },
+  {
+    "skill_name": "google analytics",
+    "mention_count": 224,
+    "posting_coverage_pct": 1.41,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "seo",
+        "co_occurrence_count": 92
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 77
+      },
+      {
+        "skill": "google adwords",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 32
+      }
+    ]
+  },
+  {
+    "skill_name": "budgeting",
+    "mention_count": 220,
+    "posting_coverage_pct": 1.39,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 111
+      },
+      {
+        "skill": "financial planning",
+        "co_occurrence_count": 54
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "financial analysis",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "forecasting",
+        "co_occurrence_count": 39
+      }
+    ]
+  },
+  {
+    "skill_name": "operations",
+    "mention_count": 220,
+    "posting_coverage_pct": 1.39,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 91
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 38
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "customer service",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "sem",
+    "mention_count": 216,
+    "posting_coverage_pct": 1.36,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "seo",
+        "co_occurrence_count": 159
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 117
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "google adwords",
+        "co_occurrence_count": 31
+      }
+    ]
+  },
+  {
+    "skill_name": "jquery",
+    "mention_count": 203,
+    "posting_coverage_pct": 1.28,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 155
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 78
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 68
+      },
+      {
+        "skill": "ajax",
+        "co_occurrence_count": 38
+      },
+      {
+        "skill": "html5",
+        "co_occurrence_count": 35
+      }
+    ]
+  },
+  {
+    "skill_name": "mysql",
+    "mention_count": 203,
+    "posting_coverage_pct": 1.28,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 70
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 65
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "php",
+        "co_occurrence_count": 48
+      }
+    ]
+  },
+  {
+    "skill_name": "analytical",
+    "mention_count": 200,
+    "posting_coverage_pct": 1.26,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 47
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "operations",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "operations...",
+        "co_occurrence_count": 16
+      }
+    ]
+  },
+  {
+    "skill_name": "hive",
+    "mention_count": 199,
+    "posting_coverage_pct": 1.26,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 139
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 130
+      },
+      {
+        "skill": "big data",
+        "co_occurrence_count": 60
+      },
+      {
+        "skill": "pig",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "nosql",
+        "co_occurrence_count": 59
+      }
+    ]
+  },
+  {
+    "skill_name": "consulting",
+    "mention_count": 189,
+    "posting_coverage_pct": 1.19,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "sap",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "product management",
+    "mention_count": 179,
+    "posting_coverage_pct": 1.13,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Product Manager",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sales",
+        "co_occurrence_count": 27
+      },
+      {
+        "skill": "product strategy",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "product marketing",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "user experience",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "nosql",
+    "mention_count": 178,
+    "posting_coverage_pct": 1.12,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 72
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 67
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 60
+      },
+      {
+        "skill": "hive",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 52
+      }
+    ]
+  },
+  {
+    "skill_name": "business intelligence",
+    "mention_count": 177,
+    "posting_coverage_pct": 1.12,
+    "domain_category": "Business Intelligence & Visualization",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 65
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "data warehousing",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 22
+      }
+    ]
+  },
+  {
+    "skill_name": "c#",
+    "mention_count": 175,
+    "posting_coverage_pct": 1.1,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": ".net",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "asp.net",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "sql server",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 27
+      }
+    ]
+  },
+  {
+    "skill_name": "hr",
+    "mention_count": 169,
+    "posting_coverage_pct": 1.07,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "recruitment",
+        "co_occurrence_count": 51
+      },
+      {
+        "skill": "talent acquisition",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "hiring",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "interviewing",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "learning",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "banking",
+    "mention_count": 168,
+    "posting_coverage_pct": 1.06,
+    "domain_category": "Finance & Domain Knowledge",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 56
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 55
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "analytics head",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "linux",
+    "mention_count": 164,
+    "posting_coverage_pct": 1.04,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "c++",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "unix",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "windows",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "c",
+        "co_occurrence_count": 23
+      }
+    ]
+  },
+  {
+    "skill_name": "recruitment",
+    "mention_count": 162,
+    "posting_coverage_pct": 1.02,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hr",
+        "co_occurrence_count": 51
+      },
+      {
+        "skill": "hiring",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "talent acquisition",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "sourcing",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "screening",
+        "co_occurrence_count": 21
+      }
+    ]
+  },
+  {
+    "skill_name": "algorithms",
+    "mention_count": 161,
+    "posting_coverage_pct": 1.02,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "c++",
+        "co_occurrence_count": 64
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "data structures",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 35
+      }
+    ]
+  },
+  {
+    "skill_name": "core java",
+    "mention_count": 160,
+    "posting_coverage_pct": 1.01,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hibernate",
+        "co_occurrence_count": 38
+      },
+      {
+        "skill": "spring",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "j2ee",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "rest",
+        "co_occurrence_count": 20
+      }
+    ]
+  },
+  {
+    "skill_name": "xml",
+    "mention_count": 160,
+    "posting_coverage_pct": 1.01,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "json",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 25
+      }
+    ]
+  },
+  {
+    "skill_name": "social media",
+    "mention_count": 158,
+    "posting_coverage_pct": 1.0,
+    "domain_category": "Digital Marketing & Growth",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "seo",
+        "co_occurrence_count": 56
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "tableau",
+    "mention_count": 157,
+    "posting_coverage_pct": 0.99,
+    "domain_category": "Business Intelligence & Visualization",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 23
+      }
+    ]
+  },
+  {
+    "skill_name": "deep learning",
+    "mention_count": 154,
+    "posting_coverage_pct": 0.97,
+    "domain_category": "AI & Machine Learning",
+    "primary_role_affinity": "Data Scientist",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 90
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 44
+      },
+      {
+        "skill": "nlp",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "natural language processing",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 30
+      }
+    ]
+  },
+  {
+    "skill_name": "forecasting",
+    "mention_count": 150,
+    "posting_coverage_pct": 0.95,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "financial planning",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "oracle",
+    "mention_count": 149,
+    "posting_coverage_pct": 0.94,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "unix",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sap",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "etl",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "data warehousing",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "strategy",
+    "mention_count": 148,
+    "posting_coverage_pct": 0.93,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business development",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "sales",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "consulting",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "predictive modeling",
+    "mention_count": 146,
+    "posting_coverage_pct": 0.92,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sas",
+        "co_occurrence_count": 67
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 57
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "logistic regression",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "analytics...",
+    "mention_count": 144,
+    "posting_coverage_pct": 0.91,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "c",
+    "mention_count": 144,
+    "posting_coverage_pct": 0.91,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "c++",
+        "co_occurrence_count": 63
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "linux",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "algorithms",
+        "co_occurrence_count": 20
+      }
+    ]
+  },
+  {
+    "skill_name": "nlp",
+    "mention_count": 143,
+    "posting_coverage_pct": 0.9,
+    "domain_category": "AI & Machine Learning",
+    "primary_role_affinity": "Data Scientist",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 92
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 63
+      },
+      {
+        "skill": "deep learning",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "natural language processing",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 25
+      }
+    ]
+  },
+  {
+    "skill_name": "sql server",
+    "mention_count": 143,
+    "posting_coverage_pct": 0.9,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "c#",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "ssis",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": ".net",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "asp.net",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "data modeling",
+    "mention_count": 142,
+    "posting_coverage_pct": 0.9,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "big data",
+        "co_occurrence_count": 33
+      },
+      {
+        "skill": "data warehousing",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "etl",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "mis",
+    "mention_count": 142,
+    "posting_coverage_pct": 0.9,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "advanced excel",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "macros",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "mis reporting",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "j2ee",
+    "mention_count": 140,
+    "posting_coverage_pct": 0.88,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 81
+      },
+      {
+        "skill": "hibernate",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "spring",
+        "co_occurrence_count": 42
+      },
+      {
+        "skill": "core java",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 27
+      }
+    ]
+  },
+  {
+    "skill_name": "etl",
+    "mention_count": 140,
+    "posting_coverage_pct": 0.88,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "data warehousing",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "ssis",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "sql queries",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "data modeling",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "business analyst",
+    "mention_count": 140,
+    "posting_coverage_pct": 0.88,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Business Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business analysis",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "ba",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 7
+      }
+    ]
+  },
+  {
+    "skill_name": "operations...",
+    "mention_count": 139,
+    "posting_coverage_pct": 0.88,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 116
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 71
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "coding",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 16
+      }
+    ]
+  },
+  {
+    "skill_name": "rest",
+    "mention_count": 138,
+    "posting_coverage_pct": 0.87,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 69
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "soap",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "json",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "web services",
+        "co_occurrence_count": 23
+      }
+    ]
+  },
+  {
+    "skill_name": "online marketing",
+    "mention_count": 137,
+    "posting_coverage_pct": 0.86,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "seo",
+        "co_occurrence_count": 55
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "internet marketing",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "scala",
+    "mention_count": 136,
+    "posting_coverage_pct": 0.86,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "spark",
+        "co_occurrence_count": 90
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 79
+      },
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 59
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 52
+      }
+    ]
+  },
+  {
+    "skill_name": "software development",
+    "mention_count": 135,
+    "posting_coverage_pct": 0.85,
+    "domain_category": "Software Engineering",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "software engineering",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": ".net",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "c++",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": ".net",
+    "mention_count": 134,
+    "posting_coverage_pct": 0.85,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "c#",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "sql server",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "asp.net",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "quantitative analysis",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "advanced excel",
+    "mention_count": 133,
+    "posting_coverage_pct": 0.84,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "macros",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "vba",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "mis",
+        "co_occurrence_count": 28
+      }
+    ]
+  },
+  {
+    "skill_name": "google adwords",
+    "mention_count": 128,
+    "posting_coverage_pct": 0.81,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 68
+      },
+      {
+        "skill": "seo",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "ppc",
+        "co_occurrence_count": 28
+      }
+    ]
+  },
+  {
+    "skill_name": "data management",
+    "mention_count": 128,
+    "posting_coverage_pct": 0.81,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "consulting",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "communication skills",
+    "mention_count": 127,
+    "posting_coverage_pct": 0.8,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "problem solving",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "itil solving...",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "analytical skills",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "data warehousing",
+    "mention_count": 127,
+    "posting_coverage_pct": 0.8,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "etl",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "business intelligence",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "data modeling",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "olap",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "json",
+    "mention_count": 126,
+    "posting_coverage_pct": 0.8,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 58
+      },
+      {
+        "skill": "xml",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "rest",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 25
+      }
+    ]
+  },
+  {
+    "skill_name": "predictive analytics",
+    "mention_count": 124,
+    "posting_coverage_pct": 0.78,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "data science",
+        "co_occurrence_count": 22
+      }
+    ]
+  },
+  {
+    "skill_name": "php",
+    "mention_count": 123,
+    "posting_coverage_pct": 0.78,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 72
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "mysql",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 36
+      }
+    ]
+  },
+  {
+    "skill_name": "web technologies",
+    "mention_count": 123,
+    "posting_coverage_pct": 0.78,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 27
+      },
+      {
+        "skill": "web services",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "web development",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "rest",
+        "co_occurrence_count": 10
+      }
+    ]
+  },
+  {
+    "skill_name": "financial planning",
+    "mention_count": 123,
+    "posting_coverage_pct": 0.78,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 54
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "financial analysis",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "forecasting",
+        "co_occurrence_count": 19
+      }
+    ]
+  },
+  {
+    "skill_name": "html5",
+    "mention_count": 121,
+    "posting_coverage_pct": 0.76,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 80
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 26
+      }
+    ]
+  },
+  {
+    "skill_name": "financial modelling",
+    "mention_count": 120,
+    "posting_coverage_pct": 0.76,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 51
+      },
+      {
+        "skill": "equity research",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "valuation",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "financial analysis",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "corporate finance",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "agile",
+    "mention_count": 119,
+    "posting_coverage_pct": 0.75,
+    "domain_category": "Business & Product Management",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "scrum",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "business analysis",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "customer service",
+    "mention_count": 119,
+    "posting_coverage_pct": 0.75,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "bpo",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "operations",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "recruitment",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "international bpo",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "financial services",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "risk management",
+    "mention_count": 119,
+    "posting_coverage_pct": 0.75,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "ccar",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "data analytics...",
+    "mention_count": 114,
+    "posting_coverage_pct": 0.72,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "data visualization",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "data structures",
+    "mention_count": 113,
+    "posting_coverage_pct": 0.71,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "algorithms",
+        "co_occurrence_count": 53
+      },
+      {
+        "skill": "c++",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 47
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "programming",
+        "co_occurrence_count": 19
+      }
+    ]
+  },
+  {
+    "skill_name": "bpo",
+    "mention_count": 112,
+    "posting_coverage_pct": 0.71,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "kpo",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "customer service",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "call center",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "recruitment",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "night shift",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "sap",
+    "mention_count": 112,
+    "posting_coverage_pct": 0.71,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 34
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "consulting",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "oracle",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "ppc",
+    "mention_count": 112,
+    "posting_coverage_pct": 0.71,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Marketing / Digital Marketing",
+    "top_co_occurring_skills": [
+      {
+        "skill": "seo",
+        "co_occurrence_count": 61
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 52
+      },
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "google adwords",
+        "co_occurrence_count": 28
+      }
+    ]
+  },
+  {
+    "skill_name": "networking",
+    "mention_count": 110,
+    "posting_coverage_pct": 0.69,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "linux",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "switching",
+        "co_occurrence_count": 9
+      },
+      {
+        "skill": "network security",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "ospf",
+        "co_occurrence_count": 8
+      }
+    ]
+  },
+  {
+    "skill_name": "web services",
+    "mention_count": 108,
+    "posting_coverage_pct": 0.68,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "rest",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "xml",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "soap",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "angularjs",
+    "mention_count": 107,
+    "posting_coverage_pct": 0.68,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 65
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 33
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 27
+      }
+    ]
+  },
+  {
+    "skill_name": "taxation",
+    "mention_count": 106,
+    "posting_coverage_pct": 0.67,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 54
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 45
+      },
+      {
+        "skill": "auditing",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "budgeting",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "income tax",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "quality analysis",
+    "mention_count": 105,
+    "posting_coverage_pct": 0.66,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "feedback",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "call monitoring",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "quality analyst",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "bpo",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "call quality",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "credit risk",
+    "mention_count": 104,
+    "posting_coverage_pct": 0.66,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "finance",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "credit",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "credit analysis",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "risk analytics",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "valuation",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "data analysis...",
+    "mention_count": 103,
+    "posting_coverage_pct": 0.65,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "data science",
+        "co_occurrence_count": 9
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 8
+      }
+    ]
+  },
+  {
+    "skill_name": "android",
+    "mention_count": 102,
+    "posting_coverage_pct": 0.64,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "ios",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "xml",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "unix",
+    "mention_count": 100,
+    "posting_coverage_pct": 0.63,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "linux",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "oracle",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "coding",
+    "mention_count": 99,
+    "posting_coverage_pct": 0.62,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 33
+      },
+      {
+        "skill": "business process",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "business intelligence",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 19
+      }
+    ]
+  },
+  {
+    "skill_name": "hibernate",
+    "mention_count": 99,
+    "posting_coverage_pct": 0.62,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "spring",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "j2ee",
+        "co_occurrence_count": 46
+      },
+      {
+        "skill": "core java",
+        "co_occurrence_count": 38
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "statistics",
+    "mention_count": 98,
+    "posting_coverage_pct": 0.62,
+    "domain_category": "Data Analytics & Statistics",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sas",
+        "co_occurrence_count": 43
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "data analytics",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sdtm",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "python...",
+    "mention_count": 98,
+    "posting_coverage_pct": 0.62,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 48
+      },
+      {
+        "skill": "deep learning",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "nlp",
+        "co_occurrence_count": 22
+      }
+    ]
+  },
+  {
+    "skill_name": "research analysis",
+    "mention_count": 97,
+    "posting_coverage_pct": 0.61,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "market research",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "mutual funds",
+        "co_occurrence_count": 9
+      },
+      {
+        "skill": "wealth management",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 6
+      }
+    ]
+  },
+  {
+    "skill_name": "technical support",
+    "mention_count": 97,
+    "posting_coverage_pct": 0.61,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "customer support",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "tech support",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "networking...",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "technical support executive...",
+        "co_occurrence_count": 7
+      },
+      {
+        "skill": "customer service",
+        "co_occurrence_count": 6
+      }
+    ]
+  },
+  {
+    "skill_name": "business analysis...",
+    "mention_count": 97,
+    "posting_coverage_pct": 0.61,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Business Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "project management",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "linear regression",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "insurance analytics",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "consulting",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 8
+      }
+    ]
+  },
+  {
+    "skill_name": "statistical modeling",
+    "mention_count": 96,
+    "posting_coverage_pct": 0.61,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 27
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "machine learning...",
+    "mention_count": 95,
+    "posting_coverage_pct": 0.6,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 15
+      }
+    ]
+  },
+  {
+    "skill_name": "marketing analytics",
+    "mention_count": 95,
+    "posting_coverage_pct": 0.6,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sales analytics",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sales forecasting...",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "campaign analytics",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "sas sql",
+    "mention_count": 95,
+    "posting_coverage_pct": 0.6,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 35
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "ccar",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "sql...",
+    "mention_count": 93,
+    "posting_coverage_pct": 0.59,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "java",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "internal audit",
+    "mention_count": 92,
+    "posting_coverage_pct": 0.58,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "auditing",
+        "co_occurrence_count": 61
+      },
+      {
+        "skill": "enterprise risk management",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "accounting",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "internal control",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "data entry",
+    "mention_count": 91,
+    "posting_coverage_pct": 0.57,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "part time",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "freelancing",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "present job",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "work from home...",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "web analytics",
+    "mention_count": 91,
+    "posting_coverage_pct": 0.57,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "digital marketing",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "seo",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "google analytics",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "adobe analytics",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sem",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "business analytics",
+    "mention_count": 90,
+    "posting_coverage_pct": 0.57,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business analysis",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 8
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 7
+      }
+    ]
+  },
+  {
+    "skill_name": "part time",
+    "mention_count": 90,
+    "posting_coverage_pct": 0.57,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "freelancing",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "data entry",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "present job",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "work from home...",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "work from home",
+        "co_occurrence_count": 8
+      }
+    ]
+  },
+  {
+    "skill_name": "research",
+    "mention_count": 89,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "market research",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "research analyst",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "business research",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "company profiling...",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "analyst",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "mongodb",
+    "mention_count": 89,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "Data Engineering & Big Data",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "mysql",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "nosql",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 24
+      }
+    ]
+  },
+  {
+    "skill_name": "sales management",
+    "mention_count": 89,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "business development management",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "lead generation...",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "promotions",
+        "co_occurrence_count": 7
+      },
+      {
+        "skill": "iim",
+        "co_occurrence_count": 6
+      }
+    ]
+  },
+  {
+    "skill_name": "mvc",
+    "mention_count": 88,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "asp.net",
+        "co_occurrence_count": 32
+      },
+      {
+        "skill": "c#",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "wcf",
+        "co_occurrence_count": 20
+      }
+    ]
+  },
+  {
+    "skill_name": "spring",
+    "mention_count": 88,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "hibernate",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "j2ee",
+        "co_occurrence_count": 42
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "core java",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 25
+      }
+    ]
+  },
+  {
+    "skill_name": "ms office",
+    "mention_count": 88,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "excel",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 7
+      },
+      {
+        "skill": "word",
+        "co_occurrence_count": 6
+      },
+      {
+        "skill": "powerpoint",
+        "co_occurrence_count": 6
+      }
+    ]
+  },
+  {
+    "skill_name": "automation",
+    "mention_count": 88,
+    "posting_coverage_pct": 0.56,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "vba",
+    "mention_count": 87,
+    "posting_coverage_pct": 0.55,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "advanced excel",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "macros",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 16
+      }
+    ]
+  },
+  {
+    "skill_name": "team management",
+    "mention_count": 86,
+    "posting_coverage_pct": 0.54,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "marketing",
+        "co_occurrence_count": 9
+      },
+      {
+        "skill": "strategy",
+        "co_occurrence_count": 7
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 7
+      },
+      {
+        "skill": "business development",
+        "co_occurrence_count": 6
+      },
+      {
+        "skill": "team handling",
+        "co_occurrence_count": 6
+      }
+    ]
+  },
+  {
+    "skill_name": "ssis",
+    "mention_count": 86,
+    "posting_coverage_pct": 0.54,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "ssrs",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "ssas",
+        "co_occurrence_count": 30
+      },
+      {
+        "skill": "sql server",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "etl",
+        "co_occurrence_count": 23
+      },
+      {
+        "skill": "t - sql",
+        "co_occurrence_count": 21
+      }
+    ]
+  },
+  {
+    "skill_name": "outsourcing...",
+    "mention_count": 85,
+    "posting_coverage_pct": 0.54,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "business process",
+        "co_occurrence_count": 49
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "automation",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "model development",
+    "mention_count": 84,
+    "posting_coverage_pct": 0.53,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "insurance analytics",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "c",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 17
+      }
+    ]
+  },
+  {
+    "skill_name": "financial services",
+    "mention_count": 84,
+    "posting_coverage_pct": 0.53,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "consulting",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "analytical",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "forecasting",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "project management",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 10
+      }
+    ]
+  },
+  {
+    "skill_name": "analytical skills",
+    "mention_count": 84,
+    "posting_coverage_pct": 0.53,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "communication skills",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "typing speed",
+        "co_occurrence_count": 6
+      },
+      {
+        "skill": "ms office",
+        "co_occurrence_count": 5
+      },
+      {
+        "skill": "problem solving...",
+        "co_occurrence_count": 4
+      }
+    ]
+  },
+  {
+    "skill_name": "cassandra",
+    "mention_count": 84,
+    "posting_coverage_pct": 0.53,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "nosql",
+        "co_occurrence_count": 50
+      },
+      {
+        "skill": "spark",
+        "co_occurrence_count": 41
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "scala",
+        "co_occurrence_count": 36
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 35
+      }
+    ]
+  },
+  {
+    "skill_name": "team leading",
+    "mention_count": 83,
+    "posting_coverage_pct": 0.52,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 20
+      },
+      {
+        "skill": "people management skills",
+        "co_occurrence_count": 18
+      },
+      {
+        "skill": "problem solving...",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "fraud analytics",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 10
+      }
+    ]
+  },
+  {
+    "skill_name": "linear regression",
+    "mention_count": 83,
+    "posting_coverage_pct": 0.52,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sas",
+        "co_occurrence_count": 28
+      },
+      {
+        "skill": "r",
+        "co_occurrence_count": 24
+      },
+      {
+        "skill": "insurance analytics",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "segmentation",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "model development",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "text mining",
+    "mention_count": 83,
+    "posting_coverage_pct": 0.52,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 47
+      },
+      {
+        "skill": "machine learning",
+        "co_occurrence_count": 39
+      },
+      {
+        "skill": "python",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "nlp",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "sas",
+        "co_occurrence_count": 14
+      }
+    ]
+  },
+  {
+    "skill_name": "data visualization",
+    "mention_count": 83,
+    "posting_coverage_pct": 0.52,
+    "domain_category": "Business Intelligence & Visualization",
+    "primary_role_affinity": "Business Analyst",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sql",
+        "co_occurrence_count": 29
+      },
+      {
+        "skill": "data analysis",
+        "co_occurrence_count": 26
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "tableau",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "data analytics...",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "mapreduce",
+    "mention_count": 81,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "spark",
+        "co_occurrence_count": 61
+      },
+      {
+        "skill": "hadoop",
+        "co_occurrence_count": 55
+      },
+      {
+        "skill": "hive",
+        "co_occurrence_count": 51
+      },
+      {
+        "skill": "nosql",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "scala",
+        "co_occurrence_count": 29
+      }
+    ]
+  },
+  {
+    "skill_name": "presales",
+    "mention_count": 81,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "sales",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "rfp",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "rfi",
+        "co_occurrence_count": 14
+      },
+      {
+        "skill": "business analysis",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "ajax",
+    "mention_count": 80,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 60
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "jquery",
+        "co_occurrence_count": 38
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 37
+      },
+      {
+        "skill": "json",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "mis reporting",
+    "mention_count": 80,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "excel",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "mis",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "finance",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "mis analyst",
+        "co_occurrence_count": 12
+      },
+      {
+        "skill": "mis executive",
+        "co_occurrence_count": 11
+      }
+    ]
+  },
+  {
+    "skill_name": "test cases",
+    "mention_count": 80,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "manual testing",
+        "co_occurrence_count": 15
+      },
+      {
+        "skill": "test case execution",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "test planning",
+        "co_occurrence_count": 10
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 9
+      },
+      {
+        "skill": "selenium",
+        "co_occurrence_count": 9
+      }
+    ]
+  },
+  {
+    "skill_name": "aws",
+    "mention_count": 80,
+    "posting_coverage_pct": 0.51,
+    "domain_category": "Cloud & Platform Infrastructure",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "python",
+        "co_occurrence_count": 25
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 19
+      },
+      {
+        "skill": "ansible",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "linux",
+        "co_occurrence_count": 17
+      },
+      {
+        "skill": "devops",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "sas...",
+    "mention_count": 79,
+    "posting_coverage_pct": 0.5,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "r",
+        "co_occurrence_count": 27
+      },
+      {
+        "skill": "analytics",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "sql",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "predictive analytics",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "excel",
+        "co_occurrence_count": 13
+      }
+    ]
+  },
+  {
+    "skill_name": "freelancing",
+    "mention_count": 79,
+    "posting_coverage_pct": 0.5,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "part time",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "data entry",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "present job",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "work from home...",
+        "co_occurrence_count": 66
+      },
+      {
+        "skill": "data entry operation",
+        "co_occurrence_count": 12
+      }
+    ]
+  },
+  {
+    "skill_name": "node.js",
+    "mention_count": 78,
+    "posting_coverage_pct": 0.49,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Software / Application Developer",
+    "top_co_occurring_skills": [
+      {
+        "skill": "javascript",
+        "co_occurrence_count": 40
+      },
+      {
+        "skill": "java",
+        "co_occurrence_count": 31
+      },
+      {
+        "skill": "css",
+        "co_occurrence_count": 22
+      },
+      {
+        "skill": "angularjs",
+        "co_occurrence_count": 21
+      },
+      {
+        "skill": "html",
+        "co_occurrence_count": 18
+      }
+    ]
+  },
+  {
+    "skill_name": "salesforce",
+    "mention_count": 78,
+    "posting_coverage_pct": 0.49,
+    "domain_category": "General Technical / Professional",
+    "primary_role_affinity": "Other General Professional",
+    "top_co_occurring_skills": [
+      {
+        "skill": "outsourcing",
+        "co_occurrence_count": 16
+      },
+      {
+        "skill": "sfdc",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "troubleshooting",
+        "co_occurrence_count": 13
+      },
+      {
+        "skill": "linux",
+        "co_occurrence_count": 11
+      },
+      {
+        "skill": "windows",
+        "co_occurrence_count": 11
+      }
+    ]
+  }
+]

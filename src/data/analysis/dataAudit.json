@@ -1,0 +1,451 @@
+{
+  "pipeline_stage": "Stage 1: Data Identification and Quality Audit",
+  "datasets": {
+    "analytics_jobs": {
+      "dataset_name": "Analytics Jobs",
+      "file_name": "Analytics Jobs.csv",
+      "file_path": "C:\\Users\\asus\\Downloads\\SAS Data Problem Statement and Instructions Hackathon (1)\\SAS Data Problem Statement and Instructions Hackathon\\Analytics Jobs.csv",
+      "analytical_purpose": "Market roles, skills, salary, experience and locations",
+      "rows": 15841,
+      "columns": 8,
+      "column_names": [
+        "s_no",
+        "experience",
+        "job_description",
+        "job_desig",
+        "job_type",
+        "key_skills",
+        "location",
+        "salary"
+      ],
+      "data_types": {
+        "s_no": "int64",
+        "experience": "str",
+        "job_description": "str",
+        "job_desig": "str",
+        "job_type": "str",
+        "key_skills": "str",
+        "location": "str",
+        "salary": "str"
+      },
+      "numerical_columns": [
+        "s_no"
+      ],
+      "categorical_columns": [
+        "experience",
+        "job_description",
+        "job_desig",
+        "job_type",
+        "key_skills",
+        "location",
+        "salary"
+      ],
+      "missing_values": {
+        "total_missing_cells": 15520,
+        "overall_missing_pct": 12.2467,
+        "per_column": {
+          "s_no": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "experience": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "job_description": {
+            "missing_count": 3508,
+            "missing_pct": 22.1451
+          },
+          "job_desig": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "job_type": {
+            "missing_count": 12011,
+            "missing_pct": 75.8222
+          },
+          "key_skills": {
+            "missing_count": 1,
+            "missing_pct": 0.0063
+          },
+          "location": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "salary": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          }
+        }
+      },
+      "duplicates": {
+        "exact_duplicate_rows": 0,
+        "id_column": "s_no",
+        "unique_ids": 15841,
+        "duplicate_ids_count": 0,
+        "content_duplicates_excluding_id": 1001
+      },
+      "unique_value_counts": {
+        "s_no": 15841,
+        "experience": 128,
+        "job_description": 7859,
+        "job_desig": 10097,
+        "job_type": 5,
+        "key_skills": 11155,
+        "location": 1355,
+        "salary": 6
+      }
+    },
+    "datascience_jobs": {
+      "dataset_name": "DataScience Jobs",
+      "file_name": "DataScience Jobs.csv",
+      "file_path": "C:\\Users\\asus\\Downloads\\SAS Data Problem Statement and Instructions Hackathon (1)\\SAS Data Problem Statement and Instructions Hackathon\\DataScience Jobs.csv",
+      "analytical_purpose": "Data-science roles, companies, salary, experience and job volume",
+      "rows": 1602,
+      "columns": 8,
+      "column_names": [
+        "reference_no",
+        "company_name",
+        "job_title",
+        "min_experience",
+        "avg_salary",
+        "min_salary",
+        "max_salary",
+        "num_of_jobs"
+      ],
+      "data_types": {
+        "reference_no": "int64",
+        "company_name": "str",
+        "job_title": "str",
+        "min_experience": "int64",
+        "avg_salary": "str",
+        "min_salary": "str",
+        "max_salary": "str",
+        "num_of_jobs": "int64"
+      },
+      "numerical_columns": [
+        "reference_no",
+        "min_experience",
+        "num_of_jobs"
+      ],
+      "categorical_columns": [
+        "company_name",
+        "job_title",
+        "avg_salary",
+        "min_salary",
+        "max_salary"
+      ],
+      "missing_values": {
+        "total_missing_cells": 0,
+        "overall_missing_pct": 0.0,
+        "per_column": {
+          "reference_no": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "company_name": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "job_title": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "min_experience": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "avg_salary": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "min_salary": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "max_salary": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "num_of_jobs": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          }
+        }
+      },
+      "duplicates": {
+        "exact_duplicate_rows": 0,
+        "id_column": "reference_no",
+        "unique_ids": 1460,
+        "duplicate_ids_count": 142,
+        "content_duplicates_excluding_id": 0
+      },
+      "unique_value_counts": {
+        "reference_no": 1460,
+        "company_name": 642,
+        "job_title": 10,
+        "min_experience": 18,
+        "avg_salary": 305,
+        "min_salary": 197,
+        "max_salary": 304,
+        "num_of_jobs": 220
+      }
+    },
+    "jds_skill_traits": {
+      "dataset_name": "JDS Skill Traits",
+      "file_name": "JDS Skill Traits.xlsx",
+      "file_path": "C:\\Users\\asus\\Downloads\\SAS Data Problem Statement and Instructions Hackathon (1)\\SAS Data Problem Statement and Instructions Hackathon\\JDS Skill Traits.xlsx",
+      "analytical_purpose": "Technical capability dimensions and salary-hike outcome",
+      "rows": 139,
+      "columns": 7,
+      "column_names": [
+        "id",
+        "big_data_skills",
+        "maths-stats_skills",
+        "coding_skills",
+        "ai_and_ml_skills",
+        "dashboard_and_storytelling_skills",
+        "salary_hike_high_or_low"
+      ],
+      "data_types": {
+        "id": "int64",
+        "big_data_skills": "float64",
+        "maths-stats_skills": "float64",
+        "coding_skills": "float64",
+        "ai_and_ml_skills": "float64",
+        "dashboard_and_storytelling_skills": "float64",
+        "salary_hike_high_or_low": "int64"
+      },
+      "numerical_columns": [
+        "id",
+        "big_data_skills",
+        "maths-stats_skills",
+        "coding_skills",
+        "ai_and_ml_skills",
+        "dashboard_and_storytelling_skills",
+        "salary_hike_high_or_low"
+      ],
+      "categorical_columns": [],
+      "missing_values": {
+        "total_missing_cells": 0,
+        "overall_missing_pct": 0.0,
+        "per_column": {
+          "id": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "big_data_skills": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "maths-stats_skills": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "coding_skills": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "ai_and_ml_skills": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "dashboard_and_storytelling_skills": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "salary_hike_high_or_low": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          }
+        }
+      },
+      "duplicates": {
+        "exact_duplicate_rows": 0,
+        "id_column": "id",
+        "unique_ids": 137,
+        "duplicate_ids_count": 2,
+        "content_duplicates_excluding_id": 21
+      },
+      "unique_value_counts": {
+        "id": 137,
+        "big_data_skills": 28,
+        "maths-stats_skills": 27,
+        "coding_skills": 22,
+        "ai_and_ml_skills": 22,
+        "dashboard_and_storytelling_skills": 21,
+        "salary_hike_high_or_low": 2
+      }
+    },
+    "sds_personality_traits": {
+      "dataset_name": "SDS Personality Traits",
+      "file_name": "SDS Personality Traits.xlsx",
+      "file_path": "C:\\Users\\asus\\Downloads\\SAS Data Problem Statement and Instructions Hackathon (1)\\SAS Data Problem Statement and Instructions Hackathon\\SDS Personality Traits.xlsx",
+      "analytical_purpose": "Big Five dimensions and success outcome",
+      "rows": 161,
+      "columns": 7,
+      "column_names": [
+        "id",
+        "neuroticism",
+        " extraversion",
+        "openness_to_experience",
+        "agreeableness",
+        "conscientiousness",
+        "success_ classification_ high_low"
+      ],
+      "data_types": {
+        "id": "int64",
+        "neuroticism": "int64",
+        " extraversion": "int64",
+        "openness_to_experience": "int64",
+        "agreeableness": "int64",
+        "conscientiousness": "int64",
+        "success_ classification_ high_low": "int64"
+      },
+      "numerical_columns": [
+        "id",
+        "neuroticism",
+        " extraversion",
+        "openness_to_experience",
+        "agreeableness",
+        "conscientiousness",
+        "success_ classification_ high_low"
+      ],
+      "categorical_columns": [],
+      "missing_values": {
+        "total_missing_cells": 0,
+        "overall_missing_pct": 0.0,
+        "per_column": {
+          "id": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "neuroticism": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          " extraversion": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "openness_to_experience": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "agreeableness": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "conscientiousness": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          },
+          "success_ classification_ high_low": {
+            "missing_count": 0,
+            "missing_pct": 0.0
+          }
+        }
+      },
+      "duplicates": {
+        "exact_duplicate_rows": 0,
+        "id_column": "id",
+        "unique_ids": 152,
+        "duplicate_ids_count": 9,
+        "content_duplicates_excluding_id": 0
+      },
+      "unique_value_counts": {
+        "id": 152,
+        "neuroticism": 45,
+        " extraversion": 47,
+        "openness_to_experience": 46,
+        "agreeableness": 47,
+        "conscientiousness": 46,
+        "success_ classification_ high_low": 2
+      }
+    }
+  },
+  "quality_audit_flags": [
+    {
+      "dataset": "Analytics Jobs",
+      "category": "Missing Values (High Severity)",
+      "column": "job_type",
+      "affected_count": 12011,
+      "affected_percentage": 75.8222,
+      "description": "75.82% missing values in job_type column.",
+      "stage_2_recommendation": "Impute from job_desig / job_description or flag as 'Not Specified'; avoid using as a primary mandatory filter."
+    },
+    {
+      "dataset": "Analytics Jobs",
+      "category": "Missing Values (Medium Severity)",
+      "column": "job_description",
+      "affected_count": 3508,
+      "affected_percentage": 22.1451,
+      "description": "22.14% missing job descriptions in Analytics Jobs.",
+      "stage_2_recommendation": "Use key_skills as primary signal for skill extraction and fill missing descriptions with empty token."
+    },
+    {
+      "dataset": "Analytics Jobs",
+      "category": "Category Text Inconsistency",
+      "column": "job_type",
+      "affected_count": 3830,
+      "description": "5 distinct spelling/casing variants observed: 'Analytics' (2971), 'analytics' (746), 'ANALYTICS' (64), 'analytic' (30), 'Analytic' (19).",
+      "stage_2_recommendation": "Standardize using .str.strip().str.title() to map all 3,830 non-null values to 'Analytics'."
+    },
+    {
+      "dataset": "Analytics Jobs",
+      "category": "Semantic Duplicate Postings",
+      "column": "s_no (all non-index columns)",
+      "affected_count": 1001,
+      "description": "1,001 rows share identical content across all attributes (same role, company, skills, location, experience) but have distinct s_no.",
+      "stage_2_recommendation": "Audit whether duplicated rows represent distinct hiring openings or scraper duplication before ML modeling."
+    },
+    {
+      "dataset": "Analytics Jobs",
+      "category": "Text Scraping Artifacts",
+      "column": "key_skills",
+      "affected_count": 63169,
+      "description": "63,169 skill mentions possess unstripped whitespace; 946 postings contain truncated ellipsis '...' tokens.",
+      "stage_2_recommendation": "Tokenize skills on comma, strip whitespace, drop ellipsis '...' tokens, and normalize case."
+    },
+    {
+      "dataset": "DataScience Jobs",
+      "category": "Identifier Collision",
+      "column": "reference_no",
+      "affected_count": 276,
+      "description": "142 reference_no values are repeated across different companies (276 total rows affected). reference_no is not a primary key.",
+      "stage_2_recommendation": "Construct composite primary key (company_name + job_title + min_experience) rather than relying on reference_no."
+    },
+    {
+      "dataset": "DataScience Jobs",
+      "category": "Extreme Distribution Skew",
+      "column": "num_of_jobs",
+      "affected_count": 1602,
+      "description": "num_of_jobs ranges from 3 to 4,200 with heavy right skew (mean 58.1 vs median 22.0).",
+      "stage_2_recommendation": "Use log-transformation or posting-weighted averages when calculating aggregate salary and experience metrics."
+    },
+    {
+      "dataset": "JDS Skill Traits",
+      "category": "Candidate Re-entry & Label Conflict",
+      "column": "id",
+      "affected_count": 4,
+      "description": "Candidate IDs 2223 and 3291 appear twice. Crucially, ID 3291 has conflicting target labels (Class 0 in row 3, Class 1 in row 29).",
+      "stage_2_recommendation": "Audit candidate records; resolve whether row 29 represents an updated assessment after training or drop conflicting record."
+    },
+    {
+      "dataset": "SDS Personality Traits",
+      "category": "Candidate Re-entry & Label Conflict",
+      "column": "id",
+      "affected_count": 18,
+      "description": "9 candidate IDs appear twice (18 total rows). 7 out of 9 pairs exhibit contradictory success labels (0 vs 1).",
+      "stage_2_recommendation": "Flag contradictory candidate evaluations for deterministic deduplication/filtering in Stage 2."
+    },
+    {
+      "dataset": "SDS Personality Traits",
+      "category": "Schema Column Naming",
+      "column": "' extraversion' and 'success_ classification_ high_low'",
+      "affected_count": 2,
+      "description": "Column ' extraversion' has a leading space; target column contains internal spaces.",
+      "stage_2_recommendation": "Normalize column names with df.columns = df.columns.str.strip().str.replace(' ', '_')."
+    }
+  ]
+}

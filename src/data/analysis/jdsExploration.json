@@ -1,0 +1,204 @@
+{
+  "dataset_name": "JDS Skill Traits",
+  "total_records": 139,
+  "unique_candidates": 137,
+  "target_variable": "salary_hike_high_or_low",
+  "salary_hike_class_distribution": {
+    "high_hike_class_1": {
+      "count": 73,
+      "percentage": 52.52
+    },
+    "low_hike_class_0": {
+      "count": 66,
+      "percentage": 47.48
+    }
+  },
+  "technical_capabilities_stats": {
+    "big_data_skills": {
+      "min": 2.3,
+      "max": 5.0,
+      "mean": 3.8496,
+      "median": 3.8,
+      "std": 0.8466,
+      "q25": 3.1,
+      "q75": 4.6,
+      "correlation_with_target": 0.1123,
+      "mean_class_0_low_hike": 3.75,
+      "mean_class_1_high_hike": 3.9397,
+      "mean_difference_high_minus_low": 0.1897
+    },
+    "maths-stats_skills": {
+      "min": 2.2,
+      "max": 5.0,
+      "mean": 4.2935,
+      "median": 4.6,
+      "std": 0.8439,
+      "q25": 3.8,
+      "q75": 5.0,
+      "correlation_with_target": 0.5238,
+      "mean_class_0_low_hike": 3.8303,
+      "mean_class_1_high_hike": 4.7123,
+      "mean_difference_high_minus_low": 0.882
+    },
+    "coding_skills": {
+      "min": 2.2,
+      "max": 5.0,
+      "mean": 4.2683,
+      "median": 4.6,
+      "std": 0.893,
+      "q25": 3.35,
+      "q75": 5.0,
+      "correlation_with_target": 0.4438,
+      "mean_class_0_low_hike": 3.853,
+      "mean_class_1_high_hike": 4.6438,
+      "mean_difference_high_minus_low": 0.7908
+    },
+    "ai_and_ml_skills": {
+      "min": 2.2,
+      "max": 5.0,
+      "mean": 4.5662,
+      "median": 4.9,
+      "std": 0.6671,
+      "q25": 4.4,
+      "q75": 5.0,
+      "correlation_with_target": 0.4046,
+      "mean_class_0_low_hike": 4.2833,
+      "mean_class_1_high_hike": 4.8219,
+      "mean_difference_high_minus_low": 0.5386
+    },
+    "dashboard_and_storytelling_skills": {
+      "min": 2.3,
+      "max": 5.0,
+      "mean": 4.3554,
+      "median": 5.0,
+      "std": 0.9331,
+      "q25": 3.75,
+      "q75": 5.0,
+      "correlation_with_target": 0.5541,
+      "mean_class_0_low_hike": 3.8136,
+      "mean_class_1_high_hike": 4.8452,
+      "mean_difference_high_minus_low": 1.0316
+    }
+  },
+  "correlation_with_target": {
+    "big_data_skills": 0.1123,
+    "maths-stats_skills": 0.5238,
+    "coding_skills": 0.4438,
+    "ai_and_ml_skills": 0.4046,
+    "dashboard_and_storytelling_skills": 0.5541
+  },
+  "ranked_by_predictive_power": [
+    {
+      "skill": "dashboard_and_storytelling_skills",
+      "correlation_with_salary_hike": 0.5541
+    },
+    {
+      "skill": "maths-stats_skills",
+      "correlation_with_salary_hike": 0.5238
+    },
+    {
+      "skill": "coding_skills",
+      "correlation_with_salary_hike": 0.4438
+    },
+    {
+      "skill": "ai_and_ml_skills",
+      "correlation_with_salary_hike": 0.4046
+    },
+    {
+      "skill": "big_data_skills",
+      "correlation_with_salary_hike": 0.1123
+    }
+  ],
+  "correlation_matrix": {
+    "big_data_skills": {
+      "big_data_skills": 1.0,
+      "maths-stats_skills": -0.1225,
+      "coding_skills": 0.0473,
+      "ai_and_ml_skills": -0.0619,
+      "dashboard_and_storytelling_skills": 0.0828,
+      "salary_hike_high_or_low": 0.1123
+    },
+    "maths-stats_skills": {
+      "big_data_skills": -0.1225,
+      "maths-stats_skills": 1.0,
+      "coding_skills": 0.4475,
+      "ai_and_ml_skills": 0.3654,
+      "dashboard_and_storytelling_skills": 0.3357,
+      "salary_hike_high_or_low": 0.5238
+    },
+    "coding_skills": {
+      "big_data_skills": 0.0473,
+      "maths-stats_skills": 0.4475,
+      "coding_skills": 1.0,
+      "ai_and_ml_skills": 0.1861,
+      "dashboard_and_storytelling_skills": 0.4083,
+      "salary_hike_high_or_low": 0.4438
+    },
+    "ai_and_ml_skills": {
+      "big_data_skills": -0.0619,
+      "maths-stats_skills": 0.3654,
+      "coding_skills": 0.1861,
+      "ai_and_ml_skills": 1.0,
+      "dashboard_and_storytelling_skills": 0.3172,
+      "salary_hike_high_or_low": 0.4046
+    },
+    "dashboard_and_storytelling_skills": {
+      "big_data_skills": 0.0828,
+      "maths-stats_skills": 0.3357,
+      "coding_skills": 0.4083,
+      "ai_and_ml_skills": 0.3172,
+      "dashboard_and_storytelling_skills": 1.0,
+      "salary_hike_high_or_low": 0.5541
+    },
+    "salary_hike_high_or_low": {
+      "big_data_skills": 0.1123,
+      "maths-stats_skills": 0.5238,
+      "coding_skills": 0.4438,
+      "ai_and_ml_skills": 0.4046,
+      "dashboard_and_storytelling_skills": 0.5541,
+      "salary_hike_high_or_low": 1.0
+    }
+  },
+  "duplicate_candidate_id_audit": {
+    "duplicate_ids_count": 2,
+    "affected_rows_count": 4,
+    "affected_candidate_records": [
+      {
+        "id": 2223,
+        "big_data_skills": 3.3,
+        "maths-stats_skills": 3.8,
+        "coding_skills": 5.0,
+        "ai_and_ml_skills": 3.4,
+        "dashboard_and_storytelling_skills": 2.5,
+        "salary_hike_high_or_low": 0
+      },
+      {
+        "id": 2223,
+        "big_data_skills": 2.4,
+        "maths-stats_skills": 3.4,
+        "coding_skills": 3.1,
+        "ai_and_ml_skills": 4.3,
+        "dashboard_and_storytelling_skills": 2.5,
+        "salary_hike_high_or_low": 0
+      },
+      {
+        "id": 3291,
+        "big_data_skills": 4.8,
+        "maths-stats_skills": 4.5,
+        "coding_skills": 5.0,
+        "ai_and_ml_skills": 4.8,
+        "dashboard_and_storytelling_skills": 5.0,
+        "salary_hike_high_or_low": 1
+      },
+      {
+        "id": 3291,
+        "big_data_skills": 4.4,
+        "maths-stats_skills": 3.0,
+        "coding_skills": 3.3,
+        "ai_and_ml_skills": 4.6,
+        "dashboard_and_storytelling_skills": 2.3,
+        "salary_hike_high_or_low": 0
+      }
+    ]
+  }
+}

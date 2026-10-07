@@ -1,0 +1,680 @@
+{
+  "dataset_name": "Analytics Jobs (Processed)",
+  "source_file": "Analytics Jobs.csv",
+  "record_count_raw": 15841,
+  "record_count_processed_total": 15841,
+  "semantic_duplicates_flagged": 1001,
+  "deduplicated_unique_record_count": 14840,
+  "deduplication_policy": "All 15,841 raw records are preserved for complete market traceability. Semantic duplicate postings (1,001 rows matching on all content attributes) are flagged with `is_semantic_duplicate: true`. Downstream feature models can cleanly filter on `is_semantic_duplicate: false`.",
+  "missing_value_handling": {
+    "job_type": "Standardized casing to 'Analytics'; 12,011 missing rows mapped to 'Not Specified' with job_type_missing_flag=true.",
+    "job_description": "3,508 missing descriptions imputed as empty string with job_description_missing_flag=true.",
+    "key_skills": "Single missing row (s_no 7810) mapped to empty token array [] with key_skills_missing_flag=true."
+  },
+  "role_distribution_summary": {
+    "Other General Professional": 8655,
+    "Other Analyst": 1966,
+    "Software / Application Developer": 1347,
+    "Marketing / Digital Marketing": 973,
+    "Business Analyst": 748,
+    "Consultant": 573,
+    "Data Scientist": 413,
+    "Data Analyst": 232,
+    "Product Manager": 200,
+    "Machine Learning Engineer": 173,
+    "Senior Business Analyst": 142,
+    "Project Manager": 131,
+    "Data Engineer": 112,
+    "Data Architect": 81,
+    "Senior Data Scientist": 51,
+    "Senior Data Analyst": 31,
+    "Senior Data Engineer": 13
+  },
+  "salary_midpoint_lpa_summary": {
+    "count": 15841.0,
+    "mean": 12.27,
+    "std": 9.66,
+    "min": 1.5,
+    "25%": 4.5,
+    "50%": 12.5,
+    "75%": 20.0,
+    "max": 37.5
+  },
+  "experience_midpoint_summary": {
+    "count": 15841.0,
+    "mean": 6.19,
+    "std": 3.73,
+    "min": 0.0,
+    "25%": 3.5,
+    "50%": 5.5,
+    "75%": 8.0,
+    "max": 26.5
+  },
+  "sample_processed_records": [
+    {
+      "s_no": 1,
+      "job_desig": "Oracle EBS Technical Consultant",
+      "normalized_role": "Consultant",
+      "experience": "6-10 yrs",
+      "parsed_min_experience": 6,
+      "parsed_max_experience": 10,
+      "experience_midpoint": 8.0,
+      "salary": "6to10",
+      "salary_midpoint_lpa": 8.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Bengaluru, Chennai",
+      "location_cities": [
+        "Bengaluru",
+        "Chennai"
+      ],
+      "normalized_skill_tokens": [
+        "oracle sql",
+        "plsql",
+        "pl",
+        "oracle forms",
+        "oracle reports",
+        "oracle workflow..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 2,
+      "job_desig": "Staff Software Engineer - Object Oriented Analysis & Design",
+      "normalized_role": "Software / Application Developer",
+      "experience": "8-12 yrs",
+      "parsed_min_experience": 8,
+      "parsed_max_experience": 12,
+      "experience_midpoint": 10.0,
+      "salary": "10to15",
+      "salary_midpoint_lpa": 12.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Bengaluru",
+      "location_cities": [
+        "Bengaluru"
+      ],
+      "normalized_skill_tokens": [
+        "javascript",
+        "html",
+        "jquery",
+        "web development",
+        "play framework",
+        "mvc",
+        "rest..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 3,
+      "job_desig": "Servicenow Developer",
+      "normalized_role": "Software / Application Developer",
+      "experience": "3-8 yrs",
+      "parsed_min_experience": 3,
+      "parsed_max_experience": 8,
+      "experience_midpoint": 5.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Hyderabad, Pune",
+      "location_cities": [
+        "Hyderabad",
+        "Pune"
+      ],
+      "normalized_skill_tokens": [
+        "snow",
+        "servicenow",
+        "servicenow developer"
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 4,
+      "job_desig": "Software Development Engineering, Analyst",
+      "normalized_role": "Other Analyst",
+      "experience": "3-6 yrs",
+      "parsed_min_experience": 3,
+      "parsed_max_experience": 6,
+      "experience_midpoint": 4.5,
+      "salary": "6to10",
+      "salary_midpoint_lpa": 8.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Pune",
+      "location_cities": [
+        "Pune"
+      ],
+      "normalized_skill_tokens": [
+        "qtp",
+        "flex",
+        "lan",
+        "application support",
+        "performance testing",
+        "eclipse..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 5,
+      "job_desig": "NVH Engineer - Nastran/ Ls-dyna",
+      "normalized_role": "Other General Professional",
+      "experience": "5-10 yrs",
+      "parsed_min_experience": 5,
+      "parsed_max_experience": 10,
+      "experience_midpoint": 7.5,
+      "salary": "10to15",
+      "salary_midpoint_lpa": 12.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Mumbai, Bengaluru, Hyderabad, Pune, Delhi",
+      "location_cities": [
+        "Mumbai",
+        "Bengaluru",
+        "Hyderabad",
+        "Pune",
+        "Delhi"
+      ],
+      "normalized_skill_tokens": [
+        "hypermesh",
+        "ls - dyna",
+        "nastran",
+        "abaqus",
+        "fatigue",
+        "durability",
+        "nvh",
+        "fea..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 6,
+      "job_desig": "Manager - Portfolio Analytics - NBFC - Iit/nit/bits",
+      "normalized_role": "Other General Professional",
+      "experience": "4-9 yrs",
+      "parsed_min_experience": 4,
+      "parsed_max_experience": 9,
+      "experience_midpoint": 6.5,
+      "salary": "15to25",
+      "salary_midpoint_lpa": 20.0,
+      "standardized_job_type": "Analytics",
+      "location": "Chennai, Pune",
+      "location_cities": [
+        "Chennai",
+        "Pune"
+      ],
+      "normalized_skill_tokens": [
+        "manager - portfolio analytics",
+        "portfolio analytics",
+        "analytics..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 7,
+      "job_desig": "Head Delivery-providers",
+      "normalized_role": "Other General Professional",
+      "experience": "5-7 yrs",
+      "parsed_min_experience": 5,
+      "parsed_max_experience": 7,
+      "experience_midpoint": 6.0,
+      "salary": "3to6",
+      "salary_midpoint_lpa": 4.5,
+      "standardized_job_type": "Analytics",
+      "location": "Delhi NCR",
+      "location_cities": [
+        "Delhi NCR"
+      ],
+      "normalized_skill_tokens": [
+        "project management",
+        "client interfacing",
+        "client management",
+        "data analytics..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 8,
+      "job_desig": "Fresher Analytics ( Hiring for Analyst | Data Research Team )-mnc-kpo",
+      "normalized_role": "Other Analyst",
+      "experience": "0-0 yrs",
+      "parsed_min_experience": 0,
+      "parsed_max_experience": 0,
+      "experience_midpoint": 0.0,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Analytics",
+      "location": "Delhi NCR, Faridabad, Ghaziabad, Greater Noida, Gurgaon, Noida",
+      "location_cities": [
+        "Delhi NCR",
+        "Faridabad",
+        "Ghaziabad",
+        "Greater Noida",
+        "Gurgaon",
+        "Noida"
+      ],
+      "normalized_skill_tokens": [
+        "analysis",
+        "research",
+        "analyst",
+        "research analyst",
+        "research associate",
+        "research..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 9,
+      "job_desig": "Team Leader Operations - Digital Marketing",
+      "normalized_role": "Marketing / Digital Marketing",
+      "experience": "6-11 yrs",
+      "parsed_min_experience": 6,
+      "parsed_max_experience": 11,
+      "experience_midpoint": 8.5,
+      "salary": "6to10",
+      "salary_midpoint_lpa": 8.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Mumbai, Mumbai Suburbs",
+      "location_cities": [
+        "Mumbai",
+        "Mumbai Suburbs"
+      ],
+      "normalized_skill_tokens": [
+        "seo",
+        "digital marketing",
+        "search engine marketing",
+        "google adwords",
+        "sem..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 10,
+      "job_desig": "Senior Manager Collections@ Two Wheeler Finance -female Preferred",
+      "normalized_role": "Other General Professional",
+      "experience": "1-6 yrs",
+      "parsed_min_experience": 1,
+      "parsed_max_experience": 6,
+      "experience_midpoint": 3.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Thane",
+      "location_cities": [
+        "Thane"
+      ],
+      "normalized_skill_tokens": [
+        "recovery",
+        "team handling",
+        "data analysis",
+        "team leader",
+        "collection..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 11,
+      "job_desig": "Analytics Specialist",
+      "normalized_role": "Other General Professional",
+      "experience": "2-7 yrs",
+      "parsed_min_experience": 2,
+      "parsed_max_experience": 7,
+      "experience_midpoint": 4.5,
+      "salary": "6to10",
+      "salary_midpoint_lpa": 8.0,
+      "standardized_job_type": "Analytics",
+      "location": "Gurgaon, Mumbai",
+      "location_cities": [
+        "Gurgaon",
+        "Mumbai"
+      ],
+      "normalized_skill_tokens": [
+        "analytics",
+        "data analysis",
+        "data mining",
+        "sql",
+        "trend analysis..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 12,
+      "job_desig": "Data Science & Machine Learning Role - Python/sql/r/etl/scala",
+      "normalized_role": "Data Scientist",
+      "experience": "5-9 yrs",
+      "parsed_min_experience": 5,
+      "parsed_max_experience": 9,
+      "experience_midpoint": 7.0,
+      "salary": "15to25",
+      "salary_midpoint_lpa": 20.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Gurgaon",
+      "location_cities": [
+        "Gurgaon"
+      ],
+      "normalized_skill_tokens": [
+        "data science",
+        "scala",
+        "machine learning",
+        "java",
+        "python",
+        "sql",
+        "r",
+        "pig..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 13,
+      "job_desig": "Big Data Architect/specialist - Java/hadoop",
+      "normalized_role": "Data Architect",
+      "experience": "9-14 yrs",
+      "parsed_min_experience": 9,
+      "parsed_max_experience": 14,
+      "experience_midpoint": 11.5,
+      "salary": "25to50",
+      "salary_midpoint_lpa": 37.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Bengaluru, Delhi NCR",
+      "location_cities": [
+        "Bengaluru",
+        "Delhi NCR"
+      ],
+      "normalized_skill_tokens": [
+        "java",
+        "j2ee",
+        "spring framework",
+        "hadoop",
+        "mapreduce",
+        "spark",
+        "hbase",
+        "big data..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 14,
+      "job_desig": "Big Data Architect - Data Analytics/data Modeling",
+      "normalized_role": "Data Architect",
+      "experience": "11-15 yrs",
+      "parsed_min_experience": 11,
+      "parsed_max_experience": 15,
+      "experience_midpoint": 13.0,
+      "salary": "15to25",
+      "salary_midpoint_lpa": 20.0,
+      "standardized_job_type": "Analytics",
+      "location": "Bengaluru",
+      "location_cities": [
+        "Bengaluru"
+      ],
+      "normalized_skill_tokens": [
+        "poc",
+        "data analytics",
+        "big data",
+        "data modeling",
+        "data management..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 15,
+      "job_desig": "Manager-electronics Commodity",
+      "normalized_role": "Other General Professional",
+      "experience": "8-12 yrs",
+      "parsed_min_experience": 8,
+      "parsed_max_experience": 12,
+      "experience_midpoint": 10.0,
+      "salary": "15to25",
+      "salary_midpoint_lpa": 20.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Delhi NCR",
+      "location_cities": [
+        "Delhi NCR"
+      ],
+      "normalized_skill_tokens": [
+        "process monitoring",
+        "cost reduction initiatives",
+        "vendor contracts..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 16,
+      "job_desig": "Analyst - Background Verification (Day Shift)",
+      "normalized_role": "Other Analyst",
+      "experience": "0-3 yrs",
+      "parsed_min_experience": 0,
+      "parsed_max_experience": 3,
+      "experience_midpoint": 1.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Kolkata(Salt Lake)",
+      "location_cities": [
+        "Kolkata(Salt Lake)"
+      ],
+      "normalized_skill_tokens": [
+        "background verification",
+        "backend",
+        "back office",
+        "back office operations..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 17,
+      "job_desig": "Big Data Solution Architect  - Automobiles - Chennai",
+      "normalized_role": "Other General Professional",
+      "experience": "8-13 yrs",
+      "parsed_min_experience": 8,
+      "parsed_max_experience": 13,
+      "experience_midpoint": 10.5,
+      "salary": "25to50",
+      "salary_midpoint_lpa": 37.5,
+      "standardized_job_type": "Analytics",
+      "location": "Chennai",
+      "location_cities": [
+        "Chennai"
+      ],
+      "normalized_skill_tokens": [
+        "spark",
+        "big data analytics",
+        "data analysis",
+        "software development"
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 18,
+      "job_desig": "Executive - Social Media",
+      "normalized_role": "Other General Professional",
+      "experience": "2-3 yrs",
+      "parsed_min_experience": 2,
+      "parsed_max_experience": 3,
+      "experience_midpoint": 2.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Mumbai(Lower Parel)",
+      "location_cities": [
+        "Mumbai(Lower Parel)"
+      ],
+      "normalized_skill_tokens": [
+        "digital marketing",
+        "content strategy",
+        "digital media",
+        "sales",
+        "twitter..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 19,
+      "job_desig": "Executive - Audit Finance and Accounts",
+      "normalized_role": "Other General Professional",
+      "experience": "0-5 yrs",
+      "parsed_min_experience": 0,
+      "parsed_max_experience": 5,
+      "experience_midpoint": 2.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Bengaluru, Chennai, Kochi",
+      "location_cities": [
+        "Bengaluru",
+        "Chennai",
+        "Kochi"
+      ],
+      "normalized_skill_tokens": [
+        "finance",
+        "auditing",
+        "accounting",
+        "financial reporting",
+        "financial analysis..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 20,
+      "job_desig": "Urgently Hiring For Solution Consultant - Adobe Analytics Cloud",
+      "normalized_role": "Consultant",
+      "experience": "4-8 yrs",
+      "parsed_min_experience": 4,
+      "parsed_max_experience": 8,
+      "experience_midpoint": 6.0,
+      "salary": "3to6",
+      "salary_midpoint_lpa": 4.5,
+      "standardized_job_type": "Analytics",
+      "location": "Delhi NCR, Mumbai, Gurgaon",
+      "location_cities": [
+        "Delhi NCR",
+        "Mumbai",
+        "Gurgaon"
+      ],
+      "normalized_skill_tokens": [
+        "product sales",
+        "product marketing",
+        "product management",
+        "sales training",
+        "sales..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 21,
+      "job_desig": "Credit Manager - Home Loans l Kakinada, Karimnagar, Amalapuram",
+      "normalized_role": "Other General Professional",
+      "experience": "5-10 yrs",
+      "parsed_min_experience": 5,
+      "parsed_max_experience": 10,
+      "experience_midpoint": 7.5,
+      "salary": "3to6",
+      "salary_midpoint_lpa": 4.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Kakinada, Karimnagar",
+      "location_cities": [
+        "Kakinada",
+        "Karimnagar"
+      ],
+      "normalized_skill_tokens": [
+        "credit management",
+        "home loans",
+        "credit manager",
+        "credit analyst..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 22,
+      "job_desig": "Assistant Manager Recruitment and Client Management",
+      "normalized_role": "Other General Professional",
+      "experience": "3-8 yrs",
+      "parsed_min_experience": 3,
+      "parsed_max_experience": 8,
+      "experience_midpoint": 5.5,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Delhi NCR(Old Rajender Nagar)",
+      "location_cities": [
+        "Delhi NCR(Old Rajender Nagar)"
+      ],
+      "normalized_skill_tokens": [
+        "head hunting",
+        "recruitment",
+        "screening",
+        "leadership hiring",
+        "hr..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 23,
+      "job_desig": "Sales Associate",
+      "normalized_role": "Other General Professional",
+      "experience": "2-6 yrs",
+      "parsed_min_experience": 2,
+      "parsed_max_experience": 6,
+      "experience_midpoint": 4.0,
+      "salary": "0to3",
+      "salary_midpoint_lpa": 1.5,
+      "standardized_job_type": "Not Specified",
+      "location": "Hyderabad",
+      "location_cities": [
+        "Hyderabad"
+      ],
+      "normalized_skill_tokens": [
+        "event sales",
+        "space selling",
+        "ad sales",
+        "project sales",
+        "sales planning",
+        "target..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 24,
+      "job_desig": "Image Processing Engineer - Machine Learning/opencv",
+      "normalized_role": "Machine Learning Engineer",
+      "experience": "4-6 yrs",
+      "parsed_min_experience": 4,
+      "parsed_max_experience": 6,
+      "experience_midpoint": 5.0,
+      "salary": "6to10",
+      "salary_midpoint_lpa": 8.0,
+      "standardized_job_type": "Not Specified",
+      "location": "Mumbai",
+      "location_cities": [
+        "Mumbai"
+      ],
+      "normalized_skill_tokens": [
+        "opencv",
+        "c++",
+        "image processing",
+        "matlab",
+        "algorithms",
+        "machine learning..."
+      ],
+      "is_semantic_duplicate": false
+    },
+    {
+      "s_no": 25,
+      "job_desig": "Data Science Leader",
+      "normalized_role": "Data Scientist",
+      "experience": "12-16 yrs",
+      "parsed_min_experience": 12,
+      "parsed_max_experience": 16,
+      "experience_midpoint": 14.0,
+      "salary": "25to50",
+      "salary_midpoint_lpa": 37.5,
+      "standardized_job_type": "Analytics",
+      "location": "Pune",
+      "location_cities": [
+        "Pune"
+      ],
+      "normalized_skill_tokens": [
+        "statistics",
+        "advanced analytics",
+        "data science",
+        "predictive modeling..."
+      ],
+      "is_semantic_duplicate": false
+    }
+  ]
+}

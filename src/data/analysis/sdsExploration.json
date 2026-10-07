@@ -1,0 +1,335 @@
+{
+  "dataset_name": "SDS Personality Traits",
+  "total_records": 161,
+  "unique_candidates": 152,
+  "target_variable": "success_ classification_ high_low",
+  "success_class_distribution": {
+    "high_success_class_1": {
+      "count": 85,
+      "percentage": 52.8
+    },
+    "low_success_class_0": {
+      "count": 76,
+      "percentage": 47.2
+    }
+  },
+  "personality_dimensions_stats": {
+    "neuroticism": {
+      "raw_column_name": "neuroticism",
+      "min": 17.0,
+      "max": 68.0,
+      "mean": 36.1925,
+      "median": 34.0,
+      "std": 11.268,
+      "q25": 27.0,
+      "q75": 44.0,
+      "correlation_with_target": -0.0059,
+      "mean_class_0_low_success": 36.2632,
+      "mean_class_1_high_success": 36.1294,
+      "mean_difference_high_minus_low": -0.1337
+    },
+    "extraversion": {
+      "raw_column_name": " extraversion",
+      "min": 17.0,
+      "max": 67.0,
+      "mean": 43.205,
+      "median": 45.0,
+      "std": 12.1347,
+      "q25": 34.0,
+      "q75": 53.0,
+      "correlation_with_target": 0.4943,
+      "mean_class_0_low_success": 36.8816,
+      "mean_class_1_high_success": 48.8588,
+      "mean_difference_high_minus_low": 11.9772
+    },
+    "openness_to_experience": {
+      "raw_column_name": "openness_to_experience",
+      "min": 18.0,
+      "max": 65.0,
+      "mean": 41.3292,
+      "median": 44.0,
+      "std": 11.3224,
+      "q25": 32.0,
+      "q75": 49.0,
+      "correlation_with_target": 0.6713,
+      "mean_class_0_low_success": 33.3158,
+      "mean_class_1_high_success": 48.4941,
+      "mean_difference_high_minus_low": 15.1783
+    },
+    "agreeableness": {
+      "raw_column_name": "agreeableness",
+      "min": 17.0,
+      "max": 68.0,
+      "mean": 44.6025,
+      "median": 46.0,
+      "std": 11.2934,
+      "q25": 39.0,
+      "q75": 51.0,
+      "correlation_with_target": 0.2926,
+      "mean_class_0_low_success": 41.1184,
+      "mean_class_1_high_success": 47.7176,
+      "mean_difference_high_minus_low": 6.5992
+    },
+    "conscientiousness": {
+      "raw_column_name": "conscientiousness",
+      "min": 18.0,
+      "max": 66.0,
+      "mean": 45.2112,
+      "median": 49.0,
+      "std": 13.2119,
+      "q25": 35.0,
+      "q75": 56.0,
+      "correlation_with_target": 0.6802,
+      "mean_class_0_low_success": 35.7368,
+      "mean_class_1_high_success": 53.6824,
+      "mean_difference_high_minus_low": 17.9455
+    }
+  },
+  "correlation_with_target": {
+    "neuroticism": -0.0059,
+    "extraversion": 0.4943,
+    "openness_to_experience": 0.6713,
+    "agreeableness": 0.2926,
+    "conscientiousness": 0.6802
+  },
+  "ranked_by_predictive_power": [
+    {
+      "personality_dimension": "conscientiousness",
+      "correlation_with_career_success": 0.6802
+    },
+    {
+      "personality_dimension": "openness_to_experience",
+      "correlation_with_career_success": 0.6713
+    },
+    {
+      "personality_dimension": "extraversion",
+      "correlation_with_career_success": 0.4943
+    },
+    {
+      "personality_dimension": "agreeableness",
+      "correlation_with_career_success": 0.2926
+    },
+    {
+      "personality_dimension": "neuroticism",
+      "correlation_with_career_success": -0.0059
+    }
+  ],
+  "correlation_matrix": {
+    "neuroticism": {
+      "neuroticism": 1.0,
+      " extraversion": -0.2465,
+      "openness_to_experience": -0.0003,
+      "agreeableness": -0.1546,
+      "conscientiousness": -0.135,
+      "success_ classification_ high_low": -0.0059
+    },
+    " extraversion": {
+      "neuroticism": -0.2465,
+      " extraversion": 1.0,
+      "openness_to_experience": 0.4005,
+      "agreeableness": 0.2651,
+      "conscientiousness": 0.4031,
+      "success_ classification_ high_low": 0.4943
+    },
+    "openness_to_experience": {
+      "neuroticism": -0.0003,
+      " extraversion": 0.4005,
+      "openness_to_experience": 1.0,
+      "agreeableness": 0.1129,
+      "conscientiousness": 0.4526,
+      "success_ classification_ high_low": 0.6713
+    },
+    "agreeableness": {
+      "neuroticism": -0.1546,
+      " extraversion": 0.2651,
+      "openness_to_experience": 0.1129,
+      "agreeableness": 1.0,
+      "conscientiousness": 0.3038,
+      "success_ classification_ high_low": 0.2926
+    },
+    "conscientiousness": {
+      "neuroticism": -0.135,
+      " extraversion": 0.4031,
+      "openness_to_experience": 0.4526,
+      "agreeableness": 0.3038,
+      "conscientiousness": 1.0,
+      "success_ classification_ high_low": 0.6802
+    },
+    "success_ classification_ high_low": {
+      "neuroticism": -0.0059,
+      " extraversion": 0.4943,
+      "openness_to_experience": 0.6713,
+      "agreeableness": 0.2926,
+      "conscientiousness": 0.6802,
+      "success_ classification_ high_low": 1.0
+    }
+  },
+  "duplicate_candidate_id_audit": {
+    "duplicate_ids_count": 9,
+    "affected_rows_count": 18,
+    "affected_candidate_records": [
+      {
+        "id": 8065,
+        "neuroticism": 17,
+        " extraversion": 26,
+        "openness_to_experience": 34,
+        "agreeableness": 30,
+        "conscientiousness": 44,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8065,
+        "neuroticism": 36,
+        " extraversion": 47,
+        "openness_to_experience": 54,
+        "agreeableness": 52,
+        "conscientiousness": 51,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8198,
+        "neuroticism": 41,
+        " extraversion": 39,
+        "openness_to_experience": 48,
+        "agreeableness": 46,
+        "conscientiousness": 59,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8198,
+        "neuroticism": 31,
+        " extraversion": 43,
+        "openness_to_experience": 42,
+        "agreeableness": 59,
+        "conscientiousness": 31,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8228,
+        "neuroticism": 44,
+        " extraversion": 28,
+        "openness_to_experience": 44,
+        "agreeableness": 61,
+        "conscientiousness": 27,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8228,
+        "neuroticism": 26,
+        " extraversion": 32,
+        "openness_to_experience": 37,
+        "agreeableness": 44,
+        "conscientiousness": 35,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8301,
+        "neuroticism": 35,
+        " extraversion": 42,
+        "openness_to_experience": 34,
+        "agreeableness": 29,
+        "conscientiousness": 50,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8301,
+        "neuroticism": 30,
+        " extraversion": 56,
+        "openness_to_experience": 41,
+        "agreeableness": 48,
+        "conscientiousness": 52,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8303,
+        "neuroticism": 47,
+        " extraversion": 22,
+        "openness_to_experience": 32,
+        "agreeableness": 42,
+        "conscientiousness": 57,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8303,
+        "neuroticism": 39,
+        " extraversion": 46,
+        "openness_to_experience": 47,
+        "agreeableness": 50,
+        "conscientiousness": 50,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8308,
+        "neuroticism": 22,
+        " extraversion": 46,
+        "openness_to_experience": 44,
+        "agreeableness": 60,
+        "conscientiousness": 42,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8308,
+        "neuroticism": 37,
+        " extraversion": 50,
+        "openness_to_experience": 53,
+        "agreeableness": 41,
+        "conscientiousness": 51,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8489,
+        "neuroticism": 56,
+        " extraversion": 20,
+        "openness_to_experience": 23,
+        "agreeableness": 21,
+        "conscientiousness": 24,
+        "success_ classification_ high_low": 0
+      },
+      {
+        "id": 8489,
+        "neuroticism": 28,
+        " extraversion": 51,
+        "openness_to_experience": 53,
+        "agreeableness": 56,
+        "conscientiousness": 60,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8656,
+        "neuroticism": 38,
+        " extraversion": 35,
+        "openness_to_experience": 42,
+        "agreeableness": 39,
+        "conscientiousness": 49,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8656,
+        "neuroticism": 36,
+        " extraversion": 46,
+        "openness_to_experience": 45,
+        "agreeableness": 44,
+        "conscientiousness": 54,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8887,
+        "neuroticism": 34,
+        " extraversion": 47,
+        "openness_to_experience": 49,
+        "agreeableness": 52,
+        "conscientiousness": 53,
+        "success_ classification_ high_low": 1
+      },
+      {
+        "id": 8887,
+        "neuroticism": 23,
+        " extraversion": 24,
+        "openness_to_experience": 39,
+        "agreeableness": 37,
+        "conscientiousness": 64,
+        "success_ classification_ high_low": 0
+      }
+    ]
+  }
+}
